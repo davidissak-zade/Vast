@@ -91,9 +91,9 @@
         android:layout_height="wrap_content"
         android:text="section2"
         android:translationY="700px"
+        tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="76dp"
-        tools:ignore="MissingConstraints" />
+        tools:layout_editor_absoluteY="76dp" />
 
     <HorizontalScrollView
         android:layout_width="match_parent"
@@ -158,6 +158,84 @@
 
             <FrameLayout
                 android:id="@+id/flFragment2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/section3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="section3"
+        android:translationY="1100px"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="76dp" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:translationY="1400px"
+        tools:layout_editor_absoluteX="498dp"
+        tools:layout_editor_absoluteY="433dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button111"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button222"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button333"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button444"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button555"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button666"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <FrameLayout
+                android:id="@+id/flFragment3"
                 android:layout_width="match_parent"
                 android:layout_height="0dp" />
         </LinearLayout>
