@@ -28,4 +28,6 @@
     <string name="quote_string7">“How much is real and for how long?”
         <b>\n\n– J. Limbu</b>
     </string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

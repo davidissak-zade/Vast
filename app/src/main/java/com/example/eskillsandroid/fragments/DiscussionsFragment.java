@@ -1,4 +1,4 @@
-package com.example.eskillsandroid;
+package com.example.eskillsandroid.fragments;
 
 import android.os.Bundle;
 
@@ -8,12 +8,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+import com.example.eskillsandroid.R;
+
 /**
  * A simple {@link Fragment} subclass.
- * Use the {@link Discussions#newInstance} factory method to
+ * Use the {@link DiscussionsFragment#newInstance} factory method to
  * create an instance of this fragment.
  */
-public class Discussions extends Fragment {
+public class DiscussionsFragment extends Fragment {
 
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -24,7 +26,7 @@ public class Discussions extends Fragment {
     private String mParam1;
     private String mParam2;
 
-    public Discussions() {
+    public DiscussionsFragment() {
         // Required empty public constructor
     }
 
@@ -34,11 +36,11 @@ public class Discussions extends Fragment {
      *
      * @param param1 Parameter 1.
      * @param param2 Parameter 2.
-     * @return A new instance of fragment Discussions.
+     * @return A new instance of fragment DiscussionsFragment.
      */
     // TODO: Rename and change types and number of parameters
-    public static Discussions newInstance(String param1, String param2) {
-        Discussions fragment = new Discussions();
+    public static DiscussionsFragment newInstance(String param1, String param2) {
+        DiscussionsFragment fragment = new DiscussionsFragment();
         Bundle args = new Bundle();
         args.putString(ARG_PARAM1, param1);
         args.putString(ARG_PARAM2, param2);
