@@ -10,4 +10,14 @@
         android:name="com.example.eskillsandroid.MainActivity"
         android:label="activity_main"
         tools:layout="@layout/activity_main" />
+    <fragment
+        android:id="@+id/searchPage"
+        android:name="com.example.eskillsandroid.SearchPage"
+        android:label="fragment_search_page"
+        tools:layout="@layout/fragment_search_page" />
+    <fragment
+        android:id="@+id/discussions"
+        android:name="com.example.eskillsandroid.Discussions"
+        android:label="fragment_discussions"
+        tools:layout="@layout/fragment_discussions" />
 </navigation>
