@@ -239,5 +239,21 @@
         </LinearLayout>
     </HorizontalScrollView>
 
+    <TextView
+        android:id="@+id/quote"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="quote"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:translationY="-800px" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:translationX="800px"
+        android:translationY="-1000px"
+        tools:srcCompat="@tools:sample/avatars" />
+
 
 </LinearLayout>
