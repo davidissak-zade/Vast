@@ -8,13 +8,12 @@
     android:orientation="vertical">
 
 
-
     <TextView
         android:id="@+id/section1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="section1"
-        android:translationY="500px"
+        android:translationY="400px"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
         tools:layout_editor_absoluteY="182dp" />
@@ -24,7 +23,7 @@
         android:layout_height="150px"
         android:layout_marginTop="140dp"
         android:fillViewport="true"
-        android:translationY="850px"
+        android:translationY="750px"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -94,15 +93,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="section2"
-        android:translationY="250px"
+        android:translationY="150px"
         tools:layout_editor_absoluteX="20dp"
         tools:layout_editor_absoluteY="76dp" />
-
 
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="150px"
         android:fillViewport="true"
+        android:translationY="-100px"
         tools:layout_editor_absoluteX="498dp"
         tools:layout_editor_absoluteY="433dp">
 
@@ -171,13 +170,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="section3"
-        android:translationY="400px" />
+        android:translationY="300px" />
 
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="150px"
         android:fillViewport="true"
-        android:translationY="100px"
         tools:layout_editor_absoluteX="498dp"
         tools:layout_editor_absoluteY="433dp">
 
