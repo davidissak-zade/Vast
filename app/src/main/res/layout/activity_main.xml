@@ -12,7 +12,6 @@
         tools:layout_editor_absoluteX="1dp"
         tools:layout_editor_absoluteY="1dp">
 
-
     <TextView
         android:id="@+id/section2"
         android:layout_width="wrap_content"
@@ -90,7 +89,7 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <TextView
+     <TextView
         android:id="@+id/section1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -99,10 +98,9 @@
         tools:layout_editor_absoluteY="182dp"
         tools:ignore="MissingConstraints" />
 
-
     <HorizontalScrollView
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="250px"
         android:layout_marginTop="140dp"
         android:fillViewport="true"
         android:translationY="200px"
@@ -111,7 +109,7 @@
 
         <LinearLayout
             android:layout_width="wrap_content"
-            android:layout_height="175px"
+            android:layout_height="150px"
             android:orientation="horizontal">
 
             <Button
@@ -169,6 +167,89 @@
 
         </LinearLayout>
     </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/section2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="section2"
+        android:translationY="700px"
+        tools:layout_editor_absoluteX="20dp"
+        tools:layout_editor_absoluteY="76dp"
+        tools:ignore="MissingConstraints" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true"
+        android:translationY="1000px"
+        tools:layout_editor_absoluteX="498dp"
+        tools:layout_editor_absoluteY="433dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="150px"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button11"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button44"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <FrameLayout
+                android:id="@+id/flFragment2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+        </LinearLayout>
+    </HorizontalScrollView>
+
+
+
+
+
 
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
