@@ -7,11 +7,6 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-    <FrameLayout
-        android:id = "@+id/fl_wrapper"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/bottom_navigation_panel"/>
 
     <TextView
         android:id="@+id/section1"
@@ -26,9 +21,8 @@
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="150px"
-        android:layout_marginTop="140dp"
         android:fillViewport="true"
-        android:translationY="750px"
+        android:translationY="450px"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
@@ -98,7 +92,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="section2"
-        android:translationY="150px"
+        android:translationY="625px"
         tools:layout_editor_absoluteX="20dp"
         tools:layout_editor_absoluteY="76dp" />
 
@@ -106,9 +100,9 @@
         android:layout_width="match_parent"
         android:layout_height="150px"
         android:fillViewport="true"
-        android:translationY="-100px"
-        tools:layout_editor_absoluteX="498dp"
-        tools:layout_editor_absoluteY="433dp">
+        android:translationY="675px"
+        tools:layout_editor_absoluteX="0"
+        tools:layout_editor_absoluteY="0">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -175,14 +169,15 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="section3"
-        android:translationY="300px" />
+        android:translationY="850px" />
 
     <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="150px"
         android:fillViewport="true"
-        tools:layout_editor_absoluteX="498dp"
-        tools:layout_editor_absoluteY="433dp">
+        android:translationY="900px"
+        tools:layout_editor_absoluteX="0"
+        tools:layout_editor_absoluteY="0">
 
         <LinearLayout
             android:layout_width="wrap_content"
@@ -244,43 +239,19 @@
         </LinearLayout>
     </HorizontalScrollView>
 
-    <TextView
-        android:id="@+id/tv_text"
-        android:layout_width="wrap_content"
-        android:layout_height="86dp"
-        android:layout_centerVertical="true"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="16dp"
-        android:clickable="true"
-        android:focusable="true"
-        android:selectAllOnFocus="true"
-        android:text="@string/quote_string"
-        android:textAlignment="inherit"
-        android:textColor="@android:color/black"
-        android:textIsSelectable="true"
-        android:textSize="18sp"
-        android:translationY="-1000px" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation_panel"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:translationX="800px"
-        android:translationY="-1000px"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:layout_alignParentBottom="true"
+        android:background="?android:attr/windowBackground"
+        app:itemBackground="@color/purple_500"
+        app:itemIconTint="#fff"
+        app:itemTextColor="#fff"
+        app:menu="@menu/bottom_nav_menu" />
 
-<com.google.android.material.bottomnavigation.BottomNavigationView
-    android:id="@+id/bottom_navigation_panel"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:layout_alignParentBottom="true"
-    android:background="?android:attr/windowBackground"
-    app:itemBackground="@color/purple_500"
-    app:itemIconTint="#fff"
-    app:itemTextColor="#fff"
-    app:menu="@menu/bottom_nav_menu" />
+
 
 
 </RelativeLayout>
