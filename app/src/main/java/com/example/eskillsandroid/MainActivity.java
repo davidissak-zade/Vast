@@ -16,7 +16,7 @@ public  class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button DiscussionsButton = (Button) findViewById(R.id.DiscussionsButton);
+        Button DiscussionsButton = (Button) findViewById(R.id.DiscussionsButton);   // link to the discussions page
         DiscussionsButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view)
@@ -25,13 +25,13 @@ public  class MainActivity extends AppCompatActivity {
             }
         });
 
-//        Button SearchButton = (Button) findViewById(R.id.SearchButton); // link to the search page
-//        SearchButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(MainActivity.this, SearchBar.class));
-//            }
-//        });
+        Button SearchButton = (Button) findViewById(R.id.SearchButton); // link to the search page
+        SearchButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, SearchBarActivity.class));
+            }
+        });
 
 
     }

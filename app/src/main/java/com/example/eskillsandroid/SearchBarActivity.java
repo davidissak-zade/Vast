@@ -7,28 +7,30 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class MemberCommunityActivity extends AppCompatActivity {
+public class SearchBarActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_member_community);
+        setContentView(R.layout.activity_search_bar);
 
         Button HomeButton = (Button) findViewById(R.id.HomeButton);  // link to the home page
         HomeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MemberCommunityActivity.this, MainActivity.class));
+                startActivity(new Intent(SearchBarActivity.this, MainActivity.class));
             }
         });
 
-        Button SearchButton = (Button) findViewById(R.id.SearchButton); // link to the search page
-        SearchButton.setOnClickListener(new View.OnClickListener() {
+        Button DiscussionsButton = (Button) findViewById(R.id.DiscussionsButton);   // link to the discussions page
+        DiscussionsButton.setOnClickListener(new View.OnClickListener(){
             @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MemberCommunityActivity.this, SearchBarActivity.class));
+            public void onClick(View view)
+            {
+                startActivity(new Intent(SearchBarActivity.this, MemberCommunityActivity.class));
             }
         });
+
 
     }
 }

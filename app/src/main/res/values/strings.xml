@@ -44,4 +44,5 @@
     <string name="title_activity_find_lesson">FindLesson</string>
     <string name="title_activity_lessons_search">LessonsSearchActivity</string>
     <string name="title_activity_middle_page">MiddlePage</string>
+    <string name="title_activity_main2">MainActivity2</string>
 </resources>
