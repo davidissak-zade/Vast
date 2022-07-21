@@ -8,10 +8,10 @@
     android:orientation="vertical">
 
     <FrameLayout
-        android:id = "@+id/fl_wrapper"
+        android:id="@+id/fl_wrapper"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@id/bottom_navigation_panel"/>
+        android:layout_above="@id/bottom_navigation_panel" />
 
     <TextView
         android:id="@+id/section1"
@@ -263,6 +263,7 @@
         android:textSize="18sp"
         android:translationY="-1000px" />
 
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
@@ -270,6 +271,7 @@
         android:translationX="800px"
         android:translationY="-1000px"
         tools:srcCompat="@tools:sample/avatars" />
+
 
 <com.google.android.material.bottomnavigation.BottomNavigationView
     android:id="@+id/bottom_navigation_panel"
