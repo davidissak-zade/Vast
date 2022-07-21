@@ -42,7 +42,9 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5px"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:text="sv"
+                android:onClick="Onclick"
+               />
 
             <Button
                 android:id="@+id/button2"
@@ -50,7 +52,8 @@
                 android:layout_height="wrap_content"
                 android:layout_margin="5px"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:text="Button"
+                />
 
             <Button
                 android:id="@+id/button3"
