@@ -4,9 +4,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
+    tools:context="MainActivity"
     android:orientation="vertical">
-    
+
     <FrameLayout
         android:id="@+id/fl_wrapper"
         android:layout_width="match_parent"
@@ -245,16 +245,15 @@
     </HorizontalScrollView>
 
 
-<<<<<<< HEAD
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-=======
+
+<!--    <ImageView-->
+<!--        android:id="@+id/imageView"-->
+<!--        android:layout_width="wrap_content"-->
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation_panel"
         android:layout_width="match_parent"
->>>>>>> 3c19d0b8eef7bfb1c937435525eeaf0cf414eeb8
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:background="?android:attr/windowBackground"
@@ -264,7 +263,6 @@
         app:menu="@menu/bottom_nav_menu" />
 
 
-<<<<<<< HEAD
 
 <com.google.android.material.bottomnavigation.BottomNavigationView
     android:id="@+id/bottom_navigation_panel"
@@ -276,8 +274,6 @@
     app:itemIconTint="#fff"
     app:itemTextColor="#fff"
     app:menu="@menu/bottom_nav_menu" />
-=======
->>>>>>> 3c19d0b8eef7bfb1c937435525eeaf0cf414eeb8
 
 
 </RelativeLayout>
