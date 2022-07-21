@@ -17,7 +17,7 @@
         android:id="@+id/section1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="section1"
+        android:text="Academics and employment"
         android:translationY="400px"
         tools:ignore="MissingConstraints"
         tools:layout_editor_absoluteX="16dp"
@@ -37,14 +37,18 @@
             android:orientation="horizontal">
 
             <Button
-                android:id="@+id/button1"
+                android:id="@+id/cv"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_margin="5px"
                 android:layout_weight="1"
+<<<<<<< Updated upstream
                 android:text="sv"
                 android:onClick="Onclick"
                />
+=======
+                android:text="cv" />
+>>>>>>> Stashed changes
 
             <Button
                 android:id="@+id/button2"
