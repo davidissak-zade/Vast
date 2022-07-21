@@ -8,27 +8,7 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
-<<<<<<< Updated upstream
-    <FrameLayout
-        android:id="@+id/fl_wrapper"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_above="@id/bottom_navigation_panel" />
-
-    <TextView
-        android:id="@+id/section1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Academics and employment"
-        android:translationY="400px"
-        tools:ignore="MissingConstraints"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="182dp" />
-
-    <HorizontalScrollView
-=======
     <LinearLayout
->>>>>>> Stashed changes
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <TextView
@@ -43,54 +23,12 @@
         <HorizontalScrollView
             android:layout_width="match_parent"
             android:layout_height="150px"
-<<<<<<< Updated upstream
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/cv"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-<<<<<<< Updated upstream
-                android:text="sv"
-                android:onClick="Onclick"
-               />
-=======
-                android:text="cv" />
->>>>>>> Stashed changes
-
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button"
-                />
-
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button" />
-=======
+            android:orientation="horizontal"
             android:fillViewport="true"
             android:translationX="-125px"
             android:translationY="450px"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent">
->>>>>>> Stashed changes
 
             <LinearLayout
                 android:layout_width="wrap_content"
@@ -98,20 +36,22 @@
                 android:orientation="horizontal">
 
                 <Button
-                    android:id="@+id/button1"
+                    android:id="@+id/CV"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:onClick="OnClick"
+                    android:text="CV" />
 
                 <Button
-                    android:id="@+id/button2"
+                    android:id="@+id/bank"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_margin="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:onClick="OnClick"
+                    android:text="bank" />
 
                 <Button
                     android:id="@+id/button3"
@@ -248,6 +188,7 @@
             android:layout_height="wrap_content"
             android:text="section3"
             android:translationY="850px" />
+
         <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="150px"
