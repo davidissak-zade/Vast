@@ -16,23 +16,22 @@ public  class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedinstanceState) {
         super.onCreate(savedinstanceState);
         setContentView(R.layout.activity_main);
-
         button = findViewById(R.id.CV);
         button2 = findViewById(R.id.bank);
+        button.setOnClickListener(new View.OnClickListener() {
+            @Override
 
+            public void onClick(View view) {
+                openNewActivity();
+            }
+
+        public void openNewActivity()
+        {
+            Intent i = new Intent(MainActivity.this, viewpage.class);
+            startActivity(i);
+        }
+
+});
 
     }
-
-
-    public void OnClick(View v ) {
-        Intent intent = new Intent(MainActivity.this, viewpage.class);
-        startActivity(intent);
-
-    }
-
 }
-
-
-
-
-
