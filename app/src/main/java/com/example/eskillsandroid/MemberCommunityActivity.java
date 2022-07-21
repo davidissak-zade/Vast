@@ -1,4 +1,3 @@
-
 package com.example.eskillsandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,20 +7,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-
-public  class MainActivity extends AppCompatActivity {
+public class MemberCommunityActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_member_community);
 
-        Button DiscussionsButton = (Button) findViewById(R.id.DiscussionsButton);
-        DiscussionsButton.setOnClickListener(new View.OnClickListener(){
+        Button HomeButton = (Button) findViewById(R.id.HomeButton);  // link to the home page
+        HomeButton.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                startActivity(new Intent(MainActivity.this, MemberCommunityActivity.class));
+            public void onClick(View view) {
+                startActivity(new Intent(MemberCommunityActivity.this, MainActivity.class));
             }
         });
 
@@ -29,11 +26,9 @@ public  class MainActivity extends AppCompatActivity {
 //        SearchButton.setOnClickListener(new View.OnClickListener() {
 //            @Override
 //            public void onClick(View view) {
-//                startActivity(new Intent(MainActivity.this, SearchBar.class));
+//                startActivity(new Intent(MemberCommunityActivity.this, SearchBar.class));
 //            }
 //        });
-
-
+        
     }
 }
-

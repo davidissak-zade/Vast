@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EskillsAndroid">
         <activity
+            android:name=".MemberCommunityActivity"
+            android:exported="false" />
+        <activity
             android:name=".viewpage"
             android:exported="false" />
         <activity

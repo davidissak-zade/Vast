@@ -260,35 +260,66 @@
     </LinearLayout>
 
     <LinearLayout
-
+        android:id="@+id/NavBar"
         android:layout_width="match_parent"
-        android:layout_height="100px"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
         android:orientation="horizontal"
-        android:translationY="1800px"
         tools:context=".activity.MainActivity">
 
-        <Button
-            android:id="@+id/Navbutton1"
-            android:layout_width="wrap_content"
+        <RelativeLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_margin="5px"
             android:layout_weight="1"
-            android:text="Button" />
+            android:gravity="center">
 
-        <Button
-            android:id="@+id/Navbutton2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="5px"
-            android:layout_weight="1"
-            android:text="Button" />
 
-        <Button
-            android:id="@+id/Navbutton3"
-            android:layout_width="wrap_content"
+            <Button
+                android:id="@+id/SearchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5px"
+                android:layout_marginTop="5px"
+                android:layout_marginEnd="5px"
+                android:layout_marginBottom="5px"
+                android:layout_weight="0"
+                android:background="@drawable/ic_search"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Button" />
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/HomeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5px"
+                android:layout_marginTop="5px"
+                android:layout_marginEnd="5px"
+                android:layout_marginBottom="5px"
+                android:layout_weight="0"
+                android:background="@drawable/ic_home"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/DiscussionsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/ic_community"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
 
     </LinearLayout>     <!--NavBar-->
 
