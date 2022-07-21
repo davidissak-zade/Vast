@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
@@ -7,6 +8,7 @@
     tools:context=".MainActivity"
     android:orientation="vertical">
 
+<<<<<<< Updated upstream
     <FrameLayout
         android:id="@+id/fl_wrapper"
         android:layout_width="match_parent"
@@ -24,16 +26,24 @@
         tools:layout_editor_absoluteY="182dp" />
 
     <HorizontalScrollView
+=======
+    <LinearLayout
+>>>>>>> Stashed changes
         android:layout_width="match_parent"
-        android:layout_height="150px"
-        android:fillViewport="true"
-        android:translationY="450px"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
-
-        <LinearLayout
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/section1"
             android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="section1"
+            android:translationY="400px"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteX="16dp"
+            tools:layout_editor_absoluteY="182dp" />
+        <HorizontalScrollView
+            android:layout_width="match_parent"
             android:layout_height="150px"
+<<<<<<< Updated upstream
             android:orientation="horizontal">
 
             <Button
@@ -74,201 +84,241 @@
                 android:layout_margin="5px"
                 android:layout_weight="1"
                 android:text="Button" />
+=======
+            android:fillViewport="true"
+            android:translationX="-125px"
+            android:translationY="450px"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+>>>>>>> Stashed changes
 
-            <Button
-                android:id="@+id/button5"
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button" />
+                android:layout_height="150px"
+                android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button" />
+                <Button
+                    android:id="@+id/button1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
 
-            <FrameLayout
-                android:id="@+id/flFragment"
-                android:layout_width="match_parent"
-                android:layout_height="0dp" />
+                <Button
+                    android:id="@+id/button2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
 
-        </LinearLayout>
-    </HorizontalScrollView>
+                <Button
+                    android:id="@+id/button3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
 
-    <TextView
-        android:id="@+id/section2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="section2"
-        android:translationY="625px"
-        tools:layout_editor_absoluteX="20dp"
-        tools:layout_editor_absoluteY="76dp" />
+                <Button
+                    android:id="@+id/button4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
 
-    <HorizontalScrollView
+                <Button
+                    android:id="@+id/button5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <FrameLayout
+                    android:id="@+id/flFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="150px"
-        android:fillViewport="true"
-        android:translationY="675px"
-        tools:layout_editor_absoluteX="0"
-        tools:layout_editor_absoluteY="0">
+        android:layout_height="match_parent">
 
-        <LinearLayout
+        <TextView
+            android:id="@+id/section2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="section2"
+            android:translationY="625px"
+            tools:layout_editor_absoluteX="20dp"
+            tools:layout_editor_absoluteY="76dp" />
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="150px"
+            android:fillViewport="true"
+            android:translationX="-125px"
+            android:translationY="675px"
+            tools:layout_editor_absoluteX="0"
+            tools:layout_editor_absoluteY="0">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="150px"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/button111"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button222"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button333"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button444"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button555"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <Button
+                    android:id="@+id/button666"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
+
+                <FrameLayout
+                    android:id="@+id/flFragment3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+            </LinearLayout>
+        </HorizontalScrollView>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/section3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="section3"
+            android:translationY="850px" />
+        <HorizontalScrollView
             android:layout_width="wrap_content"
             android:layout_height="150px"
-            android:orientation="horizontal">
+            android:fillViewport="true"
+            android:translationX="-125px"
+            android:translationY="900px"
+            tools:layout_editor_absoluteX="0"
+            tools:layout_editor_absoluteY="0">
 
-            <Button
-                android:id="@+id/button111"
+            <LinearLayout
                 android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button" />
+                android:layout_height="175px"
+                android:orientation="horizontal"
+                android:translationX="135px">
 
-            <Button
-                android:id="@+id/button222"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button" />
+                <Button
+                    android:id="@+id/button11"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
 
-            <Button
-                android:id="@+id/button333"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button" />
+                <Button
+                    android:id="@+id/button22"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
 
-            <Button
-                android:id="@+id/button444"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button" />
+                <Button
+                    android:id="@+id/button33"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
 
-            <Button
-                android:id="@+id/button555"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button" />
+                <Button
+                    android:id="@+id/button44"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
 
-            <Button
-                android:id="@+id/button666"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button" />
+                <Button
+                    android:id="@+id/button55"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
 
-            <FrameLayout
-                android:id="@+id/flFragment3"
-                android:layout_width="match_parent"
-                android:layout_height="0dp" />
-        </LinearLayout>
-    </HorizontalScrollView>
+                <Button
+                    android:id="@+id/button66"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="5px"
+                    android:layout_weight="1"
+                    android:text="Button" />
 
-    <TextView
-        android:id="@+id/section3"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="section3"
-        android:translationY="850px" />
+                <FrameLayout
+                    android:id="@+id/flFragment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp" />
+            </LinearLayout>
 
-    <HorizontalScrollView
-        android:layout_width="match_parent"
-        android:layout_height="150px"
-        android:fillViewport="true"
-        android:translationY="900px"
-        tools:layout_editor_absoluteX="0"
-        tools:layout_editor_absoluteY="0">
-
-        <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="175px"
-            android:orientation="horizontal">
-
-            <Button
-                android:id="@+id/button11"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button33"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button44"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button55"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button" />
-
-            <Button
-                android:id="@+id/button66"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button" />
-
-            <FrameLayout
-                android:id="@+id/flFragment2"
-                android:layout_width="match_parent"
-                android:layout_height="0dp" />
-        </LinearLayout>
-    </HorizontalScrollView>
-
-
-
-
-<!--    <ImageView-->
-<!--        android:id="@+id/imageView"-->
-<!--        android:layout_width="wrap_content"-->
-
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/bottom_navigation_panel"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_alignParentBottom="true"
-        android:background="?android:attr/windowBackground"
-        app:itemBackground="@color/purple_500"
-        app:itemIconTint="#fff"
-        app:itemTextColor="#fff"
-        app:menu="@menu/bottom_nav_menu" />
-
+        </HorizontalScrollView>
+    </LinearLayout>
 
 
 
