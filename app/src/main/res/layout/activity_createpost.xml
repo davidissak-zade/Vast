@@ -32,13 +32,13 @@
 
         <TextView
             android:id="@+id/createposttxt"
-            android:layout_width="326dp"
+            android:layout_width="295dp"
             android:layout_height="46dp"
             android:layout_marginLeft="0px"
             android:layout_marginTop="10px"
             android:background="@drawable/main_box"
             android:gravity="left"
-            android:text=" Create a post"
+            android:text="    Create a post"
             android:textColor="@color/PageBackgroundCOlOR"
             android:textSize="32dp" />
 
@@ -47,13 +47,13 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="960dp"
+        android:layout_height="match_parent"
         android:background="@color/PageBackgroundCOlOR"
         android:orientation="vertical">
         #first small layout
 
         <LinearLayout
-            android:layout_width="394dp"
+            android:layout_width="900px"
             android:layout_height="554dp"
             android:layout_marginLeft="88px"
             android:layout_marginTop="100px"
@@ -71,44 +71,44 @@
                 android:gravity="left"
                 android:text="what's your name?"
                 android:textColor="@color/black"
-                android:textSize="32dp" />
+                android:textSize="27dp" />
 
             #second small layout
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/username"
-                android:layout_width="320dp"
-                android:layout_height="40dp"
+                android:layout_width="750px"
+                android:layout_height="50dp"
+                android:layout_marginTop="50px"
                 android:layout_marginLeft="80px"
                 android:background="@drawable/messagebox"
                 android:hint="  username" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="177dp"
-                android:layout_marginLeft="30px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10px"
                 android:layout_marginTop="10px"
                 android:background="@drawable/main_box"
                 android:orientation="vertical">
 
-
                 <TextView
                     android:id="@+id/postQ"
-                    android:layout_width="311dp"
-                    android:layout_height="96dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
                     android:layout_marginLeft="50px"
                     android:layout_marginTop="60px"
-
                     android:background="@drawable/main_box"
                     android:gravity="left"
                     android:text="What is your post about?"
                     android:textColor="@color/black"
-                    android:textSize="32dp" />
+                    android:textSize="27dp" />
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/post"
-                    android:layout_width="320dp"
-                    android:layout_height="40dp"
+                    android:layout_width="750px"
+                    android:layout_height="50dp"
+                    android:layout_marginTop="10px"
                     android:layout_alignParentLeft="false"
                     android:layout_alignParentTop="false"
                     android:layout_marginLeft="60px"
@@ -120,49 +120,130 @@
             #third question
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="124dp"
-                android:layout_marginLeft="30px"
-                android:layout_marginTop="0px"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px"
                 android:background="@drawable/main_box"
                 android:orientation="vertical">
 
 
                 <TextView
                     android:id="@+id/mindQ"
-                    android:layout_width="376dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="40px"
+                    android:layout_width="match_parent"
+                    android:layout_height="75dp"
+                    android:layout_marginLeft="80px"
                     android:layout_marginTop="80px"
                     android:background="@drawable/main_box"
                     android:gravity="left"
                     android:text="Share what's on your mind?"
                     android:textColor="@color/black"
-                    android:textSize="32dp" />
+                    android:textSize="27dp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/mind"
+                    android:layout_width="750px"
+                    android:layout_height="50dp"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="10px"
+                    android:background="@drawable/messagebox"
+                    android:hint="  post content" />
 
             </LinearLayout>
 
-            <com.google.android.material.textfield.TextInputEditText
-                android:id="@+id/mind"
-                android:layout_width="320dp"
-                android:layout_height="40dp"
-                android:layout_marginLeft="90px"
-                android:background="@drawable/messagebox"
-                android:hint="  post content" />
-
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10px">
             <ImageButton
                 android:id="@+id/sendbutton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="500px"
+                android:layout_width="225px"
+                android:layout_height="225px"
+                android:layout_marginLeft="350px"
                 android:layout_marginTop="100px"
-                android:background="#0D5D56"
+                android:background="@drawable/send"
                 android:paddingLeft="20px"
-                android:src="@drawable/send_2"
                 tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+
+                <ImageView
+                    android:layout_width="200px"
+                    android:layout_height="200px"
+                    android:layout_marginRight="30px"
+                    android:adjustViewBounds="true"
+                    android:translationX="-225px"
+                    android:translationY="125px"
+                    android:src="@drawable/send_2"></ImageView>
+            </LinearLayout>
 
         </LinearLayout>
 
+        <LinearLayout
+            android:id="@+id/NavBar"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:gravity="bottom"
+            android:orientation="horizontal"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            tools:context=".activity.MainActivity">
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+
+                <Button
+                    android:id="@+id/SearchButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5px"
+                    android:layout_marginTop="5px"
+                    android:layout_marginEnd="5px"
+                    android:layout_marginBottom="5px"
+                    android:layout_weight="0"
+                    android:background="@drawable/ic_search"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/HomeButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5px"
+                    android:layout_marginTop="5px"
+                    android:layout_marginEnd="5px"
+                    android:layout_marginBottom="5px"
+                    android:layout_weight="0"
+                    android:background="@drawable/ic_home"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/DiscussionsButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0"
+                    android:background="@drawable/ic_community"
+                    tools:ignore="SpeakableTextPresentCheck" />
+            </RelativeLayout>
+
+        </LinearLayout>
 
     </LinearLayout>
 
