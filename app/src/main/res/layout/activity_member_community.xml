@@ -38,7 +38,6 @@
             android:text="Member Community"
             android:textColor="@color/PageBackgroundCOlOR"
             android:textSize="32dp"
-            android:fontFamily="@font/"
 
             />
 
@@ -66,9 +65,18 @@
                 android:text="Hey there friend!"
                 android:textColor="@color/black"
                 android:textSize="24sp"
-                >
+                android:fontFamily="@font/inter"
+                /> !--welcome--!
 
-            </TextView>
+             <TextView
+                 android:id="@+id/explanation"
+                 android:layout_width="match_parent"
+                 android:layout_height="wrap_content"
+                 android:textColor="@color/textCOLOR"
+                 android:text="This is your place to connect with\nother members of Vast, ask questions\nand get tips from the Vast community"
+                 android:textSize="16sp"
+                 android:fontFamily="@font/inter"
+                 />  !--explanation --!
 
         </LinearLayout>
 
