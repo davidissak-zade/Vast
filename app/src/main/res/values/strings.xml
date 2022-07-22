@@ -45,7 +45,15 @@
     <string name="title_activity_lessons_search">LessonsSearchActivity</string>
     <string name="title_activity_middle_page">MiddlePage</string>
     <string name="title_activity_main2">MainActivity2</string>
+<<<<<<< Updated upstream
     <string name="money">Money</string>
     <string name="essential">Eseential</string>
+=======
+
+    <string name="Comment1TXT">hi guys:) i’ve been trying to find a good driving teacher in the Tel Aviv area for a while now, does anyone have any recommentations?</string>
+    <string name="Comment1HEADER">looking for a good driving teacher!</string>
+
+    <string name="Comment2TXT"> I followed the steps in the app and it really helped me! still not sure about it though, can anyone review what i wrote? Thx! </string>
+>>>>>>> Stashed changes
 
 </resources>

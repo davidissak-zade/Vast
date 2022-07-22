@@ -1,20 +1,49 @@
 <?xml version="1.0" encoding="utf-8"?>
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:gravity="center"
+    android:background="@color/PageBackgroundCOlOR"
     tools:context=".MemberCommunityActivity">
 
+    <LinearLayout
+        android:id="@+id/MemberActivityTopBar"
+        android:layout_width="match_parent"
+        android:layout_height="160px"
+        android:paddingTop="20px"
+        android:orientation="horizontal"
+
+        >
+
+        <ImageButton
+            android:id="@+id/MemberCommunityBackButton"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src = "@drawable/_arrow_1_ek1"
+            android:paddingLeft="20px"
+            android:background ="@color/PageBackgroundCOlOR"
+            >
+        </ImageButton>
+
+        <TextView
+            android:id="@+id/MemberCommunityTXT"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="30px"
+            android:layout_marginTop = "10px"
+            android:gravity="center"
+            android:text="Member Community"
+            android:textSize="32dp"
+            android:textColor="@color/PageBackgroundCOlOR"
+            android:background="@color/CommentBackgroundCOLOR"
+            />
+        
 
 
-    <Button
-        android:id="@+id/ActivityMember"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="member community"/>
+    </LinearLayout>   //topbar that includes button back and pagename
 
 
     <LinearLayout
@@ -81,4 +110,4 @@
     </LinearLayout>     <!--NavBar-->
 
 
-</RelativeLayout>
+</LinearLayout>
