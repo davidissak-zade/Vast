@@ -7,6 +7,8 @@
     android:background="#FDF8E1"
     tools:context=".MainActivity3">
 
+
+
     <View
         android:id="@+id/view"
         android:layout_width="347dp"
@@ -17,18 +19,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <View
-        android:id="@+id/va_logo_1_1"
-        android:layout_width="60dp"
-        android:layout_height="54dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="225dp"
-        android:layout_marginTop="50px"
-        android:background="@drawable/logo"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view" />
 
     <TextView
         android:id="@+id/welcome_to_"
@@ -36,11 +26,11 @@
         android:layout_height="49dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
         android:gravity="top"
-        android:layout_marginTop="50px"
-        android:text="Welcome to VAST"
+        android:text="          Welcome to "
         android:textAppearance="@style/welcome_to_"
-        app:layout_constraintEnd_toStartOf="@+id/va_logo_1_1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/view" />
 
@@ -59,34 +49,50 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/welcome_to_" />
 
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="143dp"
+        android:layout_height="133dp"
+        android:layout_marginLeft="350px"
+        android:layout_marginBottom="300px"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/vastlogo" />
+
     <TextView
         android:id="@+id/academics_e"
         android:layout_width="255dp"
         android:layout_height="0dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
         android:layout_marginEnd="100dp"
         android:gravity="top"
-        android:layout_marginTop="30px"
         android:text="@string/academics_e"
         android:textAppearance="@style/academics_e"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
 
     <HorizontalScrollView
-        android:layout_marginLeft="225px"
         android:id="@+id/horizontalScrollView"
         android:layout_width="1300px"
         android:layout_height="150px"
+        android:layout_marginLeft="225px"
+        android:layout_marginBottom="770px"
         android:fillViewport="true"
         android:orientation="horizontal"
-        android:layout_marginBottom="800px"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/academics_e"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        >
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/academics_e"
+        app:layout_constraintVertical_bias="0.573">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -146,6 +152,70 @@
                 android:id="@+id/flFragment"
                 android:layout_width="match_parent"
                 android:layout_height="0dp" />
+
+            <LinearLayout
+                android:id="@+id/NavBar2"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="bottom"
+                android:orientation="horizontal"
+                tools:context=".activity.MainActivity">
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+
+                    <Button
+                        android:id="@+id/SearchButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5px"
+                        android:layout_marginTop="5px"
+                        android:layout_marginEnd="5px"
+                        android:layout_marginBottom="5px"
+                        android:layout_weight="0"
+                        android:background="@drawable/ic_search"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/HomeButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5px"
+                        android:layout_marginTop="5px"
+                        android:layout_marginEnd="5px"
+                        android:layout_marginBottom="5px"
+                        android:layout_weight="0"
+                        android:background="@drawable/ic_home"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="center">
+
+                    <Button
+                        android:id="@+id/DiscussionsButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:background="@drawable/ic_community"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </RelativeLayout>
+
+            </LinearLayout>
         </LinearLayout>
     </HorizontalScrollView>
 
@@ -166,17 +236,18 @@
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
 
     <HorizontalScrollView
-        android:layout_marginLeft="225px"
         android:id="@+id/horizontalScrollView2"
         android:layout_width="1300px"
         android:layout_height="150px"
-        android:fillViewport="true"
+        android:layout_marginLeft="225px"
         android:layout_marginBottom="300px"
+        android:fillViewport="true"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/academics_e"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent">
+        app:layout_constraintTop_toTopOf="@+id/academics_e"
+        app:layout_constraintVertical_bias="0.546">
 
 
         <LinearLayout
@@ -238,8 +309,7 @@
                 android:layout_height="0dp" />
 
 
-
-            </LinearLayout>
+        </LinearLayout>
     </HorizontalScrollView>
 
     <TextView
@@ -270,7 +340,8 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/essential"
-        app:layout_constraintTop_toTopOf="@+id/academics_e">
+        app:layout_constraintTop_toTopOf="@+id/academics_e"
+        app:layout_constraintVertical_bias="0.569">
 
 
         <LinearLayout
@@ -335,17 +406,15 @@
     </HorizontalScrollView>
 
     <LinearLayout
-        android:id="@+id/NavBar2"
+        android:id="@+id/NavBar"
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:gravity="bottom"
         android:orientation="horizontal"
         tools:context=".activity.MainActivity"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/academics_e"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        >
+        app:layout_constraintStart_toStartOf="parent">
 
         <RelativeLayout
             android:layout_width="0dp"
@@ -355,7 +424,7 @@
 
 
             <Button
-                android:id="@+id/SearchButton2"
+                android:id="@+id/SearchButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5px"
@@ -374,7 +443,7 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/HomeButton2"
+                android:id="@+id/HomeButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginStart="5px"
@@ -393,7 +462,7 @@
             android:gravity="center">
 
             <Button
-                android:id="@+id/DiscussionsButton2"
+                android:id="@+id/DiscussionsButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="0"
