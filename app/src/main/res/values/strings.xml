@@ -45,4 +45,7 @@
     <string name="title_activity_lessons_search">LessonsSearchActivity</string>
     <string name="title_activity_middle_page">MiddlePage</string>
     <string name="title_activity_main2">MainActivity2</string>
+    <string name="money">Money</string>
+    <string name="essential">Eseential</string>
+
 </resources>

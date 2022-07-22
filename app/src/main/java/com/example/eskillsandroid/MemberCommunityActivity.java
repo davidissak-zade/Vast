@@ -18,7 +18,7 @@ public class MemberCommunityActivity extends AppCompatActivity {
         HomeButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(MemberCommunityActivity.this, MainActivity.class));
+                startActivity(new Intent(MemberCommunityActivity.this, MainActivity3.class));
             }
         });
 

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="welcome_to_">
+
+        <item name="android:textSize">
+            24sp
+        </item>
+
+        <item name="android:textColor">
+            #FDF8E1
+        </item>
+
+    </style>
+
+
+    <!-- strings.xml -->
+    <string name="welcome_to_">
+
+Welcome to VAST!
+</string>
+
+</resources>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="academics_e">
+
+        <item name="android:textSize">
+            20sp
+        </item>
+
+        <item name="android:textColor">
+            #FC0D5D56
+        </item>
+
+    </style>
+
+
+    <style name="money">
+
+        <item name="android:textSize">
+            20sp
+        </item>
+
+        <item name="android:textColor">
+            #FC0D5D56
+        </item>
+
+    </style>
+
+
+</resources>
