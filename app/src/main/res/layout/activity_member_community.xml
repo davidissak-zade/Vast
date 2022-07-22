@@ -37,7 +37,10 @@
             android:gravity="center"
             android:text="Member Community"
             android:textColor="@color/PageBackgroundCOlOR"
-            android:textSize="32dp" />
+            android:textSize="32dp"
+            android:fontFamily="@font/"
+
+            />
 
 
     </LinearLayout>
