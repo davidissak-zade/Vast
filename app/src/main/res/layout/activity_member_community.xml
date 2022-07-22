@@ -3,6 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
+    android:paddingLeft="20px"
+    android:paddingRight="20px"
     android:layout_height="match_parent"
     android:background="@color/PageBackgroundCOlOR"
     android:gravity="center"
@@ -24,14 +26,15 @@
             android:layout_height="match_parent"
             android:background="@color/PageBackgroundCOlOR"
             android:paddingLeft="20px"
+            android:layout_marginRight="20px"
             android:src="@drawable/_arrow_1_ek1"
-            tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"></ImageButton>
 
         <TextView
             android:id="@+id/MemberCommunityTXT"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginLeft="30px"
+            android:layout_marginLeft="10px"
             android:layout_marginTop="10px"
             android:background="@drawable/main_box"
             android:gravity="center"
@@ -54,8 +57,10 @@
 
          <LinearLayout
             android:id="@+id/memberCommunityWelcome"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20px"
+             android:layout_marginLeft="20px"
             android:orientation="vertical">
 
             <TextView
@@ -64,24 +69,164 @@
                 android:layout_height="wrap_content"
                 android:text="Hey there friend!"
                 android:textColor="@color/black"
+                android:textStyle="bold"
                 android:textSize="24sp"
                 android:fontFamily="@font/inter"
                 /> !--welcome--!
 
              <TextView
                  android:id="@+id/explanation"
-                 android:layout_width="match_parent"
+                 android:layout_width="wrap_content"
                  android:layout_height="wrap_content"
                  android:textColor="@color/textCOLOR"
                  android:text="This is your place to connect with\nother members of Vast, ask questions\nand get tips from the Vast community"
                  android:textSize="16sp"
+                 android:textStyle="bold"
                  android:fontFamily="@font/inter"
                  />  !--explanation --!
 
         </LinearLayout>
 
+        <ScrollView
+             android:id="@+id/commentSection"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:gravity="center">
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+                    <LinearLayout
+                        android:id="@+id/comment1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:id="@+id/comment1INFO"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="vertical">
+                             <TextView
+                                 android:id="@+id/commentator1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="june.IOves.dolph1ns"
+                                 />
+
+                             <TextView
+                                 android:id="@+id/commenttime1"
+                                 android:layout_width="wrap_content"
+                                 android:layout_height="wrap_content"
+                                 android:text="19/7/22     16:23"
+                                 />
+
+                        </LinearLayout>  // Comment Info
+
+                        <View
+                            android:id="@+id/commentTRIANGLE1"
+                            android:layout_width="49dp"
+                            android:layout_height="49dp"
+                            android:background="@drawable/polygon_11" />
+
+                        <LinearLayout
+                            android:id="@+id/commentContent1"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical">
+
+                            <TextView
+                                android:id="@+id/commentHeader1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="looking for a good driving teacher!"
+
+                                />
+
+                            <TextView
+                                android:id="@+id/commentTXT1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:text="hi guys:) i've been trying to find a\ngood driving teacher in the Tel Aviv\nfor a while now, does anyone \nhave any recommendations?"
+                                />
+
+                        </LinearLayout>
+
+                    </LinearLayout>
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+        </ScrollView>
+
      </LinearLayout>
 
+    <LinearLayout
+        android:id="@+id/NavBar"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
 
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:context=".activity.MainActivity">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+
+            <Button
+                android:id="@+id/SearchButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5px"
+                android:layout_marginTop="5px"
+                android:layout_marginEnd="5px"
+                android:layout_marginBottom="5px"
+                android:layout_weight="0"
+                android:background="@drawable/ic_search"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/HomeButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5px"
+                android:layout_marginTop="5px"
+                android:layout_marginEnd="5px"
+                android:layout_marginBottom="5px"
+                android:layout_weight="0"
+                android:background="@drawable/ic_home"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/DiscussionsButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0"
+                android:background="@drawable/ic_community"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </RelativeLayout>
+
+    </LinearLayout>
 
 </LinearLayout>
