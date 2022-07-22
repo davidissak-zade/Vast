@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:gravity="center"
     android:background="@color/PageBackgroundCOlOR"
+    android:gravity="center"
+    android:orientation="vertical"
     tools:context=".MemberCommunityActivity">
 
     <LinearLayout
         android:id="@+id/MemberActivityTopBar"
         android:layout_width="match_parent"
         android:layout_height="160px"
-        android:paddingTop="20px"
         android:orientation="horizontal"
+        android:paddingTop="20px"
 
         >
 
@@ -22,92 +22,55 @@
             android:id="@+id/MemberCommunityBackButton"
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
-            android:src = "@drawable/_arrow_1_ek1"
+            android:background="@color/PageBackgroundCOlOR"
             android:paddingLeft="20px"
-            android:background ="@color/PageBackgroundCOlOR"
-            >
-        </ImageButton>
+            android:src="@drawable/_arrow_1_ek1"
+            tools:ignore="SpeakableTextPresentCheck"></ImageButton>
 
         <TextView
             android:id="@+id/MemberCommunityTXT"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:layout_marginLeft="30px"
-            android:layout_marginTop = "10px"
+            android:layout_marginTop="10px"
+            android:background="@drawable/main_box"
             android:gravity="center"
             android:text="Member Community"
-            android:textSize="32dp"
             android:textColor="@color/PageBackgroundCOlOR"
-            android:background="@color/CommentBackgroundCOLOR"
-            />
-        
+            android:textSize="32dp" />
 
 
-    </LinearLayout>   //topbar that includes button back and pagename
+    </LinearLayout>
+    //topbar that includes button back and pagename
 
 
     <LinearLayout
-        android:id="@+id/NavBar"
+        android:id="@+id/memberCommunityContent"
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
-        android:gravity="bottom"
-        android:orientation="horizontal"
-        tools:context=".activity.MainActivity">
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <RelativeLayout
-            android:layout_width="0dp"
+         <LinearLayout
+            android:id="@+id/memberCommunityWelcome"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
+            android:orientation="vertical">
 
-            <Button
-                android:id="@+id/SearchButton"
-                android:layout_width="wrap_content"
+            <TextView
+                android:id="@+id/heythere"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5px"
-                android:layout_marginTop="5px"
-                android:layout_marginEnd="5px"
-                android:layout_marginBottom="5px"
-                android:layout_weight="0"
-                android:background="@drawable/ic_search"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </RelativeLayout>
+                android:text="Hey there friend!"
+                android:textColor="@color/black"
+                android:textSize="24sp"
+                >
 
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
+            </TextView>
 
-            <Button
-                android:id="@+id/HomeButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5px"
-                android:layout_marginTop="5px"
-                android:layout_marginEnd="5px"
-                android:layout_marginBottom="5px"
-                android:layout_weight="0"
-                android:background="@drawable/ic_home"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </RelativeLayout>
+        </LinearLayout>
 
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
+     </LinearLayout>
 
-            <Button
-                android:id="@+id/DiscussionsButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_weight="0"
-                android:background="@drawable/ic_community"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </RelativeLayout>
-
-    </LinearLayout>     <!--NavBar-->
 
 
 </LinearLayout>
