@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".createpost">
+
+
+    #big vertical layout
+
+    <LinearLayout
+        android:id="@+id/createpost"
+        android:layout_width="416dp"
+        android:layout_height="60dp"
+        android:background="@color/PageBackgroundCOlOR"
+        android:orientation="horizontal"
+        android:paddingTop="20px"
+
+
+        >
+
+        <ImageButton
+            android:id="@+id/arrowbutton"
+            android:layout_width="83dp"
+            android:layout_height="match_parent"
+            android:background="@color/PageBackgroundCOlOR"
+            android:paddingLeft="20px"
+            android:src="@drawable/_arrow_1_ek1"
+            tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+
+        <TextView
+            android:id="@+id/createposttxt"
+            android:layout_width="326dp"
+            android:layout_height="46dp"
+            android:layout_marginLeft="0px"
+            android:layout_marginTop="10px"
+            android:background="@drawable/main_box"
+            android:gravity="left"
+            android:text=" Create a post"
+            android:textColor="@color/PageBackgroundCOlOR"
+            android:textSize="32dp" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="960dp"
+        android:background="@color/PageBackgroundCOlOR"
+        android:orientation="vertical">
+        #first small layout
+
+        <LinearLayout
+            android:layout_width="394dp"
+            android:layout_height="554dp"
+            android:layout_marginLeft="88px"
+            android:layout_marginTop="100px"
+            android:background="@drawable/main_box"
+            android:orientation="vertical">
+            #first small layout
+
+            <TextView
+                android:id="@+id/usernameQ"
+                android:layout_width="376dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="75px"
+                android:layout_marginTop="50px"
+                android:background="@drawable/main_box"
+                android:gravity="left"
+                android:text="what's your name?"
+                android:textColor="@color/black"
+                android:textSize="32dp" />
+
+            #second small layout
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="80px"
+                android:background="@drawable/messagebox"
+                android:hint="  username" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="177dp"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="10px"
+                android:background="@drawable/main_box"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/postQ"
+                    android:layout_width="311dp"
+                    android:layout_height="96dp"
+                    android:layout_marginLeft="50px"
+                    android:layout_marginTop="60px"
+
+                    android:background="@drawable/main_box"
+                    android:gravity="left"
+                    android:text="What is your post about?"
+                    android:textColor="@color/black"
+                    android:textSize="32dp" />
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/post"
+                    android:layout_width="320dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentLeft="false"
+                    android:layout_alignParentTop="false"
+                    android:layout_marginLeft="60px"
+                    android:background="@drawable/messagebox"
+                    android:hint="  post topic" />
+
+            </LinearLayout>
+
+            #third question
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="124dp"
+                android:layout_marginLeft="30px"
+                android:layout_marginTop="0px"
+                android:background="@drawable/main_box"
+                android:orientation="vertical">
+
+
+                <TextView
+                    android:id="@+id/mindQ"
+                    android:layout_width="376dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40px"
+                    android:layout_marginTop="80px"
+                    android:background="@drawable/main_box"
+                    android:gravity="left"
+                    android:text="Share what's on your mind?"
+                    android:textColor="@color/black"
+                    android:textSize="32dp" />
+
+            </LinearLayout>
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/mind"
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_marginLeft="90px"
+                android:background="@drawable/messagebox"
+                android:hint="  post content" />
+
+            <ImageButton
+                android:id="@+id/sendbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="500px"
+                android:layout_marginTop="100px"
+                android:background="#0D5D56"
+                android:paddingLeft="20px"
+                android:src="@drawable/send_2"
+                tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
+
+
