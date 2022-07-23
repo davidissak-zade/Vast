@@ -1,4 +1,3 @@
-
 package com.example.eskillsandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -6,17 +5,16 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.Button;
+import android.widget.ImageButton;
 
-
-public  class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        Button DiscussionsButton = (Button) findViewById(R.id.DiscussionsButton);   // link to the discussions page
+        ImageButton DiscussionsButton = (ImageButton) findViewById(R.id.DiscussionsButton);   // link to the discussions page
         DiscussionsButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view)
@@ -25,15 +23,12 @@ public  class MainActivity extends AppCompatActivity {
             }
         });
 
-        Button SearchButton = (Button) findViewById(R.id.SearchButton); // link to the search page
+        ImageButton SearchButton = (ImageButton) findViewById(R.id.SearchButton); // link to the search page
         SearchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, SearchBarActivity.class));
             }
         });
-
-
     }
 }
-

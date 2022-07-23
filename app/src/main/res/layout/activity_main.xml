@@ -1,254 +1,413 @@
 <?xml version="1.0" encoding="utf-8"?>
-
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity"
-    android:orientation="vertical">
+    android:background="#FDF8E1"
+    tools:context=".MainActivity">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <HorizontalScrollView
+
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="347dp"
+        android:layout_height="219dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/main_box"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/welcome_to_"
+        android:layout_width="199dp"
+        android:layout_height="49dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="Welcome to "
+        android:fontFamily="@font/inter"
+        android:textSize="24dp"
+        android:textAppearance="@style/welcome_to_"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view" />
+
+    <TextView
+        android:id="@+id/message"
+        android:layout_width="252dp"
+        android:layout_height="92dp"
+        android:layout_marginTop="50px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:paddingHorizontal="20px"
+        android:background="@drawable/messagebox"
+        android:text="Be not afraid of growing slowly, be afraid of standing still"
+        android:fontFamily="@font/inter"
+        android:textColor="@color/black"
+        android:gravity="start"
+        android:paddingTop="5dp"
+        android:textAlignment="viewStart"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/welcome_to_" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="143dp"
+        android:layout_height="133dp"
+        android:layout_marginLeft="350px"
+        android:layout_marginBottom="300px"
+        app:layout_constraintBottom_toBottomOf="@+id/view"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.552"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view"
+
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/vastlogo" />
+
+    <TextView
+        android:id="@+id/academics_e"
+        android:layout_width="255dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="100dp"
+        android:gravity="top"
+        android:text="@string/academics_e"
+        android:textAppearance="@style/academics_e"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.553"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView"
+        android:layout_width="1300px"
+        android:layout_height="150px"
+        android:layout_marginLeft="225px"
+        android:layout_marginBottom="770px"
+        android:fillViewport="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/academics_e"
+        app:layout_constraintVertical_bias="0.573">
+
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="150px"
-            android:orientation="horizontal"
-            android:fillViewport="true"
-            android:translationX="-125px"
-            android:translationY="450px"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
+            <Button
+                android:id="@+id/CV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="CV" />
+
+            <Button
+                android:id="@+id/bank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="bank" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <FrameLayout
+                android:id="@+id/flFragment"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
 
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="150px"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/CV"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5px"
-                    android:layout_weight="1"
-                    android:text="CV" />
-
-                <Button
-                    android:id="@+id/bank"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5px"
-                    android:layout_weight="1"
-                    android:text="bank" />
-
-                <Button
-                    android:id="@+id/button3"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5px"
-                    android:layout_weight="1"
-                    android:text="Button" />
-
-                <Button
-                    android:id="@+id/button4"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5px"
-                    android:layout_weight="1"
-                    android:text="Button" />
-
-                <Button
-                    android:id="@+id/button5"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5px"
-                    android:layout_weight="1"
-                    android:text="Button" />
-
-                <Button
-                    android:id="@+id/button6"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5px"
-                    android:layout_weight="1"
-                    android:text="Button" />
-
-                <FrameLayout
-                    android:id="@+id/flFragment"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp" />
-
-            </LinearLayout>
-        </HorizontalScrollView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/section2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="section2"
-            android:translationY="625px"
-            tools:layout_editor_absoluteX="20dp"
-            tools:layout_editor_absoluteY="76dp" />
-
-        <HorizontalScrollView
-            android:layout_width="match_parent"
-            android:layout_height="150px"
-            android:fillViewport="true"
-            android:translationX="-125px"
-            android:translationY="675px"
-            tools:layout_editor_absoluteX="0"
-            tools:layout_editor_absoluteY="0">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="150px"
-                android:orientation="horizontal">
-
-                <Button
-                    android:id="@+id/button111"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5px"
-                    android:layout_weight="1"
-                    android:text="Button" />
-
-                <Button
-                    android:id="@+id/button222"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5px"
-                    android:layout_weight="1"
-                    android:text="Button" />
-
-                <Button
-                    android:id="@+id/button333"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5px"
-                    android:layout_weight="1"
-                    android:text="Button" />
-
-                <Button
-                    android:id="@+id/button444"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5px"
-                    android:layout_weight="1"
-                    android:text="Button" />
-
-                <Button
-                    android:id="@+id/button555"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5px"
-                    android:layout_weight="1"
-                    android:text="Button" />
-
-                <Button
-                    android:id="@+id/button666"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5px"
-                    android:layout_weight="1"
-                    android:text="Button" />
-
-                <FrameLayout
-                    android:id="@+id/flFragment3"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp" />
-            </LinearLayout>
-        </HorizontalScrollView>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:orientation="vertical">
-
-        <TextView
-            android:id="@+id/section3"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="section3"
-            android:translationY="850px" />
-
-        <HorizontalScrollView
-            android:layout_width="wrap_content"
-            android:layout_height="150px"
-            android:fillViewport="true"
-            android:translationX="-125px"
-            android:translationY="900px"
-            tools:layout_editor_absoluteX="0"
-            tools:layout_editor_absoluteY="0">
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="175px"
+                android:id="@+id/NavBar2"
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:gravity="bottom"
                 android:orientation="horizontal"
-                android:translationX="135px">
+                tools:context=".activity.MainActivity">
 
-                <Button
-                    android:id="@+id/button11"
-                    android:layout_width="wrap_content"
+                <RelativeLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:gravity="center">
 
-                <Button
-                    android:id="@+id/button22"
-                    android:layout_width="wrap_content"
+
+                    <Button
+                        android:id="@+id/SearchButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5px"
+                        android:layout_marginTop="5px"
+                        android:layout_marginEnd="5px"
+                        android:layout_marginBottom="5px"
+                        android:layout_weight="0"
+                        android:background="@drawable/ic_search"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:gravity="center">
 
-                <Button
-                    android:id="@+id/button33"
-                    android:layout_width="wrap_content"
+                    <Button
+                        android:id="@+id/HomeButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5px"
+                        android:layout_marginTop="5px"
+                        android:layout_marginEnd="5px"
+                        android:layout_marginBottom="5px"
+                        android:layout_weight="0"
+                        android:background="@drawable/ic_home"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="5px"
                     android:layout_weight="1"
-                    android:text="Button" />
+                    android:gravity="center">
 
-                <Button
-                    android:id="@+id/button44"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5px"
-                    android:layout_weight="1"
-                    android:text="Button" />
+                    <Button
+                        android:id="@+id/DiscussionsButton2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="0"
+                        android:background="@drawable/ic_community"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </RelativeLayout>
 
-                <Button
-                    android:id="@+id/button55"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5px"
-                    android:layout_weight="1"
-                    android:text="Button" />
-
-                <Button
-                    android:id="@+id/button66"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5px"
-                    android:layout_weight="1"
-                    android:text="Button" />
-
-                <FrameLayout
-                    android:id="@+id/flFragment2"
-                    android:layout_width="match_parent"
-                    android:layout_height="0dp" />
             </LinearLayout>
+        </LinearLayout>
+    </HorizontalScrollView>
 
-        </HorizontalScrollView>
-    </LinearLayout>
+    <TextView
+        android:id="@+id/money"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="40px"
+        android:layout_marginEnd="225dp"
+        android:gravity="top"
+        android:text="@string/money"
+        android:textAppearance="@style/money"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView2"
+        android:layout_width="1300px"
+        android:layout_height="150px"
+        android:layout_marginLeft="225px"
+        android:layout_marginBottom="300px"
+        android:fillViewport="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/academics_e"
+        app:layout_constraintVertical_bias="0.546">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/CV2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="CV" />
+
+            <Button
+                android:id="@+id/bank2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="bank" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button33"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button55"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button66"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <FrameLayout
+                android:id="@+id/flFragment2"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+
+        </LinearLayout>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/essential"
+        android:layout_width="125dp"
+        android:layout_height="0dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50px"
+        android:layout_marginEnd="225dp"
+        android:gravity="top"
+        android:text="@string/essential"
+        android:textAppearance="@style/money"
+        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+    <HorizontalScrollView
+        android:id="@+id/horizontalScrollView3"
+        android:layout_width="1300px"
+        android:layout_height="150px"
+        android:layout_marginLeft="225px"
+        android:layout_marginTop="300px"
+        android:fillViewport="true"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/essential"
+        app:layout_constraintTop_toTopOf="@+id/academics_e"
+        app:layout_constraintVertical_bias="0.569">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/CV22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="CV" />
+
+            <Button
+                android:id="@+id/bank22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="bank" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button332"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button552"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <Button
+                android:id="@+id/button662"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="5px"
+                android:layout_weight="1"
+                android:text="Button" />
+
+            <FrameLayout
+                android:id="@+id/flFragment22"
+                android:layout_width="match_parent"
+                android:layout_height="0dp" />
+
+        </LinearLayout>
+    </HorizontalScrollView>
 
     <LinearLayout
         android:id="@+id/NavBar"
@@ -256,6 +415,12 @@
         android:layout_height="fill_parent"
         android:gravity="bottom"
         android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:paddingBottom="20px"
+
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
         tools:context=".activity.MainActivity">
 
         <RelativeLayout
@@ -265,16 +430,14 @@
             android:gravity="center">
 
 
-            <Button
+            <ImageButton
                 android:id="@+id/SearchButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5px"
-                android:layout_marginTop="5px"
-                android:layout_marginEnd="5px"
-                android:layout_marginBottom="5px"
+                android:layout_margin="5px"
                 android:layout_weight="0"
-                android:background="@drawable/ic_search"
+                android:background="@drawable/ellipse_11"
+                android:src="@drawable/_loupe_1"
                 tools:ignore="SpeakableTextPresentCheck" />
         </RelativeLayout>
 
@@ -282,18 +445,17 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:background="@drawable/ellipse_1_ek1"
             android:gravity="center">
 
-            <Button
+            <ImageButton
                 android:id="@+id/HomeButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5px"
-                android:layout_marginTop="5px"
-                android:layout_marginEnd="5px"
-                android:layout_marginBottom="5px"
+                android:layout_margin="5px"
                 android:layout_weight="0"
-                android:background="@drawable/ic_home"
+                android:background="@drawable/ellipse_11"
+                android:src="@drawable/_home_1__1"
                 tools:ignore="SpeakableTextPresentCheck" />
         </RelativeLayout>
 
@@ -303,17 +465,18 @@
             android:layout_weight="1"
             android:gravity="center">
 
-            <Button
+            <ImageButton
                 android:id="@+id/DiscussionsButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_margin="5px"
                 android:layout_weight="0"
-                android:background="@drawable/ic_community"
+                android:background="@drawable/ellipse_11"
+                android:src="@drawable/blogging_1"
                 tools:ignore="SpeakableTextPresentCheck" />
+
         </RelativeLayout>
 
-    </LinearLayout>     <!--NavBar-->
+    </LinearLayout>
 
-
-
-</RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

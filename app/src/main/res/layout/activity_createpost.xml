@@ -4,17 +4,17 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/PageBackgroundCOlOR"
     android:orientation="vertical"
     tools:context=".createpost">
 
 
-    #big vertical layout
+
 
     <LinearLayout
         android:id="@+id/createpost"
         android:layout_width="416dp"
         android:layout_height="60dp"
-        android:background="@color/PageBackgroundCOlOR"
         android:orientation="horizontal"
         android:paddingTop="20px"
 
@@ -28,7 +28,7 @@
             android:background="@color/PageBackgroundCOlOR"
             android:paddingLeft="20px"
             android:src="@drawable/_arrow_1_ek1"
-            tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
 
         <TextView
             android:id="@+id/createposttxt"
@@ -38,18 +38,24 @@
             android:layout_marginTop="10px"
             android:background="@drawable/main_box"
             android:gravity="left"
-            android:text="    Create a post"
+            android:layout_gravity="center"
+            android:paddingLeft="60px"
+            android:paddingTop="10px"
+            android:text="Create a post"
+            android:fontFamily="@font/inter"
             android:textColor="@color/PageBackgroundCOlOR"
-            android:textSize="32dp" />
+            android:textSize="24dp" />
 
 
     </LinearLayout>
 
+    #big vertical layout
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/PageBackgroundCOlOR"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:translationY="-50px">
         #first small layout
 
         <LinearLayout
@@ -69,9 +75,10 @@
                 android:layout_marginTop="50px"
                 android:background="@drawable/main_box"
                 android:gravity="left"
-                android:text="what's your name?"
+                android:text="What's your name?"
                 android:textColor="@color/black"
-                android:textSize="27dp" />
+                android:fontFamily="@font/inter"
+                android:textSize="24dp" />
 
             #second small layout
 
@@ -82,7 +89,7 @@
                 android:layout_marginTop="50px"
                 android:layout_marginLeft="80px"
                 android:background="@drawable/messagebox"
-                android:hint="  username" />
+                android:hint="Your Name" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -102,7 +109,8 @@
                     android:gravity="left"
                     android:text="What is your post about?"
                     android:textColor="@color/black"
-                    android:textSize="27dp" />
+                    android:fontFamily="@font/inter"
+                    android:textSize="24dp"/>
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/post"
@@ -113,7 +121,7 @@
                     android:layout_alignParentTop="false"
                     android:layout_marginLeft="60px"
                     android:background="@drawable/messagebox"
-                    android:hint="  post topic" />
+                    android:hint="  Post Topic" />
 
             </LinearLayout>
 
@@ -137,7 +145,8 @@
                     android:gravity="left"
                     android:text="Share what's on your mind?"
                     android:textColor="@color/black"
-                    android:textSize="27dp" />
+                    android:fontFamily="@font/inter"
+                    android:textSize="24dp"/>
 
                 <com.google.android.material.textfield.TextInputEditText
                     android:id="@+id/mind"
@@ -146,32 +155,43 @@
                     android:layout_marginLeft="50px"
                     android:layout_marginTop="10px"
                     android:background="@drawable/messagebox"
-                    android:hint="  post content" />
+                    android:hint="  Post Content"
+                    />
 
             </LinearLayout>
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="10px">
-            <ImageButton
-                android:id="@+id/sendbutton"
-                android:layout_width="225px"
-                android:layout_height="225px"
-                android:layout_marginLeft="350px"
-                android:layout_marginTop="100px"
-                android:background="@drawable/send"
-                android:paddingLeft="20px"
-                tools:ignore="SpeakableTextPresentCheck"></ImageButton>
+                android:layout_height="match_parent"
+                android:layout_marginTop="10px"
+                android:layout_gravity="center"
+                >
 
-                <ImageView
-                    android:layout_width="200px"
-                    android:layout_height="200px"
-                    android:layout_marginRight="30px"
-                    android:adjustViewBounds="true"
-                    android:translationX="-225px"
-                    android:translationY="125px"
-                    android:src="@drawable/send_2"></ImageView>
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20px"
+                    android:layout_marginLeft="360px"
+                    >
+
+                    <ImageButton
+                        android:id="@+id/sendbutton"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5px"
+                        android:layout_marginTop="5px"
+                        android:layout_marginEnd="5px"
+                        android:layout_marginBottom="5px"
+                        android:layout_weight="0"
+                        android:background="@drawable/ellipse_11"
+                        android:paddingTop="30px"
+                        android:paddingRight="10px"
+                        android:src="@drawable/send_2"
+                        tools:ignore="SpeakableTextPresentCheck" />
+                </RelativeLayout>
+
             </LinearLayout>
 
         </LinearLayout>
@@ -184,7 +204,7 @@
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-
+            android:paddingTop="40px"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             tools:context=".activity.MainActivity">
@@ -196,16 +216,14 @@
                 android:gravity="center">
 
 
-                <Button
+                <ImageButton
                     android:id="@+id/SearchButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5px"
-                    android:layout_marginTop="5px"
-                    android:layout_marginEnd="5px"
-                    android:layout_marginBottom="5px"
+                    android:layout_margin="5px"
                     android:layout_weight="0"
-                    android:background="@drawable/ic_search"
+                    android:background="@drawable/ellipse_11"
+                    android:src="@drawable/_loupe_1"
                     tools:ignore="SpeakableTextPresentCheck" />
             </RelativeLayout>
 
@@ -213,18 +231,17 @@
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
+                android:background="@drawable/ellipse_1_ek1"
                 android:gravity="center">
 
-                <Button
+                <ImageButton
                     android:id="@+id/HomeButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginStart="5px"
-                    android:layout_marginTop="5px"
-                    android:layout_marginEnd="5px"
-                    android:layout_marginBottom="5px"
+                    android:layout_margin="5px"
                     android:layout_weight="0"
-                    android:background="@drawable/ic_home"
+                    android:background="@drawable/ellipse_11"
+                    android:src="@drawable/_home_1__1"
                     tools:ignore="SpeakableTextPresentCheck" />
             </RelativeLayout>
 
@@ -234,13 +251,16 @@
                 android:layout_weight="1"
                 android:gravity="center">
 
-                <Button
+                <ImageButton
                     android:id="@+id/DiscussionsButton"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_margin="5px"
                     android:layout_weight="0"
-                    android:background="@drawable/ic_community"
+                    android:background="@drawable/ellipse_11"
+                    android:src="@drawable/blogging_1"
                     tools:ignore="SpeakableTextPresentCheck" />
+
             </RelativeLayout>
 
         </LinearLayout>

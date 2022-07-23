@@ -39,8 +39,10 @@
             android:background="@drawable/main_box"
             android:gravity="center"
             android:text="Member Community"
+            android:fontFamily="@font/inter"
+            android:textStyle="bold"
             android:textColor="@color/PageBackgroundCOlOR"
-            android:textSize="32dp"
+            android:textSize="24sp"
 
             />
 
@@ -55,115 +57,272 @@
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-         <LinearLayout
+        <LinearLayout
+            android:id="@+id/welcomeandbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <LinearLayout
             android:id="@+id/memberCommunityWelcome"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="20px"
             android:layout_marginTop="20px"
-             android:layout_marginLeft="20px"
+            android:paddingBottom="20dp"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/heythere"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
                 android:text="Hey there friend!"
                 android:textColor="@color/black"
-                android:textStyle="bold"
                 android:textSize="24sp"
-                android:fontFamily="@font/inter"
-                /> !--welcome--!
+                android:textStyle="bold" />
+            !--welcome--!
 
-             <TextView
-                 android:id="@+id/explanation"
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:textColor="@color/textCOLOR"
-                 android:text="This is your place to connect with\nother members of Vast, ask questions\nand get tips from the Vast community"
-                 android:textSize="16sp"
-                 android:textStyle="bold"
-                 android:fontFamily="@font/inter"
-                 />  !--explanation --!
+            <TextView
+                android:id="@+id/explanation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:text="This is your place to connect with\nother members of Vast, ask questions\nand get tips from the Vast community"
+                android:textColor="@color/textCOLOR"
+                android:textSize="16sp"
+                android:textStyle="bold" />
+            !--explanation --!
 
         </LinearLayout>
 
+            <ImageButton
+                android:id="@+id/createPostButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:paddingTop="15px"
+                android:background="@drawable/main_box"
+                android:backgroundTint="@color/textCOLOR"
+                android:src="@drawable/plus__1__5" />
+        </LinearLayout>
+
         <ScrollView
-             android:id="@+id/commentSection"
-             android:layout_width="match_parent"
-             android:layout_height="wrap_content"
-             android:gravity="center">
+            android:id="@+id/commentSection"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
 
             <androidx.appcompat.widget.LinearLayoutCompat
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/comment1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
                     <LinearLayout
-                        android:id="@+id/comment1"
+                        android:id="@+id/comment1INFO"
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="vertical">
+                        android:layout_marginLeft="40px"
+                        android:orientation="vertical"
+                        android:translationY="60px">
 
-                        <LinearLayout
-                            android:id="@+id/comment1INFO"
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:orientation="vertical">
-                             <TextView
-                                 android:id="@+id/commentator1"
-                                 android:layout_width="wrap_content"
-                                 android:layout_height="wrap_content"
-                                 android:text="june.IOves.dolph1ns"
-                                 />
-
-                             <TextView
-                                 android:id="@+id/commenttime1"
-                                 android:layout_width="wrap_content"
-                                 android:layout_height="wrap_content"
-                                 android:text="19/7/22     16:23"
-                                 />
-
-                        </LinearLayout>  // Comment Info
-
-                        <View
-                            android:id="@+id/commentTRIANGLE1"
-                            android:layout_width="49dp"
-                            android:layout_height="49dp"
-                            android:background="@drawable/polygon_11" />
-
-                        <LinearLayout
-                            android:id="@+id/commentContent1"
-                            android:layout_width="match_parent"
+                        <TextView
+                            android:id="@+id/commentator1"
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:orientation="vertical">
+                            android:text="june.IOves.dolph1ns"
+                            android:textColor="@color/textCOLOR"
+                            android:fontFamily="@font/inter"
 
-                            <TextView
-                                android:id="@+id/commentHeader1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="looking for a good driving teacher!"
+                            />
 
-                                />
-
-                            <TextView
-                                android:id="@+id/commentTXT1"
-                                android:layout_width="match_parent"
-                                android:layout_height="match_parent"
-                                android:text="hi guys:) i've been trying to find a\ngood driving teacher in the Tel Aviv\nfor a while now, does anyone \nhave any recommendations?"
-                                />
-
-                        </LinearLayout>
+                        <TextView
+                            android:id="@+id/commenttime1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="19/7/22     16:23"
+                            android:textColor="@color/CommentBackgroundCOLOR"
+                            />
 
                     </LinearLayout>
+                    // Comment Info
+
+                    <View
+                        android:id="@+id/commentTRIANGLE1"
+                        android:layout_width="49dp"
+                        android:layout_height="49dp"
+                        android:background="@drawable/polygon_11"
+                        android:translationY="72px"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/commentContent1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/main_box"
+                        android:padding="50px"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/commentHeader1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="looking for a good driving teacher!"
+                            android:fontFamily="@font/inter"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/commentTXT1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="hi guys:) i've been trying to find a good driving teacher in the Tel Aviv for a while now, does anyone have any recommendations?"
+                            android:fontFamily="@font/inter"
+                            android:textSize="16sp"
+                            android:textColor="@color/textCOLOR"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ButtonsHolder1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20px"
+                        android:layout_marginLeft="80px">
+
+                        <ImageButton
+                            android:id="@+id/LikeButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/heart_1"
+                            android:layout_marginRight="40px"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/CommentButton1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/comment_3__1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>  <!-- Comment 1 -->
+
+                <LinearLayout
+                    android:id="@+id/comment2"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/comment2INFO"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40px"
+                        android:orientation="vertical"
+                        android:translationY="60px">
+
+                        <TextView
+                            android:id="@+id/commentator2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="lia.sa1d_s0"
+                            android:textColor="@color/textCOLOR"
+                            android:fontFamily="@font/inter"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/commenttime2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="6/7/22     10:54"
+                            android:textColor="@color/CommentBackgroundCOLOR"
+                            />
+
+                    </LinearLayout>
+                    // Comment Info
+
+                    <View
+                        android:id="@+id/commentTRIANGLE2"
+                        android:layout_width="49dp"
+                        android:layout_height="49dp"
+                        android:background="@drawable/polygon_11"
+                        android:translationY="72px"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/commentContent2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/main_box"
+                        android:padding="50px"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/commentHeader2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="need help with reviewing my CV"
+                            android:fontFamily="@font/inter"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/commentTXT2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I followed the steps in the app and it really helped me! still not sure about it though, can anyone review what i wrote? Thx!"
+                            android:fontFamily="@font/inter"
+                            android:textSize="16sp"
+                            android:textColor="@color/textCOLOR"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ButtonsHolder2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20px"
+                        android:layout_marginLeft="80px">
+
+                        <ImageButton
+                            android:id="@+id/LikeButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/heart_1"
+                            android:layout_marginRight="40px"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/CommentButton2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/comment_3__1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
 
             </androidx.appcompat.widget.LinearLayoutCompat>
         </ScrollView>
 
-     </LinearLayout>
+    </LinearLayout>
 
     <LinearLayout
         android:id="@+id/NavBar"
         android:layout_width="match_parent"
-        android:layout_height="fill_parent"
+        android:layout_height="match_parent"
         android:gravity="bottom"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
