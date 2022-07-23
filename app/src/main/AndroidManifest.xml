@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.eskillsandroid" >
+    package="com.example.eskillsandroid">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -10,31 +10,27 @@
         android:label="Vast"
         android:roundIcon="@drawable/vastlogo"
         android:supportsRtl="true"
-        android:theme="@style/Theme.EskillsAndroid" >
+        android:theme="@style/Theme.EskillsAndroid">
+        <activity
+            android:name=".cvView"
+            android:exported="false" />
         <activity
             android:name=".createpost"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
-            android:exported="true" >
-
+            android:exported="true">
             <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
+                <action android:name="android.intent.action.MAIN" />
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
-
         <activity
             android:name=".MemberCommunityActivity"
             android:exported="false" />
-
         <activity
-            android:name="SearchBarActivity"
-            android:exported="false"/>
-        <activity
-            android:name=".viewpage"
+            android:name=".SearchBarActivity"
             android:exported="false" />
     </application>
 

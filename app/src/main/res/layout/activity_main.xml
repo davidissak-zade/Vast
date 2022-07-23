@@ -86,6 +86,7 @@
         app:layout_constraintHorizontal_bias="0.553"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/view" />
+
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
         android:layout_width="1300px"
@@ -179,6 +180,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
+
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView2"
         android:layout_width="1300px"
@@ -271,6 +273,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
+
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView3"
         android:layout_width="1300px"
