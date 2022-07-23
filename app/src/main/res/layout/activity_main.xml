@@ -89,10 +89,9 @@
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
-        android:layout_width="1300px"
-        android:layout_height="150px"
-        android:layout_marginLeft="225px"
-        android:layout_marginBottom="770px"
+        android:layout_width="wrap_content"
+        android:layout_height="330px"
+        android:layout_marginBottom="850px"
         android:fillViewport="true"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -107,53 +106,72 @@
             android:orientation="horizontal">
 
 
-            <Button
+            <ImageButton
                 android:id="@+id/CV"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
+                android:background="#FDF8E1"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
                 android:layout_weight="1"
-                android:text="CV" />
+                android:src="@drawable/cvimg"
+                 />
 
-            <Button
-                android:id="@+id/bank"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="bank" />
 
-            <Button
-                android:id="@+id/button3"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
+            <ImageButton
+                android:id="@+id/interview"
+                android:background="#FDF8E1"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:src="@drawable/interview"
+                />
 
-            <Button
-                android:id="@+id/button4"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
+            <ImageButton
+                android:id="@+id/schalarship"
+                android:background="#FDF8E1"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:src="@drawable/schalarship"
+                />
 
-            <Button
-                android:id="@+id/button5"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
+            <ImageButton
+                android:id="@+id/job"
+                android:background="#FDF8E1"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:src="@drawable/job"
+                />
 
-            <Button
-                android:id="@+id/button6"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
+            <ImageButton
+                android:id="@+id/exam"
+                android:background="#FDF8E1"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:src="@drawable/exam"
+                />
+
+            <ImageButton
+                android:background="#FDF8E1"
+                android:id="@+id/Universities"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
+                android:layout_weight="1"
+                android:src="@drawable/universities"
+                />
 
             <FrameLayout
                 android:id="@+id/flFragment"
@@ -183,10 +201,8 @@
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView2"
-        android:layout_width="1300px"
-        android:layout_height="150px"
-        android:layout_marginLeft="225px"
-        android:layout_marginBottom="250px"
+        android:layout_width="wrap_content"
+        android:layout_height="330px"
         android:fillViewport="true"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -201,53 +217,72 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/CV2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
+            <ImageButton
+                android:id="@+id/bank"
+                android:background="#FDF8E1"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
                 android:layout_weight="1"
-                android:text="CV" />
+                android:src="@drawable/bank"
+                />
 
-            <Button
-                android:id="@+id/bank2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
+            <ImageButton
+                android:id="@+id/saving"
+                android:background="#FDF8E1"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
                 android:layout_weight="1"
-                android:text="bank" />
+                android:src="@drawable/saving"
+                />
 
-            <Button
-                android:id="@+id/button2"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
+            <ImageButton
+                android:id="@+id/visa"
+                android:background="#FDF8E1"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:src="@drawable/visa"
+                />
 
-            <Button
-                android:id="@+id/button33"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="1"
-                android:text="Button" />
 
-            <Button
-                android:id="@+id/button55"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
+            <ImageButton
+                android:id="@+id/loans"
+                android:background="#FDF8E1"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:src="@drawable/loans"
+                />
 
-            <Button
-                android:id="@+id/button66"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
+            <ImageButton
+                android:id="@+id/bills"
+                android:background="#FDF8E1"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:src="@drawable/bills"
+                />
+
+            <ImageButton
+                android:id="@+id/tax"
+                android:background="#FDF8E1"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
+                android:layout_weight="1"
+                android:src="@drawable/tax"
+                />
 
             <FrameLayout
                 android:id="@+id/flFragment2"
@@ -276,10 +311,9 @@
 
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView3"
-        android:layout_width="1300px"
-        android:layout_height="150px"
-        android:layout_marginLeft="225px"
-        android:layout_marginTop="300px"
+        android:layout_width="wrap_content"
+        android:layout_height="330px"
+        android:layout_marginTop="1100px"
         android:fillViewport="true"
         android:orientation="horizontal"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -295,53 +329,71 @@
             android:layout_height="match_parent"
             android:orientation="horizontal">
 
-            <Button
-                android:id="@+id/CV22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
+            <ImageButton
+                android:id="@+id/driving"
+                android:background="#FDF8E1"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
                 android:layout_weight="1"
-                android:text="CV" />
+                android:src="@drawable/driving"
+                />
 
-            <Button
-                android:id="@+id/bank22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
+            <ImageButton
+                android:id="@+id/insurance"
+                android:background="#FDF8E1"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
                 android:layout_weight="1"
-                android:text="bank" />
+                android:src="@drawable/insurance"
+                />
 
-            <Button
-                android:id="@+id/button22"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
+            <ImageButton
+                android:id="@+id/rent"
+                android:background="#FDF8E1"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:src="@drawable/rent"
+                />
 
-            <Button
-                android:id="@+id/button332"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
+            <ImageButton
+                android:id="@+id/carmaintenance"
+                android:background="#FDF8E1"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:src="@drawable/carmaintenance"
+                />
 
-            <Button
-                android:id="@+id/button552"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
+            <ImageButton
+                android:id="@+id/mailing"
+                android:background="#FDF8E1"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:src="@drawable/mailing"
+                />
 
-            <Button
-                android:id="@+id/button662"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
+            <ImageButton
+                android:id="@+id/plants"
+                android:background="#FDF8E1"
+                android:layout_width="126dp"
+                android:layout_height="114dp"
+                android:scaleType="fitXY"
+                android:layout_margin="15px"
                 android:layout_weight="1"
-                android:text="Button" />
+                android:src="@drawable/plants"
+                />
 
             <FrameLayout
                 android:id="@+id/flFragment22"
@@ -376,7 +428,10 @@
                 android:id="@+id/SearchButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5px"
+                android:layout_marginStart="5px"
+                android:layout_marginTop="5px"
+                android:layout_marginEnd="5px"
+                android:layout_marginBottom="5px"
                 android:layout_weight="0"
                 android:background="@drawable/ellipse_11"
                 android:src="@drawable/_loupe_1"
@@ -394,7 +449,10 @@
                 android:id="@+id/HomeButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5px"
+                android:layout_marginStart="5px"
+                android:layout_marginTop="5px"
+                android:layout_marginEnd="5px"
+                android:layout_marginBottom="5px"
                 android:layout_weight="0"
                 android:background="@drawable/ellipse_11"
                 android:src="@drawable/_home_1__1"
