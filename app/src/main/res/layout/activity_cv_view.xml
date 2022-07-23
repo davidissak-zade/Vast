@@ -22,7 +22,8 @@
             android:layout_width="260dp"
             android:layout_height="41dp"
             android:layout_marginTop="10px"
-            android:text="*Name Of The Lesson*"
+            android:text="CV"
+            android:layout_marginLeft="570px"
             android:textColor="@color/white"
             android:textSize="25dp"
             app:layout_constraintBottom_toBottomOf="@+id/name"
@@ -56,22 +57,46 @@
                             android:id="@+id/text1"
                             android:layout_width="900px"
                             android:layout_height="1200px"
-                            android:background="@drawable/text_box"
-                            android:text="text"
                             android:layout_marginHorizontal="50px"
+                            android:background="@drawable/text_box"
+                            android:text="Resume and CV:
+                                                                RESUME
+
+                                        1-A resume is a one- to two-page document
+2-presents key facts about your professional experience, educational background, and skills.
+                                                        3-is used for job search.
+                                         CV
+                                               1- is a longer document
+2-details the whole course of your career
+                                3- used for academic purposes.
+
+
+
+"
                             android:textColor="@color/white"
-                            android:textSize="25dp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.764"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            android:textSize="25dp" />
 
                         <TextView
                             android:id="@+id/text2"
                             android:layout_width="1000px"
                             android:layout_height="1200px"
                             android:background="@drawable/text_box"
-                            android:text="text"
+                            android:text="bad example:"
+
+                            android:textColor="@color/white"
+                            android:textSize="25dp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.764"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_width="1000px"
+                            android:layout_height="1200px"
+                            android:background="@drawable/text_box"
+                            android:text="bad example:"
+
                             android:textColor="@color/white"
                             android:textSize="25dp"
                             app:layout_constraintEnd_toEndOf="parent"
@@ -81,12 +106,23 @@
 
 
                         <TextView
-                            android:id="@+id/text3"
+                            android:id="@+id/text4"
                             android:layout_width="1000px"
                             android:layout_height="1200px"
                             android:layout_marginHorizontal="50px"
                             android:background="@drawable/text_box"
-                            android:text="text"
+                            android:text="
+things that should be included:
+
+1-Include a link to your up to date LinkedIn profile within your introductory details.
+                                 2-highlight how you overcame challenges both personally and as a team member.
+                                3-Shout about your achievements
+                        4-Include two forms of contact, email and mobile
+                5-Mention any interests/hobbies
+6-Double check your grammar
+        7- Add a profile picture
+
+"
                             android:textColor="@color/white"
                             android:textSize="25dp"
                             app:layout_constraintEnd_toEndOf="parent"
