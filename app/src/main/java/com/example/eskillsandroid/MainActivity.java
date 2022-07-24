@@ -31,8 +31,8 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageButton CV = (ImageButton) findViewById(R.id.CV);   // link to the discussions page
-        DiscussionsButton.setOnClickListener(new View.OnClickListener(){
+        ImageButton CV = (ImageButton) findViewById(R.id.CV);
+        CV.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view)
             {
