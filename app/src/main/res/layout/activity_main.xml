@@ -1,482 +1,248 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FDF8E1"
-    tools:context=".MainActivity">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
 
-
-
-    <View
-        android:id="@+id/view"
-        android:layout_width="347dp"
-        android:layout_height="219dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/main_box"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/welcome_to_"
-        android:layout_width="199dp"
-        android:layout_height="49dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginStart="40dp"
-        android:layout_marginTop="20dp"
-        android:gravity="center"
-        android:text="Welcome to "
-        android:fontFamily="@font/inter"
-        android:textSize="24dp"
-        android:textAppearance="@style/welcome_to_"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view" />
-
-    <TextView
-        android:id="@+id/message"
-        android:layout_width="252dp"
-        android:layout_height="92dp"
-        android:layout_marginTop="50px"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:paddingHorizontal="20px"
-        android:background="@drawable/messagebox"
-        android:text="Be not afraid of growing slowly, be afraid of standing still"
-        android:fontFamily="@font/inter"
-        android:textColor="@color/black"
-        android:gravity="start"
-        android:paddingTop="5dp"
-        android:textAlignment="viewStart"
-        android:textSize="18dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.496"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/welcome_to_" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="143dp"
-        android:layout_height="133dp"
-        android:layout_marginLeft="350px"
-        android:layout_marginBottom="300px"
-        app:layout_constraintBottom_toBottomOf="@+id/view"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.552"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view"
-
-        app:layout_constraintVertical_bias="1.0"
-        app:srcCompat="@drawable/vastlogo" />
-
-    <TextView
-        android:id="@+id/academics_e"
-        android:layout_width="255dp"
+    <ScrollView
+        android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="12dp"
-        android:layout_marginEnd="100dp"
-        android:gravity="top"
-        android:text="@string/academics_e"
-        android:textAppearance="@style/academics_e"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.553"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/view" />
-
-    <HorizontalScrollView
-        android:id="@+id/horizontalScrollView"
-        android:layout_width="wrap_content"
-        android:layout_height="330px"
-        android:layout_marginBottom="850px"
-        android:fillViewport="true"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/academics_e"
-        app:layout_constraintVertical_bias="0.573">
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+        android:layout_weight="1"
+        android:fillViewport="true">
+        <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="vertical" android:layout_width="match_parent"
+            android:layout_height="match_parent">
 
 
-            <ImageButton
-                android:id="@+id/CV"
-                android:background="#FDF8E1"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/cvimg"
-                 />
+           <RelativeLayout
+               android:layout_height="wrap_content"
+               android:layout_width="wrap_content">
+               <View
+                   android:id="@+id/view"
+                   android:layout_width="347dp"
+                   android:layout_height="219dp"
+                   android:layout_marginTop="16dp"
+                   android:background="@drawable/main_box"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="parent" />
 
+               <TextView
+                   android:id="@+id/welcome_to_"
+                   android:layout_width="199dp"
+                   android:layout_height="49dp"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentTop="true"
+                   android:layout_marginStart="40dp"
+                   android:layout_marginTop="20dp"
+                   android:gravity="center"
+                   android:text="Welcome to "
+                   android:fontFamily="@font/inter"
+                   android:textSize="24dp"
+                   android:textAppearance="@style/welcome_to_"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="@+id/view" />
 
-            <ImageButton
-                android:id="@+id/interview"
-                android:background="#FDF8E1"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/interview"
-                />
+               <TextView
+                   android:id="@+id/message"
+                   android:layout_width="252dp"
+                   android:layout_height="92dp"
+                   android:layout_marginTop="50px"
+                   android:layout_alignParentLeft="true"
+                   android:layout_alignParentTop="true"
+                   android:paddingHorizontal="20px"
+                   android:background="@drawable/messagebox"
+                   android:text="Be not afraid of growing slowly, be afraid of standing still"
+                   android:fontFamily="@font/inter"
+                   android:textColor="@color/black"
+                   android:gravity="start"
+                   android:paddingTop="5dp"
+                   android:textAlignment="viewStart"
+                   android:textSize="18dp"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintHorizontal_bias="0.496"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toBottomOf="@+id/welcome_to_" />
 
-            <ImageButton
-                android:id="@+id/schalarship"
-                android:background="#FDF8E1"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/schalarship"
-                />
+               <ImageView
+                   android:id="@+id/imageView"
+                   android:layout_width="143dp"
+                   android:layout_height="133dp"
+                   android:layout_marginLeft="350px"
+                   android:layout_marginBottom="300px"
+                   app:layout_constraintBottom_toBottomOf="@+id/view"
+                   app:layout_constraintEnd_toEndOf="parent"
+                   app:layout_constraintHorizontal_bias="0.552"
+                   app:layout_constraintStart_toStartOf="parent"
+                   app:layout_constraintTop_toTopOf="@+id/view"
 
-            <ImageButton
-                android:id="@+id/job"
-                android:background="#FDF8E1"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/job"
-                />
-
-            <ImageButton
-                android:id="@+id/exam"
-                android:background="#FDF8E1"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/exam"
-                />
-
-            <ImageButton
-                android:background="#FDF8E1"
-                android:id="@+id/Universities"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/universities"
-                />
-
-            <FrameLayout
-                android:id="@+id/flFragment"
-                android:layout_width="match_parent"
-                android:layout_height="0dp" />
+                   app:layout_constraintVertical_bias="1.0"
+                   app:srcCompat="@drawable/vastlogo" />
+           </RelativeLayout>
 
 
 
-            </LinearLayout>
-    </HorizontalScrollView>
-
-    <TextView
-        android:id="@+id/money"
-        android:layout_width="125dp"
-        android:layout_height="0dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="40px"
-        android:layout_marginEnd="225dp"
-        android:gravity="top"
-        android:text="@string/money"
-        android:textAppearance="@style/money"
-        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView" />
-
-    <HorizontalScrollView
-        android:id="@+id/horizontalScrollView2"
-        android:layout_width="wrap_content"
-        android:layout_height="330px"
-        android:fillViewport="true"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/academics_e"
-        app:layout_constraintVertical_bias="0.546">
 
 
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
+            <HorizontalScrollView
+                android:id="@+id/horizontalScrollView"
+                android:layout_width="wrap_content"
+                android:layout_height="330px"
+                android:layout_marginBottom="850px"
+                android:fillViewport="true"
+                android:orientation="horizontal"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/academics_e"
+                app:layout_constraintVertical_bias="0.573">
 
-            <ImageButton
-                android:id="@+id/bank"
-                android:background="#FDF8E1"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/bank"
-                />
-
-            <ImageButton
-                android:id="@+id/saving"
-                android:background="#FDF8E1"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/saving"
-                />
-
-            <ImageButton
-                android:id="@+id/visa"
-                android:background="#FDF8E1"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/visa"
-                />
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
 
 
-            <ImageButton
-                android:id="@+id/loans"
-                android:background="#FDF8E1"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/loans"
-                />
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        >
+                        <ImageButton
+                            android:id="@+id/CV"
+                            android:background="#FDF8E1"
+                            android:layout_width="126dp"
+                            android:layout_height="114dp"
+                            android:scaleType="fitXY"
+                            android:layout_margin="15px"
+                            android:layout_weight="1"
+                            android:src="@drawable/cvimg"
+                            />
+                        <TextView
+                            android:id="@+id/norhing"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/messagebox"
+                            android:text="CV"
+                            android:layout_gravity="center_horizontal"
+                            android:textAlignment="center"
+                            android:textSize="18dp" />
 
-            <ImageButton
-                android:id="@+id/bills"
-                android:background="#FDF8E1"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/bills"
-                />
+                    </LinearLayout>>
 
-            <ImageButton
-                android:id="@+id/tax"
-                android:background="#FDF8E1"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/tax"
-                />
 
-            <FrameLayout
-                android:id="@+id/flFragment2"
-                android:layout_width="match_parent"
-                android:layout_height="0dp" />
+                    <ImageButton
+                        android:id="@+id/interview"
+                        android:background="#FDF8E1"
+                        android:layout_width="126dp"
+                        android:layout_height="114dp"
+                        android:scaleType="fitXY"
+                        android:layout_margin="15px"
+                        android:layout_weight="1"
+                        android:src="@drawable/interview"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/schalarship"
+                        android:background="#FDF8E1"
+                        android:layout_width="126dp"
+                        android:layout_height="114dp"
+                        android:scaleType="fitXY"
+                        android:layout_margin="15px"
+                        android:layout_weight="1"
+                        android:src="@drawable/schalarship"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/job"
+                        android:background="#FDF8E1"
+                        android:layout_width="126dp"
+                        android:layout_height="114dp"
+                        android:scaleType="fitXY"
+                        android:layout_margin="15px"
+                        android:layout_weight="1"
+                        android:src="@drawable/job"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/exam"
+                        android:background="#FDF8E1"
+                        android:layout_width="126dp"
+                        android:layout_height="114dp"
+                        android:scaleType="fitXY"
+                        android:layout_margin="15px"
+                        android:layout_weight="1"
+                        android:src="@drawable/exam"
+                        />
+
+                    <ImageButton
+                        android:background="#FDF8E1"
+                        android:id="@+id/Universities"
+                        android:layout_width="126dp"
+                        android:layout_height="114dp"
+                        android:scaleType="fitXY"
+                        android:layout_margin="15px"
+                        android:layout_weight="1"
+                        android:src="@drawable/universities"
+                        />
+
+                    <FrameLayout
+                        android:id="@+id/flFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp" />
+
+
+
+                </LinearLayout>
+            </HorizontalScrollView>
 
 
         </LinearLayout>
-    </HorizontalScrollView>
-
-    <TextView
-        android:id="@+id/essential"
-        android:layout_width="125dp"
-        android:layout_height="0dp"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentTop="true"
-        android:layout_marginTop="50px"
-        android:layout_marginEnd="225dp"
-        android:gravity="top"
-        android:text="@string/essential"
-        android:textAppearance="@style/money"
-        app:layout_constraintBottom_toTopOf="@+id/horizontalScrollView3"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/horizontalScrollView2" />
-
-    <HorizontalScrollView
-        android:id="@+id/horizontalScrollView3"
-        android:layout_width="wrap_content"
-        android:layout_height="330px"
-        android:layout_marginTop="1100px"
-        android:fillViewport="true"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/essential"
-        app:layout_constraintTop_toTopOf="@+id/academics_e"
-        app:layout_constraintVertical_bias="0.569">
-
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:orientation="horizontal">
-
-            <ImageButton
-                android:id="@+id/driving"
-                android:background="#FDF8E1"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/driving"
-                />
-
-            <ImageButton
-                android:id="@+id/insurance"
-                android:background="#FDF8E1"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/insurance"
-                />
-
-            <ImageButton
-                android:id="@+id/rent"
-                android:background="#FDF8E1"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/rent"
-                />
-
-            <ImageButton
-                android:id="@+id/carmaintenance"
-                android:background="#FDF8E1"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/carmaintenance"
-                />
-
-            <ImageButton
-                android:id="@+id/mailing"
-                android:background="#FDF8E1"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/mailing"
-                />
-
-            <ImageButton
-                android:id="@+id/plants"
-                android:background="#FDF8E1"
-                android:layout_width="126dp"
-                android:layout_height="114dp"
-                android:scaleType="fitXY"
-                android:layout_margin="15px"
-                android:layout_weight="1"
-                android:src="@drawable/plants"
-                />
-
-            <FrameLayout
-                android:id="@+id/flFragment22"
-                android:layout_width="match_parent"
-                android:layout_height="0dp" />
-
-        </LinearLayout>
-    </HorizontalScrollView>
+    </ScrollView>
 
     <LinearLayout
-        android:id="@+id/NavBar"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:gravity="bottom"
-        android:orientation="horizontal"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:paddingBottom="20px"
-
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        tools:context=".activity.MainActivity">
-
-        <RelativeLayout
-            android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center_horizontal"
+        >
+        <ImageButton
+            android:id="@+id/HomeButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
+            android:layout_marginStart="5px"
+            android:layout_marginTop="5px"
+            android:layout_marginEnd="5px"
+            android:layout_marginBottom="5px"
+            android:layout_weight="0"
+            android:background="@drawable/ellipse_11"
+            android:src="@drawable/_home_1__1"
+            tools:ignore="SpeakableTextPresentCheck" />
 
-
-            <ImageButton
-                android:id="@+id/SearchButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5px"
-                android:layout_marginTop="5px"
-                android:layout_marginEnd="5px"
-                android:layout_marginBottom="5px"
-                android:layout_weight="0"
-                android:background="@drawable/ellipse_11"
-                android:src="@drawable/_loupe_1"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="0dp"
+        <ImageButton
+            android:id="@+id/SearchButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/ellipse_1_ek1"
-            android:gravity="center">
-
-            <ImageButton
-                android:id="@+id/HomeButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginStart="5px"
-                android:layout_marginTop="5px"
-                android:layout_marginEnd="5px"
-                android:layout_marginBottom="5px"
-                android:layout_weight="0"
-                android:background="@drawable/ellipse_11"
-                android:src="@drawable/_home_1__1"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="0dp"
+            android:layout_marginStart="5px"
+            android:layout_marginTop="5px"
+            android:layout_marginEnd="5px"
+            android:layout_marginBottom="5px"
+            android:layout_weight="0"
+            android:background="@drawable/ellipse_11"
+            android:src="@drawable/_loupe_1"
+            tools:ignore="SpeakableTextPresentCheck" />
+        <ImageButton
+            android:id="@+id/DiscussionsButton"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
-
-            <ImageButton
-                android:id="@+id/DiscussionsButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="0"
-                android:background="@drawable/ellipse_11"
-                android:src="@drawable/blogging_1"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-        </RelativeLayout>
-
+            android:layout_margin="5px"
+            android:layout_weight="0"
+            android:background="@drawable/ellipse_11"
+            android:src="@drawable/blogging_1"
+            tools:ignore="SpeakableTextPresentCheck" />
     </LinearLayout>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+</LinearLayout>
+
