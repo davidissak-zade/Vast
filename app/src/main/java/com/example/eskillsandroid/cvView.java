@@ -3,6 +3,8 @@ package com.example.eskillsandroid;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.widget.Button;
+import android.widget.ImageButton;
 
 public class cvView extends AppCompatActivity {
 
@@ -10,5 +12,6 @@ public class cvView extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cv_view);
+
     }
 }

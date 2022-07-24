@@ -89,7 +89,8 @@
                 android:layout_marginTop="50px"
                 android:layout_marginLeft="80px"
                 android:background="@drawable/messagebox"
-                android:hint="Your Name" />
+                android:hint=" Your Name"
+                android:fontFamily="@font/inter"/>
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -121,7 +122,8 @@
                     android:layout_alignParentTop="false"
                     android:layout_marginLeft="60px"
                     android:background="@drawable/messagebox"
-                    android:hint="  Post Topic" />
+                    android:hint="  Post Topic"
+                    android:fontFamily="@font/inter"/>
 
             </LinearLayout>
 
@@ -156,6 +158,7 @@
                     android:layout_marginTop="10px"
                     android:background="@drawable/messagebox"
                     android:hint="  Post Content"
+                    android:fontFamily="@font/inter"
                     />
 
             </LinearLayout>

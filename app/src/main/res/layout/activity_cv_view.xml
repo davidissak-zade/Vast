@@ -7,49 +7,63 @@
     android:background="#FDF8E1"
     tools:context=".cvView">
 
-        <View
-        android:id="@+id/name"
-        android:layout_width="328dp"
-        android:layout_height="68dp"
-        android:layout_marginTop="16dp"
-        android:background="@drawable/view_box"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        <LinearLayout
+            android:id="@+id/topbar"
+            android:layout_width="416dp"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:paddingTop="20px"
+            app:layout_constraintBaseline_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
 
-        <TextView
-            android:id="@+id/textView3"
-            android:layout_width="260dp"
-            android:layout_height="41dp"
-            android:layout_marginTop="10px"
-            android:text="CV"
-            android:layout_marginLeft="570px"
-            android:textColor="@color/white"
-            android:textSize="25dp"
-            app:layout_constraintBottom_toBottomOf="@+id/name"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="@+id/name" />
+            >
+
+                <ImageButton
+                    android:id="@+id/arrowbutton"
+                    android:layout_width="83dp"
+                    android:layout_height="match_parent"
+                    android:background="@color/PageBackgroundCOlOR"
+                    android:paddingLeft="20px"
+                    android:src="@drawable/_arrow_1_ek1"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
+
+                <TextView
+                    android:id="@+id/createposttxt"
+                    android:layout_width="295dp"
+                    android:layout_height="46dp"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginTop="10px"
+                    android:background="@drawable/main_box"
+                    android:gravity="left"
+                    android:layout_gravity="center"
+                    android:paddingLeft="60px"
+                    android:paddingTop="10px"
+                    android:text="Guide to writing a CV"
+                    android:fontFamily="@font/inter"
+                    android:textColor="@color/PageBackgroundCOlOR"
+                    android:textSize="24dp"
+                    />
+
+
+        </LinearLayout>
+
 
         <HorizontalScrollView
             android:id="@+id/horizontalScrollView"
-            android:layout_marginTop="50px"
-            android:layout_width="wrap_content"
+            android:layout_marginTop="80px"
+            android:layout_width="match_parent"
+            android:foregroundGravity="center"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="16dp"
-            android:layout_marginBottom="428dp"
-            android:fillViewport="true"
             android:orientation="horizontal"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/name"
+            app:layout_constraintTop_toBottomOf="@+id/topbar"
             app:layout_constraintVertical_bias="0.0">
 
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="50px"
-
+                    android:layout_marginHorizontal="16dp"
                     android:orientation="horizontal">
 
 
@@ -57,15 +71,16 @@
                             android:id="@+id/text1"
                             android:layout_width="900px"
                             android:layout_height="1200px"
-                            android:layout_marginHorizontal="50px"
+                            android:layout_marginHorizontal="70px"
+                            android:paddingHorizontal="30px"
+                            android:textAlignment="viewStart"
                             android:background="@drawable/text_box"
                             android:text="Resume and CV:
-                                                                RESUME
-
                                         1-A resume is a one- to two-page document
 2-presents key facts about your professional experience, educational background, and skills.
                                                         3-is used for job search.
                                          CV
+
                                                1- is a longer document
 2-details the whole course of your career
                                 3- used for academic purposes.
@@ -73,43 +88,14 @@
 
 
 "
+                            android:fontFamily="@font/inter"
                             android:textColor="@color/white"
                             android:textSize="25dp" />
 
                         <TextView
                             android:id="@+id/text2"
-                            android:layout_width="1000px"
+                            android:layout_width="900px"
                             android:layout_height="1200px"
-                            android:background="@drawable/text_box"
-                            android:text="bad example:"
-
-                            android:textColor="@color/white"
-                            android:textSize="25dp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.764"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-                        <TextView
-                            android:id="@+id/text3"
-                            android:layout_width="1000px"
-                            android:layout_height="1200px"
-                            android:background="@drawable/text_box"
-                            android:text="bad example:"
-
-                            android:textColor="@color/white"
-                            android:textSize="25dp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.764"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
-
-
-                        <TextView
-                            android:id="@+id/text4"
-                            android:layout_width="1000px"
-                            android:layout_height="1200px"
-                            android:layout_marginHorizontal="50px"
                             android:background="@drawable/text_box"
                             android:text="
 things that should be included:
@@ -123,12 +109,40 @@ things that should be included:
         7- Add a profile picture
 
 "
+                            android:layout_marginHorizontal="70px"
+                            android:paddingHorizontal="30px"
+                            android:textAlignment="viewStart"
+                            android:fontFamily="@font/inter"
                             android:textColor="@color/white"
-                            android:textSize="25dp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintHorizontal_bias="0.764"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toTopOf="parent" />
+                            android:textSize="25dp" />
+
+                        <TextView
+                            android:id="@+id/text3"
+                            android:layout_width="1000px"
+                            android:layout_height="1200px"
+                            android:background="@drawable/text_box"
+                            android:text="bad example:"
+                            android:fontFamily="@font/inter"
+                            android:layout_marginHorizontal="70px"
+                            android:paddingHorizontal="30px"
+                            android:textAlignment="viewStart"
+                            android:textColor="@color/white"
+                            android:textSize="25dp" />
+
+
+                        <TextView
+                            android:id="@+id/text4"
+                            android:layout_width="1000px"
+                            android:layout_height="1200px"
+                            android:layout_marginHorizontal="70px"
+                            android:paddingHorizontal="30px"
+                            android:textAlignment="viewStart"
+                            android:background="@drawable/text_box"
+                            android:text="content holder"
+
+                            android:fontFamily="@font/inter"
+                            android:textColor="@color/white"
+                            android:textSize="25dp" />
 
                         <FrameLayout
                             android:id="@+id/flFragment"
@@ -137,97 +151,30 @@ things that should be included:
 
 
                 </LinearLayout>
+
+
         </HorizontalScrollView>
 
-        <View
-            android:id="@+id/videobox"
-            android:layout_width="347dp"
-            android:layout_height="219dp"
-            android:layout_marginTop="576dp"
-            android:background="@drawable/main_box"
 
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+                <View
+                    android:id="@+id/videobox"
+                    android:layout_width="347dp"
+                    android:layout_height="219dp"
+                    android:layout_marginTop="576dp"
+                    android:background="@drawable/main_box"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <VideoView
-        android:id="@+id/videoView"
-        android:layout_width="290dp"
-        android:layout_height="181dp"
-        app:layout_constraintBottom_toBottomOf="@+id/videobox"
-        app:layout_constraintEnd_toEndOf="@+id/videobox"
-        app:layout_constraintHorizontal_bias="0.495"
-        app:layout_constraintStart_toStartOf="@+id/videobox"
-        app:layout_constraintTop_toTopOf="@+id/videobox" />
-
-        <LinearLayout
-            android:id="@+id/NavBar"
-            android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:gravity="bottom"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:paddingBottom="20px"
-
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:context=".activity.MainActivity">
-
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center">
+                <VideoView
+                android:id="@+id/videoView"
+                android:layout_width="290dp"
+                android:layout_height="181dp"
+                app:layout_constraintBottom_toBottomOf="@+id/videobox"
+                app:layout_constraintEnd_toEndOf="@+id/videobox"
+                app:layout_constraintHorizontal_bias="0.495"
+                app:layout_constraintStart_toStartOf="@+id/videobox" />
 
 
-                        <ImageButton
-                            android:id="@+id/SearchButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5px"
-                            android:layout_weight="0"
-                            android:background="@drawable/ellipse_11"
-                            android:src="@drawable/_loupe_1"
-                            tools:ignore="SpeakableTextPresentCheck" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/ellipse_1_ek1"
-                    android:gravity="center">
-
-                        <ImageButton
-                            android:id="@+id/HomeButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5px"
-                            android:layout_weight="0"
-                            android:background="@drawable/ellipse_11"
-                            android:src="@drawable/_home_1__1"
-                            tools:ignore="SpeakableTextPresentCheck" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center">
-
-                        <ImageButton
-                            android:id="@+id/DiscussionsButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5px"
-                            android:layout_weight="0"
-                            android:background="@drawable/ellipse_11"
-                            android:src="@drawable/blogging_1"
-                            tools:ignore="SpeakableTextPresentCheck" />
-
-                </RelativeLayout>
-
-        </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
