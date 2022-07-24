@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="#FDF8E1"
     tools:context=".cvView">
-
+<!---->
         <LinearLayout
             android:id="@+id/topbar"
             android:layout_width="416dp"
