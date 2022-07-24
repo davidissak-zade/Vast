@@ -27,6 +27,15 @@ public class MainActivity extends AppCompatActivity {
         SearchButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, SearchBarActivity.class));
+            }
+        });
+
+        ImageButton CV = (ImageButton) findViewById(R.id.CV);   // link to the discussions page
+        DiscussionsButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view)
+            {
                 startActivity(new Intent(MainActivity.this, cvView.class));
             }
         });
