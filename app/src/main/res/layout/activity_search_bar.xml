@@ -19,12 +19,12 @@
         android:src="@drawable/_arrow_1_ek1"
         tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
 
-<!--        <SearchView-->
-<!--            android:layout_width="286dp"-->
-<!--            android:layout_height="wrap_content" />-->
+        <SearchView
+            android:layout_width="286dp"
+            android:layout_height="wrap_content" />
 
         <Button
             android:layout_width="322dp"
-            android:layout_height="wrap_content"
+            android:layout_height="wrap_content"/>
     </LinearLayout>
 </RelativeLayout>

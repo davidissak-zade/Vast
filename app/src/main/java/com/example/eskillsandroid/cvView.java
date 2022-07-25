@@ -9,22 +9,24 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 
-import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
-import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
+//import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
+//import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
 public class cvView extends AppCompatActivity {
-
-    private YouTubePlayerView youtubeplayer;
-
+    ImageButton BackButton;
+//
+//    private YouTubePlayerView youtubeplayer;
+//
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cv_view);
+        BackButton = findViewById(R.id.arrowbutton);
+//
+//        youtubeplayer = findViewById(R.id.activity_cvView_youtubePlayerView);
+//        getLifecycle().addObserver(youtubeplayer);
 
-        youtubeplayer = findViewById(R.id.activity_cvView_youtubePlayerView);
-        getLifecycle().addObserver(youtubeplayer);
-
-        ImageButton BackButton = (ImageButton) findViewById(R.id.arrowbutton);
+//        ImageButton BackButton = (ImageButton) findViewById(R.id.arrowbutton);
         BackButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
