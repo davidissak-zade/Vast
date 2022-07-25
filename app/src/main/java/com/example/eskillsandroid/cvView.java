@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.ImageButton;
 
 
-import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
 public class cvView extends AppCompatActivity {
