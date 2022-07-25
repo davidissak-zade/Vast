@@ -18,6 +18,7 @@
             >
 
                 <ImageButton
+                    android:id="@+id/arrowbutton"
                     android:layout_width="83dp"
                     android:layout_height="match_parent"
                     android:background="@color/PageBackgroundCOlOR"
