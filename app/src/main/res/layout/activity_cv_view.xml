@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:background="#FDF8E1"
-    tools:context=".cvView">
-<!---->
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/PageBackgroundCOlOR">
+
         <LinearLayout
-            android:id="@+id/topbar"
             android:layout_width="416dp"
             android:layout_height="60dp"
             android:orientation="horizontal"
@@ -19,7 +18,6 @@
             >
 
                 <ImageButton
-                    android:id="@+id/arrowbutton"
                     android:layout_width="83dp"
                     android:layout_height="match_parent"
                     android:background="@color/PageBackgroundCOlOR"
@@ -28,7 +26,6 @@
                     tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
 
                 <TextView
-                    android:id="@+id/createposttxt"
                     android:layout_width="295dp"
                     android:layout_height="46dp"
                     android:layout_marginLeft="0px"
@@ -47,8 +44,50 @@
 
         </LinearLayout>
 
+        <LinearLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
 
-        <HorizontalScrollView
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/activity_cvView_youtubePlayerView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:videoId="dQw4w9WgXcQ"
+                    app:autoPlay="true"
+                    />
+        </LinearLayout>
+
+        <!--<ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:fillViewport="true">
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="introduction for the lesson"
+                            android:textSize="25dp"/>
+
+                </LinearLayout>
+
+
+
+
+        </ScrollView>-->
+</LinearLayout>
+
+
+
+
+
+        <!--<HorizontalScrollView
             android:id="@+id/horizontalScrollView"
             android:layout_marginTop="80px"
             android:layout_width="match_parent"
@@ -153,28 +192,11 @@ things that should be included:
                 </LinearLayout>
 
 
-        </HorizontalScrollView>
-
-
-                <View
-                    android:id="@+id/videobox"
-                    android:layout_width="347dp"
-                    android:layout_height="219dp"
-                    android:layout_marginTop="576dp"
-                    android:background="@drawable/main_box"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-
-                <VideoView
-                android:id="@+id/videoView"
-                android:layout_width="290dp"
-                android:layout_height="181dp"
-                app:layout_constraintBottom_toBottomOf="@+id/videobox"
-                app:layout_constraintEnd_toEndOf="@+id/videobox"
-                app:layout_constraintHorizontal_bias="0.495"
-                app:layout_constraintStart_toStartOf="@+id/videobox" />
+        </HorizontalScrollView>-->
 
 
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

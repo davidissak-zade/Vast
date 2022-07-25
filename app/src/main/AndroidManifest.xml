@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EskillsAndroid">
         <activity
+            android:name=".view"
+            android:exported="false" />
+        <activity
             android:name=".cvView"
             android:exported="false" />
         <activity
