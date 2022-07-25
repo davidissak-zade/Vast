@@ -5,7 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/PageBackgroundCOlOR">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
 
+    <ImageButton
+        android:id="@+id/arrowbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/PageBackgroundCOlOR"
+        android:paddingLeft="20px"
+        android:src="@drawable/_arrow_1_ek1"
+        tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
 
+<!--        <SearchView-->
+<!--            android:layout_width="286dp"-->
+<!--            android:layout_height="wrap_content" />-->
 
+        <Button
+            android:layout_width="322dp"
+            android:layout_height="wrap_content"
+    </LinearLayout>
 </RelativeLayout>

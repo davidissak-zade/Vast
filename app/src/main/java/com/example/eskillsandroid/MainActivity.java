@@ -9,12 +9,18 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
+    ImageButton searchButton, HomeButton, DiscussionsButton;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        ImageButton DiscussionsButton = (ImageButton) findViewById(R.id.DiscussionsButton);   // link to the discussions page
+        searchButton = findViewById(R.id.searchbutton);
+        DiscussionsButton = findViewById(R.id.DiscussionsButton);
+        HomeButton = findViewById(R.id.HomeButton);
+
+
         DiscussionsButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view)
@@ -23,8 +29,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageButton SearchButton = (ImageButton) findViewById(R.id.SearchButton); // link to the search page
-        SearchButton.setOnClickListener(new View.OnClickListener() {
+        searchButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
                 startActivity(new Intent(MainActivity.this, SearchBarActivity.class));

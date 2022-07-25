@@ -15,6 +15,7 @@ public class SearchBarActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_search_bar);
 
+            /*
         ImageButton HomeButton = (ImageButton) findViewById(R.id.HomeButton);  // link to the home page
         HomeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -31,7 +32,7 @@ public class SearchBarActivity extends AppCompatActivity {
                 startActivity(new Intent(SearchBarActivity.this, MemberCommunityActivity.class));
             }
         });
-
+*/
 
     }
 }
