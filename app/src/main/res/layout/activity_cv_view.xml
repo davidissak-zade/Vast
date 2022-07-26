@@ -65,7 +65,8 @@
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="introduction for the lesson"
-                            android:textSize="25dp"/>
+                            android:textSize="25dp"
+                            android:textColor="@color/black"/>
 
                         <LinearLayout
                             xmlns:android="http://schemas.android.com/apk/res/android"
@@ -87,6 +88,7 @@
                             android:layout_height="wrap_content"
                             android:text="video recap"
                             android:textSize="30dp"
+                            android:textColor="@color/black"
                             />
 
                         <LinearLayout
