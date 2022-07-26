@@ -20,7 +20,8 @@
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
+                    android:orientation="vertical"
+                    >
 
                         <LinearLayout
                             android:layout_width="416dp"
@@ -66,7 +67,6 @@
                             android:text="introduction for the lesson"
                             android:textSize="25dp"/>
 
-
                         <LinearLayout
                             xmlns:android="http://schemas.android.com/apk/res/android"
                             android:layout_width="match_parent"
@@ -79,51 +79,210 @@
                                     android:layout_height="wrap_content"
                                     app:videoId="dQw4w9WgXcQ"
                                     app:autoPlay="true"
-
-                                    />
+                                     />
                         </LinearLayout>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="video recap"
+                            android:textSize="30dp"
+                            />
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content">
-                                <RelativeLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content">
 
-                                        <View
-                                            android:layout_width="347dp"
-                                            android:layout_height="602dp"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentTop="true"
-                                            android:layout_marginLeft="75px"
-                                            android:layout_marginTop="30px"
-                                            android:background="@drawable/rectangle_4"
-                                            />
+                                <HorizontalScrollView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fillViewport="true"
+                                    android:orientation="horizontal">
 
-                                </RelativeLayout>
+
+                                        <LinearLayout
+                                            android:layout_width="match_parent"
+                                            android:layout_height="match_parent"
+                                            android:orientation="horizontal">
+
+                                                <RelativeLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                        <View
+                                                            android:layout_width="347dp"
+                                                            android:layout_height="602dp"
+                                                            android:layout_alignParentLeft="true"
+                                                            android:layout_alignParentTop="true"
+                                                            android:layout_marginLeft="75px"
+                                                            android:layout_marginTop="30px"
+                                                            android:background="@drawable/rectangle_4"
+                                                            />
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:orientation="vertical">
+
+                                                                <ImageView
+                                                                    android:layout_width="800px"
+                                                                    android:layout_height="800px"
+                                                                    android:layout_marginLeft="125px"
+                                                                    android:layout_marginTop="75px"
+                                                                    android:background="@drawable/main_box"
+                                                                    />
+
+                                                                <TextView
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:text="text...."
+                                                                    android:textSize="40dp"
+                                                                    android:layout_marginLeft="125px"
+                                                                    android:layout_marginTop="75px"
+                                                                    />
+
+                                                        </LinearLayout>
+
+
+
+                                                </RelativeLayout>
+
+                                                <RelativeLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                        <View
+                                                            android:layout_width="347dp"
+                                                            android:layout_height="602dp"
+                                                            android:layout_alignParentLeft="true"
+                                                            android:layout_alignParentTop="true"
+                                                            android:layout_marginLeft="75px"
+                                                            android:layout_marginTop="30px"
+                                                            android:background="@drawable/rectangle_4"
+                                                            />
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:orientation="vertical">
+
+                                                                <ImageView
+                                                                    android:layout_width="800px"
+                                                                    android:layout_height="800px"
+                                                                    android:layout_marginLeft="125px"
+                                                                    android:layout_marginTop="75px"
+                                                                    android:background="@drawable/main_box"
+                                                                    />
+
+                                                                <TextView
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:text="text...."
+                                                                    android:textSize="40dp"
+                                                                    android:layout_marginLeft="125px"
+                                                                    android:layout_marginTop="75px"
+                                                                    />
+
+                                                        </LinearLayout>
+
+
+
+                                                </RelativeLayout>
+
+                                                <RelativeLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                        <View
+                                                            android:layout_width="347dp"
+                                                            android:layout_height="602dp"
+                                                            android:layout_alignParentLeft="true"
+                                                            android:layout_alignParentTop="true"
+                                                            android:layout_marginLeft="75px"
+                                                            android:layout_marginTop="30px"
+                                                            android:background="@drawable/rectangle_4"
+                                                            />
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:orientation="vertical">
+
+                                                                <ImageView
+                                                                    android:layout_width="800px"
+                                                                    android:layout_height="800px"
+                                                                    android:layout_marginLeft="125px"
+                                                                    android:layout_marginTop="75px"
+                                                                    android:background="@drawable/main_box"
+                                                                    />
+
+                                                                <TextView
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:text="text...."
+                                                                    android:textSize="40dp"
+                                                                    android:layout_marginLeft="125px"
+                                                                    android:layout_marginTop="75px"
+                                                                    />
+
+                                                        </LinearLayout>
+
+
+
+                                                </RelativeLayout>
+
+                                                <RelativeLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content">
+                                                        <View
+                                                            android:layout_width="347dp"
+                                                            android:layout_height="602dp"
+                                                            android:layout_alignParentLeft="true"
+                                                            android:layout_alignParentTop="true"
+                                                            android:layout_marginLeft="75px"
+                                                            android:layout_marginTop="30px"
+                                                            android:background="@drawable/rectangle_4"
+                                                            />
+
+                                                        <LinearLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:orientation="vertical">
+
+                                                                <ImageView
+                                                                    android:layout_width="800px"
+                                                                    android:layout_height="800px"
+                                                                    android:layout_marginLeft="125px"
+                                                                    android:layout_marginTop="75px"
+                                                                    android:background="@drawable/main_box"
+                                                                    />
+
+                                                                <TextView
+                                                                    android:layout_width="match_parent"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:text="text...."
+                                                                    android:textSize="40dp"
+                                                                    android:layout_marginLeft="125px"
+                                                                    android:layout_marginTop="75px"
+                                                                    />
+
+                                                        </LinearLayout>
+
+
+
+                                                </RelativeLayout>
+
+
+                                                <FrameLayout
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="0dp" />
+
+
+                                        </LinearLayout>
+                                </HorizontalScrollView>
+
+
+
+
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-                                <!--<RelativeLayout
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content">
-
-                                        <View
-                                            android:layout_width="1000px"
-                                            android:layout_height="500px"
-                                            android:layout_alignParentLeft="true"
-                                            android:layout_alignParentTop="true"
-                                            android:layout_marginLeft="40px"
-                                            android:layout_marginTop="30px"
-                                            android:background="@drawable/main_box"
-                                            />
-
-
-
-                                </RelativeLayout>-->
-                        </LinearLayout>
 
                 </LinearLayout>
 
