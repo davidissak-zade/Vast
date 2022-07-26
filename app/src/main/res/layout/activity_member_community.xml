@@ -158,7 +158,7 @@
                         android:id="@+id/commentTRIANGLE1"
                         android:layout_width="49dp"
                         android:layout_height="49dp"
-                        android:background="@drawable/polygon_11"
+                        android:background="@drawable/polygon_12"
                         android:translationY="72px"
                         />
 
@@ -256,7 +256,7 @@
                         android:id="@+id/commentTRIANGLE2"
                         android:layout_width="49dp"
                         android:layout_height="49dp"
-                        android:background="@drawable/polygon_11"
+                        android:background="@drawable/polygon_12"
                         android:translationY="72px"
                         />
 
