@@ -94,6 +94,7 @@
                             android:layout_height="wrap_content">
 
                                 <HorizontalScrollView
+
                                     android:layout_width="wrap_content"
                                     android:layout_height="wrap_content"
                                     android:fillViewport="true"
@@ -128,17 +129,15 @@
                                                                     android:layout_height="800px"
                                                                     android:layout_marginLeft="125px"
                                                                     android:layout_marginTop="75px"
-                                                                    android:background="@drawable/main_box"
-                                                                    />
+                                                                    android:background="@drawable/main_box" />
 
                                                                 <TextView
                                                                     android:layout_width="match_parent"
                                                                     android:layout_height="wrap_content"
-                                                                    android:text="text...."
-                                                                    android:textSize="40dp"
                                                                     android:layout_marginLeft="125px"
                                                                     android:layout_marginTop="75px"
-                                                                    />
+                                                                    android:text="text...."
+                                                                    android:textSize="40dp" />
 
                                                         </LinearLayout>
 
@@ -294,13 +293,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="bottom"
+            android:background=""
             android:orientation="horizontal"
             android:paddingBottom="20px"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
             tools:context=".activity.MainActivity">
 
                 <RelativeLayout
