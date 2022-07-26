@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/PageBackgroundCOlOR">
+    android:background="#D0E9C5">
 
 
     <ScrollView
@@ -84,7 +84,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="section1"
+                    android:text="Academics and employment"
                     android:layout_gravity="center"
                     android:textSize="27dp"/>
 
@@ -108,19 +108,19 @@
                             >
                             <ImageButton
                                 android:id="@+id/CV"
-                                android:background="#FDF8E1"
+                                android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/cvimg"
+                                android:src="@drawable/inter"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/messagebox"
-                                android:text="CV"
+                                android:text="Interview Tips"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -134,19 +134,46 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
-                                android:background="#FDF8E1"
+                                android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/cvimg"
+                                android:src="@drawable/scholer"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/messagebox"
-                                android:text="CV"
+                                android:text="Scholarships
+"
+                                android:layout_gravity="center_horizontal"
+                                android:textAlignment="center"
+                                android:textSize="18dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+
+                            <ImageButton
+                                android:layout_width="126dp"
+                                android:layout_height="114dp"
+                                android:layout_margin="15px"
+                                android:layout_weight="1"
+                                android:background="#D0E9C5"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/exam" />
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/messagebox"
+                                android:text="The Psychometry "
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -159,124 +186,28 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
-                                android:background="#FDF8E1"
+                                android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/cvimg"
+                                android:src="@drawable/universittyy"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/messagebox"
-                                android:text="CV"
+                                android:text="University Briefs"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
 
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            >
-                            <ImageButton
-                                android:background="#FDF8E1"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
-                                android:layout_margin="15px"
-                                android:layout_weight="1"
-                                android:src="@drawable/cvimg"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
-                                android:text="CV"
-                                android:layout_gravity="center_horizontal"
-                                android:textAlignment="center"
-                                android:textSize="18dp" />
 
-                        </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            >
-                            <ImageButton
-                                android:background="#FDF8E1"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
-                                android:layout_margin="15px"
-                                android:layout_weight="1"
-                                android:src="@drawable/cvimg"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
-                                android:text="CV"
-                                android:layout_gravity="center_horizontal"
-                                android:textAlignment="center"
-                                android:textSize="18dp" />
 
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            >
-                            <ImageButton
-                                android:background="#FDF8E1"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
-                                android:layout_margin="15px"
-                                android:layout_weight="1"
-                                android:src="@drawable/cvimg"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
-                                android:text="CV"
-                                android:layout_gravity="center_horizontal"
-                                android:textAlignment="center"
-                                android:textSize="18dp" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            >
-                            <ImageButton
-                                android:background="#FDF8E1"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
-                                android:layout_margin="15px"
-                                android:layout_weight="1"
-                                android:src="@drawable/cvimg"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
-                                android:text="CV"
-                                android:layout_gravity="center_horizontal"
-                                android:textAlignment="center"
-                                android:textSize="18dp" />
-
-                        </LinearLayout>
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -296,7 +227,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="section2"
+                    android:text="Finances"
                     android:layout_gravity="center"
                     android:textSize="27dp"/>
 
@@ -319,20 +250,23 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
-                                android:background="#FDF8E1"
+                                android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/cvimg"
+                                android:src="@drawable/bankk"
                                 />
+
                             <TextView
-                                android:layout_width="wrap_content"
+                                android:layout_width="114dp"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
-                                android:text="CV"
                                 android:layout_gravity="center_horizontal"
+                                android:background="@drawable/messagebox"
+                                android:text="opening a
+                                bank account
+"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
 
@@ -345,19 +279,74 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
-                                android:background="#FDF8E1"
+                                android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/cvimg"
+                                android:src="@drawable/saving"
+                                />
+
+                            <TextView
+                                android:layout_width="138dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/messagebox"
+                                android:text="opening a saving account
+"
+                                android:textAlignment="center"
+                                android:textSize="18dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageButton
+                                android:background="#D0E9C5"
+                                android:layout_width="126dp"
+                                android:layout_height="114dp"
+                                android:scaleType="fitXY"
+                                android:layout_margin="15px"
+                                android:layout_weight="1"
+                                android:src="@drawable/viissa"
+                                />
+
+                            <TextView
+                                android:layout_width="104dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/messagebox"
+                                android:text="creating a visa card
+"
+                                android:textAlignment="center"
+                                android:textSize="18dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageButton
+                                android:background="#D0E9C5"
+                                android:layout_width="126dp"
+                                android:layout_height="114dp"
+                                android:scaleType="fitXY"
+                                android:layout_margin="15px"
+                                android:layout_weight="1"
+                                android:src="@drawable/loan"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/messagebox"
-                                android:text="CV"
+                                android:text="Bank Loans
+"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -370,19 +359,19 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
-                                android:background="#FDF8E1"
+                                android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/cvimg"
+                                android:src="@drawable/bill"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/messagebox"
-                                android:text="CV"
+                                android:text="Bills"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -395,99 +384,25 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
-                                android:background="#FDF8E1"
+                                android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/cvimg"
+                                android:src="@drawable/taxx"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/messagebox"
-                                android:text="CV"
+                                android:text="Taxes"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
 
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            >
-                            <ImageButton
-                                android:background="#FDF8E1"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
-                                android:layout_margin="15px"
-                                android:layout_weight="1"
-                                android:src="@drawable/cvimg"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
-                                android:text="CV"
-                                android:layout_gravity="center_horizontal"
-                                android:textAlignment="center"
-                                android:textSize="18dp" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            >
-                            <ImageButton
-                                android:background="#FDF8E1"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
-                                android:layout_margin="15px"
-                                android:layout_weight="1"
-                                android:src="@drawable/cvimg"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
-                                android:text="CV"
-                                android:layout_gravity="center_horizontal"
-                                android:textAlignment="center"
-                                android:textSize="18dp" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            >
-                            <ImageButton
-                                android:background="#FDF8E1"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
-                                android:layout_margin="15px"
-                                android:layout_weight="1"
-                                android:src="@drawable/cvimg"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
-                                android:text="CV"
-                                android:layout_gravity="center_horizontal"
-                                android:textAlignment="center"
-                                android:textSize="18dp" />
-
-                        </LinearLayout>
 
                         <FrameLayout
                             android:layout_width="match_parent"
@@ -507,7 +422,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="section3"
+                    android:text="essentials"
                     android:layout_gravity="center"
                     android:textSize="27dp"/>
 
@@ -530,19 +445,19 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
-                                android:background="#FDF8E1"
+                                android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/cvimg"
+                                android:src="@drawable/drive"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/messagebox"
-                                android:text="CV"
+                                android:text="Driving"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -556,19 +471,19 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
-                                android:background="#FDF8E1"
+                                android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/cvimg"
+                                android:src="@drawable/neww"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/messagebox"
-                                android:text="CV"
+                                android:text="Insurance "
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -581,19 +496,19 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
-                                android:background="#FDF8E1"
+                                android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/cvimg"
+                                android:src="@drawable/rentt"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/messagebox"
-                                android:text="CV"
+                                android:text="Rent"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -606,19 +521,45 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
-                                android:background="#FDF8E1"
+                                android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/cvimg"
+                                android:src="@drawable/carr"
+                                />
+
+                            <TextView
+                                android:layout_width="150dp"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
+                                android:background="@drawable/messagebox"
+                                android:text="Car matters(changing oil,gaz, a tire)"
+                                android:textAlignment="center"
+                                android:textSize="18dp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageButton
+                                android:background="#D0E9C5"
+                                android:layout_width="126dp"
+                                android:layout_height="114dp"
+                                android:scaleType="fitXY"
+                                android:layout_margin="15px"
+                                android:layout_weight="1"
+                                android:src="@drawable/mail"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/messagebox"
-                                android:text="CV"
+                                android:text="Mailing"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -631,74 +572,25 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
-                                android:background="#FDF8E1"
+                                android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/cvimg"
+                                android:src="@drawable/lan"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:background="@drawable/messagebox"
-                                android:text="CV"
+                                android:text="Laundry and Ironing"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
 
                         </LinearLayout>
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            >
-                            <ImageButton
-                                android:background="#FDF8E1"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
-                                android:layout_margin="15px"
-                                android:layout_weight="1"
-                                android:src="@drawable/cvimg"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
-                                android:text="CV"
-                                android:layout_gravity="center_horizontal"
-                                android:textAlignment="center"
-                                android:textSize="18dp" />
-
-                        </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            >
-                            <ImageButton
-                                android:background="#FDF8E1"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
-                                android:layout_margin="15px"
-                                android:layout_weight="1"
-                                android:src="@drawable/cvimg"
-                                />
-                            <TextView
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
-                                android:text="CV"
-                                android:layout_gravity="center_horizontal"
-                                android:textAlignment="center"
-                                android:textSize="18dp" />
-
-                        </LinearLayout>
 
                         <FrameLayout
                             android:layout_width="match_parent"
