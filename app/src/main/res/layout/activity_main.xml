@@ -84,6 +84,8 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:fontFamily="@font/inter"
+                    android:textColor="@color/black"
                     android:text="Academics and employment"
                     android:layout_gravity="center"
                     android:textSize="27dp"/>
@@ -100,7 +102,6 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
@@ -114,13 +115,42 @@
                                 android:scaleType="fitXY"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
+                                android:src="@drawable/cvimg"
+                                />
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="CV"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/inter"
+                                android:layout_gravity="center_horizontal"
+                                android:textAlignment="center"
+                                android:textSize="18dp" />
+
+                        </LinearLayout>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            >
+                            <ImageButton
+                                android:id="@+id/interview"
+                                android:background="#D0E9C5"
+                                android:layout_width="126dp"
+                                android:layout_height="114dp"
+                                android:scaleType="fitXY"
+                                android:layout_margin="15px"
+                                android:layout_weight="1"
                                 android:src="@drawable/inter"
                                 />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
                                 android:text="Interview Tips"
+                                android:fontFamily="@font/inter"
+                                android:textColor="@color/black"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -145,9 +175,9 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
-                                android:text="Scholarships
-"
+                                android:fontFamily="@font/inter"
+                                android:text="Scholarships"
+                                android:textColor="@color/black"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -172,8 +202,9 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
-                                android:text="The Psychometry "
+                                android:fontFamily="@font/inter"
+                                android:text="Psychometry "
+                                android:textColor="@color/black"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -197,10 +228,11 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
+                                android:fontFamily="@font/inter"
                                 android:text="University Briefs"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
+                                android:textColor="@color/black"
                                 android:textSize="18dp" />
 
                         </LinearLayout>
@@ -228,6 +260,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Finances"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/inter"
                     android:layout_gravity="center"
                     android:textSize="27dp"/>
 
@@ -263,10 +297,9 @@
                                 android:layout_width="114dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
-                                android:background="@drawable/messagebox"
-                                android:text="opening a
-                                bank account
-"
+                                android:fontFamily="@font/inter"
+                                android:text="bank account"
+                                android:textColor="@color/black"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
 
@@ -292,9 +325,9 @@
                                 android:layout_width="138dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
-                                android:background="@drawable/messagebox"
-                                android:text="opening a saving account
-"
+                                android:fontFamily="@font/inter"
+                                android:text="saving"
+                                android:textColor="@color/black"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
 
@@ -319,9 +352,9 @@
                                 android:layout_width="104dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
-                                android:background="@drawable/messagebox"
-                                android:text="creating a visa card
-"
+                                android:fontFamily="@font/inter"
+                                android:text="visa card"
+                                android:textColor="@color/black"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
 
@@ -344,9 +377,9 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
-                                android:text="Bank Loans
-"
+                                android:fontFamily="@font/inter"
+                                android:text="Bank Loans"
+                                android:textColor="@color/black"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -370,8 +403,9 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
+                                android:fontFamily="@font/inter"
                                 android:text="Bills"
+                                android:textColor="@color/black"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -395,8 +429,9 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
+                                android:fontFamily="@font/inter"
                                 android:text="Taxes"
+                                android:textColor="@color/black"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -423,6 +458,8 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="essentials"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/inter"
                     android:layout_gravity="center"
                     android:textSize="27dp"/>
 
@@ -456,8 +493,9 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
+                                android:fontFamily="@font/inter"
                                 android:text="Driving"
+                                android:textColor="@color/black"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -482,8 +520,9 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
                                 android:text="Insurance "
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/inter"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -507,8 +546,9 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
+                                android:fontFamily="@font/inter"
                                 android:text="Rent"
+                                android:textColor="@color/black"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -534,8 +574,9 @@
                                 android:layout_width="150dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
-                                android:background="@drawable/messagebox"
-                                android:text="Car matters(changing oil,gaz, a tire)"
+                                android:fontFamily="@font/inter"
+                                android:textColor="@color/black"
+                                android:text="Car matters"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
 
@@ -558,7 +599,8 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
+                                android:fontFamily="@font/inter"
+                                android:textColor="@color/black"
                                 android:text="Mailing"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
@@ -583,7 +625,8 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:background="@drawable/messagebox"
+                                android:textColor="@color/black"
+                                android:fontFamily="@font/inter"
                                 android:text="Laundry and Ironing"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
