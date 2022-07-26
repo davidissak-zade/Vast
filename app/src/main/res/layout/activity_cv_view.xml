@@ -43,6 +43,7 @@
                                     tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
 
                                 <TextView
+                                    android:id="@+id/TopicName"
                                     android:layout_width="295dp"
                                     android:layout_height="46dp"
                                     android:layout_marginLeft="0px"
@@ -78,7 +79,7 @@
                                     android:id="@+id/activity_cvView_youtubePlayerView"
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
-                                    app:videoId="dQw4w9WgXcQ"
+                                    app:videoId="y154-LSICCo"
                                     app:autoPlay="true"
                                      />
                         </LinearLayout>

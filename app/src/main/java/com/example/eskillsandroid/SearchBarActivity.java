@@ -8,6 +8,9 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 
+import com.google.firebase.database.DatabaseReference;
+import com.google.firebase.database.FirebaseDatabase ;
+
 public class SearchBarActivity extends AppCompatActivity {
 
     @Override
@@ -33,6 +36,14 @@ public class SearchBarActivity extends AppCompatActivity {
             }
         });
 */
+        ImageButton BackButton = findViewById(R.id.arrowbutton);
+        BackButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(SearchBarActivity.this, MainActivity.class));
+            }
+        });
+
 
     }
 }

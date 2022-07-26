@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "257676664991",
+    "firebase_url": "https://vast-a293d-default-rtdb.firebaseio.com",
+    "project_id": "vast-a293d",
+    "storage_bucket": "vast-a293d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:257676664991:android:77b2d80e997bad9e69c2aa",
+        "android_client_info": {
+          "package_name": "com.example.eskillsandroid"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "257676664991-b6j84250b1bvam7sqh0e5863adp7k53v.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.eskillsandroid",
+            "certificate_hash": "2b50f4c14cf108a14c83a4fdbe2a1456dff88d1c"
+          }
+        },
+        {
+          "client_id": "257676664991-otoplqr4mdgineh8jjuqlqisim0mng73.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBuu5OG5ByJApY1DINz3GBQLVxwdgo2WM0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "257676664991-otoplqr4mdgineh8jjuqlqisim0mng73.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
