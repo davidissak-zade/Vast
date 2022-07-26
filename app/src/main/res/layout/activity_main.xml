@@ -21,58 +21,58 @@
                android:layout_height="wrap_content"
                android:layout_width="match_parent">
 
-               <View
-                   android:id="@+id/view"
-                   android:layout_width="347dp"
-                   android:layout_height="219dp"
-                   android:layout_marginLeft="75px"
-                   android:layout_marginTop="16dp"
-                   android:background="@drawable/main_box" />
+                <View
+                    android:id="@+id/view"
+                    android:layout_width="347dp"
+                    android:layout_height="219dp"
+                    android:layout_marginLeft="75px"
+                    android:layout_marginTop="16dp"
+                    android:background="@drawable/main_box" />
 
-               <TextView
-                   android:id="@+id/welcome_to_"
-                   android:layout_width="199dp"
-                   android:layout_height="49dp"
-                   android:layout_marginTop="40dp"
-                   android:layout_marginLeft="50px"
-                   android:gravity="center"
-                   android:text="Welcome to "
-                   android:fontFamily="@font/inter"
-                   android:textSize="24dp"
-                   android:textAppearance="@style/welcome_to_"
-                   app:layout_constraintStart_toStartOf="parent"
-                   app:layout_constraintTop_toTopOf="@+id/view" />
+                <TextView
+                    android:id="@+id/welcome_to_"
+                    android:layout_width="199dp"
+                    android:layout_height="49dp"
+                    android:layout_marginLeft="110px"
+                    android:layout_marginTop="40dp"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:text="Welcome to "
+                    android:textAppearance="@style/welcome_to_"
+                    android:textSize="30dp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/view" />
 
-               <TextView
-                   android:id="@+id/message"
-                   android:layout_width="252dp"
-                   android:layout_height="92dp"
-                   android:layout_marginTop="250px"
-                   android:paddingHorizontal="20px"
-                   android:background="@drawable/messagebox"
-                   android:text="Be not afraid of growing slowly, be afraid of standing still"
-                   android:fontFamily="@font/inter"
-                   android:textColor="@color/black"
-                   android:gravity="start"
-                   android:layout_marginLeft="175px"
-                   android:paddingTop="5dp"
-                   android:textAlignment="viewStart"
-                   android:textSize="18dp" />
+                <TextView
+                    android:id="@+id/message"
+                    android:layout_width="252dp"
+                    android:layout_height="92dp"
+                    android:layout_marginLeft="185px"
+                    android:layout_marginTop="300px"
+                    android:background="@drawable/messagebox"
+                    android:fontFamily="@font/inter"
+                    android:gravity="start"
+                    android:paddingHorizontal="20px"
+                    android:paddingTop="5dp"
+                    android:text="Be not afraid of growing slowly, be afraid of standing still"
+                    android:textAlignment="viewStart"
+                    android:textColor="@color/black"
+                    android:textSize="18dp" />
 
-               <ImageView
-                   android:id="@+id/imageView"
-                   android:layout_width="143dp"
-                   android:layout_height="133dp"
-                   android:layout_marginLeft="450px"
-                   android:layout_marginBottom="300px"
-                   app:layout_constraintBottom_toBottomOf="@+id/view"
-                   app:layout_constraintEnd_toEndOf="parent"
-                   app:layout_constraintHorizontal_bias="0.552"
-                   app:layout_constraintStart_toStartOf="parent"
-                   app:layout_constraintTop_toTopOf="@+id/view"
+                <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="143dp"
+                    android:layout_height="133dp"
+                    android:layout_marginLeft="560px"
+                    android:layout_marginBottom="300px"
+                    app:layout_constraintBottom_toBottomOf="@+id/view"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.552"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="@+id/view"
 
-                   app:layout_constraintVertical_bias="1.0"
-                   app:srcCompat="@drawable/vastlogo" />
+                    app:layout_constraintVertical_bias="1.0"
+                    app:srcCompat="@drawable/vastlogo" />
 
            </RelativeLayout>
 
@@ -84,11 +84,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="left"
                     android:fontFamily="@font/inter"
-                    android:textColor="@color/black"
+                    android:layout_marginLeft="10dp"
                     android:text="Academics and employment"
-                    android:layout_gravity="center"
-                    android:textSize="27dp"/>
+                    android:textColor="@color/black"
+                    android:textSize="27dp" />
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
@@ -148,7 +149,7 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="Interview Tips"
+                                android:text="Interview"
                                 android:fontFamily="@font/inter"
                                 android:textColor="@color/black"
                                 android:layout_gravity="center_horizontal"
@@ -180,7 +181,7 @@
                                 android:textColor="@color/black"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
-                                android:textSize="18dp" />
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -256,14 +257,17 @@
             <LinearLayout
                 android:orientation="vertical" android:layout_width="match_parent"
                 android:layout_height="wrap_content">
+
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/inter"
                     android:text="Finances"
                     android:textColor="@color/black"
-                    android:fontFamily="@font/inter"
-                    android:layout_gravity="center"
-                    android:textSize="27dp"/>
+                    android:textSize="27dp" />
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
@@ -294,13 +298,13 @@
                                 />
 
                             <TextView
-                                android:layout_width="114dp"
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:fontFamily="@font/inter"
-                                android:text="bank account"
-                                android:textColor="@color/black"
+                                android:text="Bank account"
                                 android:textAlignment="center"
+                                android:textColor="@color/black"
                                 android:textSize="18dp" />
 
                         </LinearLayout>
@@ -326,7 +330,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:fontFamily="@font/inter"
-                                android:text="saving"
+                                android:text="Saving"
                                 android:textColor="@color/black"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -353,7 +357,7 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:fontFamily="@font/inter"
-                                android:text="visa card"
+                                android:text="Visa Card"
                                 android:textColor="@color/black"
                                 android:textAlignment="center"
                                 android:textSize="18dp" />
@@ -457,10 +461,12 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="essentials"
+                    android:text="Essentials"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="15dp"
                     android:textColor="@color/black"
                     android:fontFamily="@font/inter"
-                    android:layout_gravity="center"
+                    android:layout_gravity="left"
                     android:textSize="27dp"/>
 
                 <HorizontalScrollView
@@ -657,10 +663,10 @@
         android:layout_height="wrap_content"
         android:gravity="bottom"
         android:orientation="horizontal"
+        android:background="#0D5D56"
         android:paddingBottom="20px"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         tools:context=".activity.MainActivity">
@@ -676,7 +682,10 @@
                 android:id="@+id/searchbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5px"
+                android:layout_marginStart="5px"
+                android:layout_marginTop="5px"
+                android:layout_marginEnd="5px"
+                android:layout_marginBottom="5px"
                 android:layout_weight="0"
                 android:background="@drawable/ellipse_11"
                 android:src="@drawable/_loupe_1"
@@ -694,7 +703,10 @@
                 android:id="@+id/HomeButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="5px"
+                android:layout_marginStart="5px"
+                android:layout_marginTop="5px"
+                android:layout_marginEnd="5px"
+                android:layout_marginBottom="5px"
                 android:layout_weight="0"
                 android:background="@drawable/ellipse_11"
                 android:src="@drawable/_home_1__1"
