@@ -288,6 +288,7 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
+                                android:id="@+id/bankaccount"
                                 android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
@@ -488,6 +489,7 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
+                                android:id="@+id/license"
                                 android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
@@ -500,7 +502,7 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/inter"
-                                android:text="Driving"
+                                android:text="License"
                                 android:textColor="@color/black"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
@@ -541,6 +543,7 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
+                                android:id="@+id/renting"
                                 android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"

@@ -11,16 +11,21 @@ import android.widget.ImageButton;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton searchButton, HomeButton, DiscussionsButton;
+    ImageButton searchButton, HomeButton, DiscussionsButton, BankAccount, Renting, License;
+    private String PageID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
         searchButton = findViewById(R.id.searchbutton);
         DiscussionsButton = findViewById(R.id.DiscussionsButton);
         HomeButton = findViewById(R.id.HomeButton);
+        BankAccount = findViewById(R.id.bankaccount);
+        Renting = findViewById(R.id.renting);
+        License = findViewById(R.id.license);
 
 
         DiscussionsButton.setOnClickListener(new View.OnClickListener(){
@@ -38,13 +43,36 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        ImageButton CV = (ImageButton) findViewById(R.id.CV);
-        CV.setOnClickListener(new View.OnClickListener(){
+        BankAccount.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view)
-            {
-                startActivity(new Intent(MainActivity.this, cvView.class));
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, cvView.class);
+                PageID = "bank";
+                i.putExtra("PageID", PageID);
+                startActivity(i);
             }
         });
+
+        Renting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, cvView.class);
+                PageID = "rent";
+                i.putExtra("PageID", PageID);
+                startActivity(i);
+            }
+        });
+
+        License.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, cvView.class);;
+                PageID = "license";
+                i.putExtra("PageID", PageID);
+                startActivity(i);
+            }
+        });
+
+
     }
 }
