@@ -43,19 +43,20 @@
 
                                 <TextView
                                     android:id="@+id/TopicName"
-                                    android:layout_width="295dp"
-                                    android:layout_height="46dp"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
                                     android:layout_marginLeft="0px"
                                     android:layout_marginTop="10px"
                                     android:background="@drawable/main_box"
                                     android:gravity="left"
                                     android:layout_gravity="center"
                                     android:paddingLeft="60px"
+                                    android:paddingRight="30px"
                                     android:paddingTop="10px"
                                     android:text=""
                                     android:fontFamily="@font/inter"
                                     android:textColor="@color/PageBackgroundCOlOR"
-                                    android:textSize="24dp"
+                                    android:textSize="20dp"
                                     />
 
 
@@ -87,6 +88,7 @@
                         </LinearLayout>
 
                         <TextView
+                            android:id="@+id/VideoRecap"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="video recap"

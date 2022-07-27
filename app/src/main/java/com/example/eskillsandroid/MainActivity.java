@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, cvView.class);
-                PageID = "bank";
+                PageID = "3";
                 i.putExtra("PageID", PageID);
                 startActivity(i);
             }
@@ -65,7 +65,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, cvView.class);
-                PageID = "rent";
+                PageID = "1";
                 i.putExtra("PageID", PageID);
                 startActivity(i);
             }
@@ -75,7 +75,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, cvView.class);;
-                PageID = "license";
+                PageID = "2";
                 i.putExtra("PageID", PageID);
                 startActivity(i);
             }
