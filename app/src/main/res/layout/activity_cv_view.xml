@@ -30,7 +30,6 @@
                             android:paddingTop="20px"
                             app:layout_constraintBaseline_toTopOf="parent"
                             app:layout_constraintLeft_toLeftOf="parent"
-
                             >
 
                                 <ImageButton
@@ -53,7 +52,7 @@
                                     android:layout_gravity="center"
                                     android:paddingLeft="60px"
                                     android:paddingTop="10px"
-                                    android:text="Guide to writing a CV"
+                                    android:text=""
                                     android:fontFamily="@font/inter"
                                     android:textColor="@color/PageBackgroundCOlOR"
                                     android:textSize="24dp"
@@ -63,6 +62,8 @@
                         </LinearLayout>
 
                         <TextView
+                            android:id="@+id/intro"
+                            android:layout_marginTop="30px"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:text="introduction for the lesson"
@@ -73,6 +74,7 @@
                             xmlns:android="http://schemas.android.com/apk/res/android"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
+                            android:layout_marginTop="30px"
                             >
 
                                 <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
@@ -90,6 +92,7 @@
                             android:text="video recap"
                             android:textSize="30dp"
                             android:textColor="@color/black"
+                            android:layout_marginTop="30px"
                             />
 
                         <LinearLayout
@@ -111,82 +114,41 @@
 
                                                 <RelativeLayout
                                                     android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content">
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="50px"
+                                                    android:layout_marginLeft="50px">
+
                                                         <View
                                                             android:layout_width="347dp"
                                                             android:layout_height="602dp"
-                                                            android:layout_alignParentLeft="true"
-                                                            android:layout_alignParentTop="true"
-                                                            android:layout_marginLeft="75px"
-                                                            android:layout_marginTop="30px"
-                                                            android:background="@drawable/rectangle_4"
-                                                            />
+                                                            android:background="@drawable/rectangle_4" />
 
                                                         <LinearLayout
-                                                            android:layout_width="match_parent"
+                                                            android:layout_width="340dp"
                                                             android:layout_height="wrap_content"
-                                                            android:orientation="vertical">
+                                                            android:orientation="vertical"
+                                                            android:gravity="center"
+                                                            android:layout_marginTop="25px">
+                                                                <TextView
+                                                                    android:id="@+id/recaptitle1"
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:gravity="center"
+                                                                    android:background="@drawable/main_box"
+                                                                    android:fontFamily="@font/inter"
+                                                                    android:text="recaptitle1"
+                                                                    android:textColor="@color/PageBackgroundCOlOR"
+                                                                    android:textSize="40dp" />
 
-                                                                <RelativeLayout
-                                                                    android:layout_width="800px"
-                                                                    android:layout_height="800px">
-                                                                <WebView
-                                                                    android:id="@+id/pic"
-                                                                    android:layout_width="match_parent"
-                                                                    android:layout_height="match_parent"
-                                                                    android:layout_marginLeft="125px"
-                                                                    android:layout_marginTop="75px"
-                                                                    android:background="@drawable/main_box" />
-                                                                </RelativeLayout>
 
                                                                 <TextView
+                                                                    android:id="@+id/c1text1"
                                                                     android:layout_width="match_parent"
                                                                     android:layout_height="wrap_content"
-                                                                    android:layout_marginLeft="125px"
-                                                                    android:layout_marginTop="75px"
                                                                     android:text="text...."
                                                                     android:textSize="40dp" />
 
-                                                        </LinearLayout>
 
-
-
-                                                </RelativeLayout>
-
-                                                <RelativeLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content">
-                                                        <View
-                                                            android:layout_width="347dp"
-                                                            android:layout_height="602dp"
-                                                            android:layout_alignParentLeft="true"
-                                                            android:layout_alignParentTop="true"
-                                                            android:layout_marginLeft="75px"
-                                                            android:layout_marginTop="30px"
-                                                            android:background="@drawable/rectangle_4"
-                                                            />
-
-                                                        <LinearLayout
-                                                            android:layout_width="match_parent"
-                                                            android:layout_height="wrap_content"
-                                                            android:orientation="vertical">
-
-                                                                <ImageView
-                                                                    android:layout_width="800px"
-                                                                    android:layout_height="800px"
-                                                                    android:layout_marginLeft="125px"
-                                                                    android:layout_marginTop="75px"
-                                                                    android:background="@drawable/main_box"
-                                                                    />
-
-                                                                <TextView
-                                                                    android:layout_width="match_parent"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:text="text...."
-                                                                    android:textSize="40dp"
-                                                                    android:layout_marginLeft="125px"
-                                                                    android:layout_marginTop="75px"
-                                                                    />
 
                                                         </LinearLayout>
 
@@ -196,38 +158,41 @@
 
                                                 <RelativeLayout
                                                     android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content">
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="50px"
+                                                    android:layout_marginLeft="50px">
+
                                                         <View
                                                             android:layout_width="347dp"
                                                             android:layout_height="602dp"
-                                                            android:layout_alignParentLeft="true"
-                                                            android:layout_alignParentTop="true"
-                                                            android:layout_marginLeft="75px"
-                                                            android:layout_marginTop="30px"
-                                                            android:background="@drawable/rectangle_4"
-                                                            />
+                                                            android:background="@drawable/rectangle_4" />
 
                                                         <LinearLayout
-                                                            android:layout_width="match_parent"
+                                                            android:layout_width="340dp"
                                                             android:layout_height="wrap_content"
-                                                            android:orientation="vertical">
-
-                                                                <ImageView
-                                                                    android:layout_width="800px"
-                                                                    android:layout_height="800px"
-                                                                    android:layout_marginLeft="125px"
-                                                                    android:layout_marginTop="75px"
+                                                            android:orientation="vertical"
+                                                            android:gravity="center"
+                                                            android:layout_marginTop="25px">
+                                                                <TextView
+                                                                    android:id="@+id/recaptitle2"
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:gravity="center"
                                                                     android:background="@drawable/main_box"
-                                                                    />
+                                                                    android:fontFamily="@font/inter"
+                                                                    android:text="recaptitle1"
+                                                                    android:textColor="@color/PageBackgroundCOlOR"
+                                                                    android:textSize="40dp" />
+
 
                                                                 <TextView
+                                                                    android:id="@+id/c2text1"
                                                                     android:layout_width="match_parent"
                                                                     android:layout_height="wrap_content"
                                                                     android:text="text...."
-                                                                    android:textSize="40dp"
-                                                                    android:layout_marginLeft="125px"
-                                                                    android:layout_marginTop="75px"
-                                                                    />
+                                                                    android:textSize="40dp" />
+
+
 
                                                         </LinearLayout>
 
@@ -237,38 +202,41 @@
 
                                                 <RelativeLayout
                                                     android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content">
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="50px"
+                                                    android:layout_marginLeft="50px">
+
                                                         <View
                                                             android:layout_width="347dp"
                                                             android:layout_height="602dp"
-                                                            android:layout_alignParentLeft="true"
-                                                            android:layout_alignParentTop="true"
-                                                            android:layout_marginLeft="75px"
-                                                            android:layout_marginTop="30px"
-                                                            android:background="@drawable/rectangle_4"
-                                                            />
+                                                            android:background="@drawable/rectangle_4" />
 
                                                         <LinearLayout
-                                                            android:layout_width="match_parent"
+                                                            android:layout_width="340dp"
                                                             android:layout_height="wrap_content"
-                                                            android:orientation="vertical">
-
-                                                                <ImageView
-                                                                    android:layout_width="800px"
-                                                                    android:layout_height="800px"
-                                                                    android:layout_marginLeft="125px"
-                                                                    android:layout_marginTop="75px"
+                                                            android:orientation="vertical"
+                                                            android:gravity="center"
+                                                            android:layout_marginTop="25px">
+                                                                <TextView
+                                                                    android:id="@+id/recaptitle3"
+                                                                    android:layout_width="wrap_content"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:gravity="center"
                                                                     android:background="@drawable/main_box"
-                                                                    />
+                                                                    android:fontFamily="@font/inter"
+                                                                    android:text="recaptitle1"
+                                                                    android:textColor="@color/PageBackgroundCOlOR"
+                                                                    android:textSize="40dp" />
+
 
                                                                 <TextView
+                                                                    android:id="@+id/c3text1"
                                                                     android:layout_width="match_parent"
                                                                     android:layout_height="wrap_content"
                                                                     android:text="text...."
-                                                                    android:textSize="40dp"
-                                                                    android:layout_marginLeft="125px"
-                                                                    android:layout_marginTop="75px"
-                                                                    />
+                                                                    android:textSize="40dp" />
+
+
 
                                                         </LinearLayout>
 
@@ -283,83 +251,16 @@
 
 
                                         </LinearLayout>
+
+
                                 </HorizontalScrollView>
 
-
-
-
                         </LinearLayout>
-
 
                 </LinearLayout>
 
         </ScrollView>
 
-
-        <LinearLayout
-            android:id="@+id/NavBar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:gravity="bottom"
-            android:orientation="horizontal"
-            android:paddingBottom="20px"
-            tools:context=".activity.MainActivity">
-
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center">
-
-
-                        <ImageButton
-                            android:id="@+id/searchbutton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5px"
-                            android:layout_weight="0"
-                            android:background="@drawable/ellipse_11"
-                            android:src="@drawable/_loupe_1"
-                            tools:ignore="SpeakableTextPresentCheck" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:background="@drawable/ellipse_1_ek1"
-                    android:gravity="center">
-
-                        <ImageButton
-                            android:id="@+id/HomeButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5px"
-                            android:layout_weight="0"
-                            android:background="@drawable/ellipse_11"
-                            android:src="@drawable/_home_1__1"
-                            tools:ignore="SpeakableTextPresentCheck" />
-                </RelativeLayout>
-
-                <RelativeLayout
-                    android:layout_width="0dp"
-                    android:layout_height="wrap_content"
-                    android:layout_weight="1"
-                    android:gravity="center">
-
-                        <ImageButton
-                            android:id="@+id/DiscussionsButton"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_margin="5px"
-                            android:layout_weight="0"
-                            android:background="@drawable/ellipse_11"
-                            android:src="@drawable/blogging_1"
-                            tools:ignore="SpeakableTextPresentCheck" />
-
-                </RelativeLayout>
-
-        </LinearLayout>
 </LinearLayout>
 
 
