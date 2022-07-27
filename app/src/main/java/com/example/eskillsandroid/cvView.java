@@ -45,8 +45,6 @@ public class cvView extends AppCompatActivity {
     public String PageID;
 
 
-
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://vast-a293d-default-rtdb.firebaseio.com/");
@@ -74,8 +72,7 @@ public class cvView extends AppCompatActivity {
         c2text1 = findViewById(R.id.c2text1);
         chat = findViewById(R.id.chat);
 
-        youtubeplayer = findViewById(R.id.activity_cvView_youtubePlayerView);
-        getLifecycle().addObserver(youtubeplayer);
+
 
 
         ref.child(PageID).addValueEventListener(new ValueEventListener() {
@@ -99,8 +96,16 @@ public class cvView extends AppCompatActivity {
                 Introduction.setText(PageIntro);
                 c1text1.setText(PageSteps);
 
+                youtubeplayer = findViewById(R.id.activity_cvView_youtubePlayerView);
+                getLifecycle().addObserver(youtubeplayer);
 
-
+                youtubeplayer.addYouTubePlayerListener(new AbstractYouTubePlayerListener() {
+                    @Override
+                    public void onReady(@NonNull YouTubePlayer youTubePlayer) {
+                        super.onReady(youTubePlayer);
+                        youTubePlayer.cueVideo(VideoLink,0);
+                    }
+                });
 
             }
 
