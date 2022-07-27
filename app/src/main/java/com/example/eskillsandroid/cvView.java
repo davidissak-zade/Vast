@@ -40,6 +40,7 @@ import kotlinx.coroutines.channels.ProduceKt;
 public class cvView extends AppCompatActivity {
     ImageButton BackButton;
     TextView LessonName;
+    Button chat;
     private YouTubePlayerView youtubeplayer;
     public String PageID;
 
@@ -71,6 +72,7 @@ public class cvView extends AppCompatActivity {
         recaptitle2 = findViewById(R.id.recaptitle2);
         c1text1 = findViewById(R.id.c1text1);
         c2text1 = findViewById(R.id.c2text1);
+        chat = findViewById(R.id.chat);
 
         youtubeplayer = findViewById(R.id.activity_cvView_youtubePlayerView);
         getLifecycle().addObserver(youtubeplayer);
@@ -114,6 +116,12 @@ public class cvView extends AppCompatActivity {
                 startActivity(new Intent(cvView.this, MainActivity.class));
             }});
 
+
+        chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(cvView.this, MemberCommunityActivity.class));
+            }});
 
 
     }
