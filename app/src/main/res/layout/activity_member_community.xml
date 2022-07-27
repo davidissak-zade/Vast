@@ -288,6 +288,7 @@
                             android:textColor="@color/textCOLOR"/>
                     </LinearLayout>
 
+
                     <LinearLayout
                         android:id="@+id/ButtonsHolder2"
                         android:layout_width="wrap_content"
@@ -314,6 +315,401 @@
 
                 </LinearLayout>
 
+                <LinearLayout
+                    android:id="@+id/comment3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/comment3INFO"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40px"
+                        android:orientation="vertical"
+                        android:translationY="60px">
+
+                        <TextView
+                            android:id="@+id/commentator3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="user134"
+                            android:textColor="@color/textCOLOR"
+                            android:fontFamily="@font/inter"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/commenttime3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="8/9/22     10:54"
+                            android:textColor="@color/CommentBackgroundCOLOR"
+                            />
+
+                    </LinearLayout>
+                    // Comment Info
+
+                    <View
+                        android:id="@+id/commentTRIANGLE3"
+                        android:layout_width="49dp"
+                        android:layout_height="49dp"
+                        android:background="@drawable/polygon_12"
+                        android:translationY="72px"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/commentContent3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/main_box"
+                        android:padding="50px"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/commentHeader3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Searching for an apartment to rent"
+                            android:fontFamily="@font/inter"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/commentTXT3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="I am a student,and i am searching for a small apartment near the university,witha good price,plesase if anyone knows.Leave me a comment "
+                            android:fontFamily="@font/inter"
+                            android:textSize="16sp"
+                            android:textColor="@color/textCOLOR"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ButtonsHolder3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20px"
+                        android:layout_marginLeft="80px">
+
+                        <ImageButton
+                            android:id="@+id/LikeButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/heart_1"
+                            android:layout_marginRight="40px"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/CommentButton3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/comment_3__1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/comment4"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/comment4INFO"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40px"
+                        android:orientation="vertical"
+                        android:translationY="60px">
+
+                        <TextView
+                            android:id="@+id/commentator4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="katia88"
+                            android:textColor="@color/textCOLOR"
+                            android:fontFamily="@font/inter"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/commenttime4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="28/7/22     12:00"
+                            android:textColor="@color/CommentBackgroundCOLOR"
+                            />
+
+                    </LinearLayout>
+                    // Comment Info
+
+                    <View
+                        android:id="@+id/commentTRIANGLE4"
+                        android:layout_width="49dp"
+                        android:layout_height="49dp"
+                        android:background="@drawable/polygon_12"
+                        android:translationY="72px"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/commentContent4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/main_box"
+                        android:padding="50px"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/commentHeader4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="opening a bank account tips"
+                            android:fontFamily="@font/inter"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/commentTXT4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="i followed the opening a bank account tips which helped me alot, i totally recommend it, thx vast!"
+                            android:fontFamily="@font/inter"
+                            android:textSize="16sp"
+                            android:textColor="@color/textCOLOR"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ButtonsHolder4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20px"
+                        android:layout_marginLeft="80px">
+
+                        <ImageButton
+                            android:id="@+id/LikeButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/heart_1"
+                            android:layout_marginRight="40px"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/CommentButton4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/comment_3__1"/>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/comment5"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+                <LinearLayout
+                    android:id="@+id/comment5INFO"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="40px"
+                    android:orientation="vertical"
+                    android:translationY="60px">
+
+                    <TextView
+                        android:id="@+id/commentator5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="1.shahd.6*"
+                        android:textColor="@color/textCOLOR"
+                        android:fontFamily="@font/inter"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/commenttime5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="9/4/22     8:54"
+                        android:textColor="@color/CommentBackgroundCOLOR"
+                        />
+
+                </LinearLayout>
+                // Comment Info
+
+                <View
+                    android:id="@+id/commentTRIANGLE5"
+                    android:layout_width="49dp"
+                    android:layout_height="49dp"
+                    android:background="@drawable/polygon_12"
+                    android:translationY="72px"
+                    />
+
+                <LinearLayout
+                    android:id="@+id/commentContent5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/main_box"
+                    android:padding="50px"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/commentHeader5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="searching for job!"
+                        android:fontFamily="@font/inter"
+                        android:textSize="16sp"
+                        android:textColor="@color/black"
+                        />
+
+                    <TextView
+                        android:id="@+id/commentTXT5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="i followed the write a CV steps and now i have a good CV but i am searching for a job. i studied IT,help me pls"
+                        android:fontFamily="@font/inter"
+                        android:textSize="16sp"
+                        android:textColor="@color/textCOLOR"/>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/ButtonsHolder5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20px"
+                    android:layout_marginLeft="80px">
+
+                    <ImageButton
+                        android:id="@+id/LikeButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/heart_1"
+                        android:layout_marginRight="40px"
+                        />
+
+                    <ImageButton
+                        android:id="@+id/CommentButton5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/comment_3__1"/>
+
+                </LinearLayout>
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:id="@+id/comment6"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:id="@+id/comment6INFO"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginLeft="40px"
+                        android:orientation="vertical"
+                        android:translationY="60px">
+
+                        <TextView
+                            android:id="@+id/commentator6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="hala_00.hr"
+                            android:textColor="@color/textCOLOR"
+                            android:fontFamily="@font/inter"
+
+                            />
+
+                        <TextView
+                            android:id="@+id/commenttime6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="2/8/21     10:54"
+                            android:textColor="@color/CommentBackgroundCOLOR"
+                            />
+
+                    </LinearLayout>
+                    // Comment Info
+
+                    <View
+                        android:id="@+id/commentTRIANGLE6"
+                        android:layout_width="49dp"
+                        android:layout_height="49dp"
+                        android:background="@drawable/polygon_12"
+                        android:translationY="72px"
+                        />
+
+                    <LinearLayout
+                        android:id="@+id/commentContent6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/main_box"
+                        android:padding="50px"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/commentHeader6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="happiest user, Yayyyyy!!!"
+                            android:fontFamily="@font/inter"
+                            android:textSize="16sp"
+                            android:textColor="@color/black"
+                            />
+
+                        <TextView
+                            android:id="@+id/commentTXT6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Hello, i am a new graduate from college,i wrote my CV and got prepeared for the interview from the tips in the app. And I got hired at Meta today!!!!!"
+                            android:fontFamily="@font/inter"
+                            android:textSize="16sp"
+                            android:textColor="@color/textCOLOR"/>
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:id="@+id/ButtonsHolder6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="20px"
+                        android:layout_marginLeft="80px">
+
+                        <ImageButton
+                            android:id="@+id/LikeButton6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/heart_1"
+                            android:layout_marginRight="40px"
+                            />
+
+                        <ImageButton
+                            android:id="@+id/CommentButton6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/comment_3__1"/>
+
+                    </LinearLayout>
+                </LinearLayout>
             </androidx.appcompat.widget.LinearLayoutCompat>
         </ScrollView>
 
