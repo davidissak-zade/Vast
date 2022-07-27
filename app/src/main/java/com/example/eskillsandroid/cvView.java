@@ -23,6 +23,7 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTube
 public class cvView extends AppCompatActivity {
     ImageButton BackButton;
     TextView LessonName;
+    Button chat;
     private YouTubePlayerView youtubeplayer;
     public int PageID;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
@@ -34,7 +35,7 @@ public class cvView extends AppCompatActivity {
         setContentView(R.layout.activity_cv_view);
         BackButton = findViewById(R.id.arrowbutton);
         LessonName = findViewById(R.id.TopicName);
-
+        chat = findViewById(R.id.chat);
 
         youtubeplayer = findViewById(R.id.activity_cvView_youtubePlayerView);
         getLifecycle().addObserver(youtubeplayer);
@@ -54,6 +55,12 @@ public class cvView extends AppCompatActivity {
                 startActivity(new Intent(cvView.this, MainActivity.class));
             }});
 
+
+        chat.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(cvView.this, MemberCommunityActivity.class));
+            }});
 
 
     }
