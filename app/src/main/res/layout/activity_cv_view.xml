@@ -120,10 +120,6 @@
                                                     android:layout_marginTop="50px"
                                                     android:layout_marginLeft="50px">
 
-                                                        <!--<View
-                                                            android:layout_width="347dp"
-                                                            android:layout_height="wrap_content"
-                                                            android:background="@drawable/rectangle_4" />
 -->
                                                         <LinearLayout
                                                             android:layout_width="340dp"
@@ -166,17 +162,15 @@
                                                     android:layout_marginTop="50px"
                                                     android:layout_marginLeft="50px">
 
-                                                        <View
-                                                            android:layout_width="347dp"
-                                                            android:layout_height="602dp"
-                                                            android:background="@drawable/rectangle_4" />
-
+                                                        -->
                                                         <LinearLayout
                                                             android:layout_width="340dp"
                                                             android:layout_height="wrap_content"
                                                             android:orientation="vertical"
                                                             android:gravity="center"
-                                                            android:layout_marginTop="25px">
+                                                            android:layout_marginTop="25px"
+                                                            android:background="@drawable/rectangle_4"
+                                                            >
                                                                 <TextView
                                                                     android:id="@+id/recaptitle2"
                                                                     android:layout_width="wrap_content"
@@ -210,17 +204,15 @@
                                                     android:layout_marginTop="50px"
                                                     android:layout_marginLeft="50px">
 
-                                                        <View
-                                                            android:layout_width="347dp"
-                                                            android:layout_height="602dp"
-                                                            android:background="@drawable/rectangle_4" />
-
+                                                        -->
                                                         <LinearLayout
                                                             android:layout_width="340dp"
                                                             android:layout_height="wrap_content"
                                                             android:orientation="vertical"
                                                             android:gravity="center"
-                                                            android:layout_marginTop="25px">
+                                                            android:layout_marginTop="25px"
+                                                            android:background="@drawable/rectangle_4"
+                                                            >
                                                                 <TextView
                                                                     android:id="@+id/recaptitle3"
                                                                     android:layout_width="wrap_content"
@@ -245,8 +237,52 @@
                                                         </LinearLayout>
 
 
+                                                        <RelativeLayout
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:layout_marginTop="50px"
+                                                            android:layout_marginLeft="50px">
+
+                                                                -->
+                                                                <LinearLayout
+                                                                    android:layout_width="340dp"
+                                                                    android:layout_height="wrap_content"
+                                                                    android:orientation="vertical"
+                                                                    android:gravity="center"
+                                                                    android:layout_marginTop="25px"
+                                                                    android:background="@drawable/rectangle_4"
+                                                                    >
+                                                                        <TextView
+                                                                            android:id="@+id/recaptitle4"
+                                                                            android:layout_width="wrap_content"
+                                                                            android:layout_height="wrap_content"
+                                                                            android:gravity="center"
+                                                                            android:background="@drawable/main_box"
+                                                                            android:fontFamily="@font/inter"
+                                                                            android:text="recaptitle1"
+                                                                            android:textColor="@color/PageBackgroundCOlOR"
+                                                                            android:textSize="40dp" />
+
+
+                                                                        <TextView
+                                                                            android:id="@+id/c4text1"
+                                                                            android:layout_width="match_parent"
+                                                                            android:layout_height="wrap_content"
+                                                                            android:text="text...."
+                                                                            android:textSize="40dp" />
+
+
+
+                                                                </LinearLayout>
+
+
+
+                                                        </RelativeLayout>
+
+
 
                                                 </RelativeLayout>
+
 
 
                                                 <FrameLayout
