@@ -120,17 +120,19 @@
                                                     android:layout_marginTop="50px"
                                                     android:layout_marginLeft="50px">
 
-                                                        <View
+                                                        <!--<View
                                                             android:layout_width="347dp"
-                                                            android:layout_height="602dp"
+                                                            android:layout_height="wrap_content"
                                                             android:background="@drawable/rectangle_4" />
-
+-->
                                                         <LinearLayout
                                                             android:layout_width="340dp"
                                                             android:layout_height="wrap_content"
                                                             android:orientation="vertical"
                                                             android:gravity="center"
-                                                            android:layout_marginTop="25px">
+                                                            android:layout_marginTop="25px"
+                                                            android:background="@drawable/rectangle_4"
+                                                            >
                                                                 <TextView
                                                                     android:id="@+id/recaptitle1"
                                                                     android:layout_width="wrap_content"
