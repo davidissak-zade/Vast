@@ -97,7 +97,6 @@ public class cvView extends AppCompatActivity {
 
                 TopicName.setText(PageName + " ");
                 Introduction.setText(PageIntro);
-                VideoRecap.setText("");
                 c1text1.setText(PageSteps);
 
 

@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="@color/PageBackgroundCOlOR">
+    android:background="#D0E9C5">
 
 
 
@@ -36,7 +36,7 @@
                                     android:id="@+id/arrowbutton"
                                     android:layout_width="83dp"
                                     android:layout_height="match_parent"
-                                    android:background="@color/PageBackgroundCOlOR"
+                                    android:background="#D0E9C5"
                                     android:paddingLeft="20px"
                                     android:src="@drawable/_arrow_1_ek1"
                                     tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
@@ -48,8 +48,7 @@
                                     android:layout_marginLeft="0px"
                                     android:layout_marginTop="10px"
                                     android:background="@drawable/main_box"
-                                    android:gravity="left"
-                                    android:layout_gravity="center"
+                                    android:gravity="center"
                                     android:paddingLeft="60px"
                                     android:paddingRight="30px"
                                     android:paddingTop="10px"
@@ -63,6 +62,7 @@
                         </LinearLayout>
 
                         <TextView
+                            android:gravity="center"
                             android:id="@+id/intro"
                             android:layout_marginTop="30px"
                             android:layout_width="match_parent"
@@ -88,6 +88,7 @@
                         </LinearLayout>
 
                         <TextView
+                            android:gravity="center"
                             android:id="@+id/VideoRecap"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
@@ -121,36 +122,37 @@
                                                     android:layout_marginLeft="50px">
 
 -->
-                                                        <LinearLayout
-                                                            android:layout_width="340dp"
+
+                                                    <LinearLayout
+                                                        android:layout_width="340dp"
+                                                        android:layout_height="wrap_content"
+                                                        android:layout_marginTop="25px"
+                                                        android:background="@drawable/rectangle_4"
+                                                        android:gravity="center"
+                                                        android:orientation="vertical">
+
+                                                        <TextView
+                                                            android:layout_marginTop="20px"
+                                                            android:id="@+id/recaptitle1"
+                                                            android:layout_width="wrap_content"
                                                             android:layout_height="wrap_content"
-                                                            android:orientation="vertical"
+                                                            android:background="@drawable/main_box"
+                                                            android:fontFamily="@font/inter"
                                                             android:gravity="center"
-                                                            android:layout_marginTop="25px"
-                                                            android:background="@drawable/rectangle_4"
-                                                            >
-                                                                <TextView
-                                                                    android:id="@+id/recaptitle1"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:gravity="center"
-                                                                    android:background="@drawable/main_box"
-                                                                    android:fontFamily="@font/inter"
-                                                                    android:text="recaptitle1"
-                                                                    android:textColor="@color/PageBackgroundCOlOR"
-                                                                    android:textSize="40dp" />
+                                                            android:text="step1"
+                                                            android:textColor="@color/white"
+                                                            android:textSize="40dp" />
 
 
-                                                                <TextView
-                                                                    android:id="@+id/c1text1"
-                                                                    android:layout_width="match_parent"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:text="text...."
-                                                                    android:textSize="40dp" />
+                                                        <TextView
+                                                            android:id="@+id/c1text1"
+                                                            android:layout_width="match_parent"
+                                                            android:layout_height="wrap_content"
+                                                            android:text="text...."
+                                                            android:textSize="40dp" />
 
 
-
-                                                        </LinearLayout>
+                                                    </LinearLayout>
 
 
 
@@ -303,18 +305,18 @@
                             android:gravity="center"
                             android:layout_marginTop="50px">
 
-                                <Button
-                                    android:id="@+id/chat"
-                                    android:layout_width="800px"
-                                    android:layout_height="wrap_content"
-                                    android:layout_weight="1"
-                                    android:ellipsize="end"
-                                    android:gravity="center"
-                                    android:padding="5dp"
-                                    android:singleLine="true"
-                                    android:text="chat"
-                                    android:textSize="40dp"
-                                    android:textStyle="bold" />
+                            <Button
+                                android:id="@+id/chat"
+                                android:layout_width="800px"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:ellipsize="end"
+                                android:gravity="center"
+                                android:padding="5dp"
+                                android:singleLine="true"
+                                android:text="chat"
+                                android:textSize="40dp"
+                                android:textStyle="bold" />
 
                                 <!--<RelativeLayout
                                     android:layout_width="match_parent"
