@@ -17,6 +17,7 @@ import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
+import com.google.firebase.firestore.FirebaseFirestore;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
 public class cvView extends AppCompatActivity {
@@ -24,7 +25,8 @@ public class cvView extends AppCompatActivity {
     TextView LessonName;
     private YouTubePlayerView youtubeplayer;
     public int PageID;
-    
+    private FirebaseFirestore db = FirebaseFirestore.getInstance();
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -41,8 +43,9 @@ public class cvView extends AppCompatActivity {
         if(extras!=null){
             String value = extras.getString("PageID");
             Log.d("ourTag", value);
+            Log.d("DB:", db.collection("pages").toString());
 
-
+;
         }
 
         BackButton.setOnClickListener(new View.OnClickListener() {
