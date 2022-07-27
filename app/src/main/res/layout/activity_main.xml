@@ -165,6 +165,7 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
+                                android:id="@+id/scholarship"
                                 android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
@@ -192,6 +193,7 @@
                             >
 
                             <ImageButton
+                                android:id="@+id/exam"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:layout_margin="15px"
@@ -218,6 +220,7 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
+                                android:id="@+id/university"
                                 android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
@@ -317,6 +320,7 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
+                                android:id="@+id/saving"
                                 android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
@@ -344,6 +348,7 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
+                                android:id="@+id/visa"
                                 android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
@@ -397,6 +402,7 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
+                                android:id="@+id/bills"
                                 android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
@@ -423,6 +429,7 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
+                                android:id="@+id/taxes"
                                 android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
@@ -517,6 +524,7 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
+                                android:id="@+id/insurace"
                                 android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
@@ -570,6 +578,7 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
+                                android:id="@+id/car"
                                 android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
@@ -597,6 +606,7 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
+                                android:id="@+id/mail"
                                 android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
@@ -623,6 +633,7 @@
                             android:orientation="vertical"
                             >
                             <ImageButton
+                                android:id="@+id/laundry"
                                 android:background="#D0E9C5"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"

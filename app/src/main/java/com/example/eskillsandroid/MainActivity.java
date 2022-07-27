@@ -36,6 +36,14 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        HomeButton.setOnClickListener(new View.OnClickListener(){
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(MainActivity.this, MemberCommunityActivity.class));
+            }
+        });
+
         searchButton.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View view) {
