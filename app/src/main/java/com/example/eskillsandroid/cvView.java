@@ -29,12 +29,14 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
+import java.lang.reflect.Array;
 import java.lang.reflect.Type;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 import java.util.jar.Attributes;
 
 import kotlinx.coroutines.channels.ProduceKt;
-
 
 
 public class cvView extends AppCompatActivity {
@@ -47,6 +49,9 @@ public class cvView extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+
+
         FirebaseDatabase database = FirebaseDatabase.getInstance("https://vast-a293d-default-rtdb.firebaseio.com/");
         DatabaseReference ref = database.getReference("pages");
 
@@ -73,8 +78,6 @@ public class cvView extends AppCompatActivity {
         chat = findViewById(R.id.chat);
 
 
-
-
         ref.child(PageID).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -93,6 +96,11 @@ public class cvView extends AppCompatActivity {
                 Log.d("DB", "Page ID: " + VideoLink);
 
                 TopicName.setText(PageName + " ");
+
+                String[] StepsNames, Steps;
+                StepsNames = PageStepsNames.split("|");
+                Steps = PageSteps.split("|");
+
                 Introduction.setText(PageIntro);
                 c1text1.setText(PageSteps);
 

@@ -132,14 +132,13 @@
                                                         android:orientation="vertical">
 
                                                         <TextView
-                                                            android:layout_marginTop="20px"
                                                             android:id="@+id/recaptitle1"
                                                             android:layout_width="wrap_content"
                                                             android:layout_height="wrap_content"
+                                                            android:layout_marginTop="20px"
                                                             android:background="@drawable/main_box"
                                                             android:fontFamily="@font/inter"
                                                             android:gravity="center"
-                                                            android:text="step1"
                                                             android:textColor="@color/white"
                                                             android:textSize="40dp" />
 
@@ -148,8 +147,9 @@
                                                             android:id="@+id/c1text1"
                                                             android:layout_width="match_parent"
                                                             android:layout_height="wrap_content"
-                                                            android:text="text...."
-                                                            android:textSize="30dp" />
+                                                            android:fontFamily="@font/inter"
+                                                            android:textColor="@color/PageBackgroundCOlOR"
+                                                            android:textSize="18dp" />
 
 
                                                     </LinearLayout>
@@ -180,7 +180,6 @@
                                                                     android:gravity="center"
                                                                     android:background="@drawable/main_box"
                                                                     android:fontFamily="@font/inter"
-                                                                    android:text="recaptitle1"
                                                                     android:textColor="@color/PageBackgroundCOlOR"
                                                                     android:textSize="40dp" />
 
@@ -189,7 +188,6 @@
                                                                     android:id="@+id/c2text1"
                                                                     android:layout_width="match_parent"
                                                                     android:layout_height="wrap_content"
-                                                                    android:text="text...."
                                                                     android:textSize="40dp" />
 
 
@@ -222,7 +220,6 @@
                                                                     android:gravity="center"
                                                                     android:background="@drawable/main_box"
                                                                     android:fontFamily="@font/inter"
-                                                                    android:text="recaptitle1"
                                                                     android:textColor="@color/PageBackgroundCOlOR"
                                                                     android:textSize="40dp" />
 
@@ -231,7 +228,6 @@
                                                                     android:id="@+id/c3text1"
                                                                     android:layout_width="match_parent"
                                                                     android:layout_height="wrap_content"
-                                                                    android:text="text...."
                                                                     android:textSize="40dp" />
 
 
@@ -239,55 +235,53 @@
                                                         </LinearLayout>
 
 
-                                                        <RelativeLayout
-                                                            android:layout_width="match_parent"
-                                                            android:layout_height="wrap_content"
-                                                            android:layout_marginTop="50px"
-                                                            android:layout_marginLeft="50px">
-
-                                                                -->
-                                                                <LinearLayout
-                                                                    android:layout_width="340dp"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:orientation="vertical"
-                                                                    android:gravity="center"
-                                                                    android:layout_marginTop="25px"
-                                                                    android:background="@drawable/rectangle_4"
-                                                                    >
-                                                                        <TextView
-                                                                            android:id="@+id/recaptitle4"
-                                                                            android:layout_width="wrap_content"
-                                                                            android:layout_height="wrap_content"
-                                                                            android:gravity="center"
-                                                                            android:background="@drawable/main_box"
-                                                                            android:fontFamily="@font/inter"
-                                                                            android:text="recaptitle1"
-                                                                            android:textColor="@color/PageBackgroundCOlOR"
-                                                                            android:textSize="40dp" />
-
-
-                                                                        <TextView
-                                                                            android:id="@+id/c4text1"
-                                                                            android:layout_width="match_parent"
-                                                                            android:layout_height="wrap_content"
-                                                                            android:text="text...."
-                                                                            android:textSize="40dp" />
-
-
-
-                                                                </LinearLayout>
-
-
-
-                                                        </RelativeLayout>
-
 
 
                                                 </RelativeLayout>
 
 
+                                            <RelativeLayout
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginLeft="50px"
+                                                android:layout_marginTop="50px">
 
-                                                <FrameLayout
+                                                -->
+
+                                                <LinearLayout
+                                                    android:layout_width="340dp"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="25px"
+                                                    android:background="@drawable/rectangle_4"
+                                                    android:gravity="center"
+                                                    android:orientation="vertical">
+
+                                                    <TextView
+                                                        android:id="@+id/recaptitle4"
+                                                        android:layout_width="wrap_content"
+                                                        android:layout_height="wrap_content"
+                                                        android:background="@drawable/main_box"
+                                                        android:fontFamily="@font/inter"
+                                                        android:gravity="center"
+                                                        android:textColor="@color/PageBackgroundCOlOR"
+                                                        android:textSize="40dp" />
+
+
+                                                    <TextView
+                                                        android:id="@+id/c4text1"
+                                                        android:layout_width="match_parent"
+                                                        android:layout_height="wrap_content"
+                                                        android:textSize="40dp" />
+
+
+                                                </LinearLayout>
+
+
+                                            </RelativeLayout>
+
+
+
+                                            <FrameLayout
                                                     android:layout_width="match_parent"
                                                     android:layout_height="0dp" />
 
@@ -316,6 +310,8 @@
                                 android:singleLine="true"
                                 android:text="chat"
                                 android:textSize="40dp"
+                                android:fontFamily="@font/inter"
+
                                 android:textStyle="bold" />
 
                                 <!--<RelativeLayout
