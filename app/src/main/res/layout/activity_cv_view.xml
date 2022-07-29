@@ -67,7 +67,6 @@
                             android:layout_marginTop="30px"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="introduction for the lesson"
                             android:textSize="25dp"
                             android:textColor="@color/black"/>
 
@@ -92,9 +91,10 @@
                             android:id="@+id/VideoRecap"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:text="video recap"
-                            android:textSize="30dp"
+                            android:text="Video Recap"
+                            android:textSize="24dp"
                             android:textColor="@color/black"
+                            android:fontFamily="@font/inter"
                             android:layout_marginTop="30px"
                             />
 
@@ -121,12 +121,10 @@
                                                     android:layout_marginTop="50px"
                                                     android:layout_marginLeft="50px">
 
--->
 
                                                     <LinearLayout
                                                         android:layout_width="340dp"
                                                         android:layout_height="wrap_content"
-                                                        android:layout_marginTop="25px"
                                                         android:background="@drawable/rectangle_4"
                                                         android:gravity="center"
                                                         android:orientation="vertical">
@@ -170,7 +168,6 @@
                                                             android:layout_height="wrap_content"
                                                             android:orientation="vertical"
                                                             android:gravity="center"
-                                                            android:layout_marginTop="25px"
                                                             android:background="@drawable/rectangle_4"
                                                             >
                                                                 <TextView

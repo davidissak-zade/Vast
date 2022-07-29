@@ -29,9 +29,13 @@
                     android:layout_marginTop="16dp"
                     android:background="@drawable/main_box" />
 
-                <TextView
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+                    <TextView
                     android:id="@+id/welcome_to_"
-                    android:layout_width="199dp"
+                    android:layout_width="wrap_content"
+                    android:layout_marginRight="24dp"
                     android:layout_height="49dp"
                     android:layout_marginLeft="110px"
                     android:layout_marginTop="40dp"
@@ -39,14 +43,23 @@
                     android:gravity="center"
                     android:text="Welcome to "
                     android:textAppearance="@style/welcome_to_"
-                    android:textSize="30dp"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/view" />
+                    android:textSize="24dp" />
+
+                    <ImageView
+                    android:id="@+id/imageView"
+                    android:layout_width="146dp"
+                    android:layout_height="41dp"
+                    android:layout_marginTop="40dp"
+                    app:srcCompat="@drawable/logo_bright" />
+                </LinearLayout>
+
+
 
                 <TextView
                     android:id="@+id/message"
                     android:layout_width="252dp"
-                    android:layout_height="92dp"
+                    android:layout_height="wrap_content"
+                    android:foregroundGravity="center"
                     android:layout_marginLeft="185px"
                     android:layout_marginTop="300px"
                     android:background="@drawable/messagebox"
@@ -56,23 +69,10 @@
                     android:paddingTop="5dp"
                     android:text="Be not afraid of growing slowly, be afraid of standing still"
                     android:textAlignment="viewStart"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textCOLOR"
                     android:textSize="18dp" />
 
-                <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="143dp"
-                    android:layout_height="133dp"
-                    android:layout_marginLeft="560px"
-                    android:layout_marginBottom="300px"
-                    app:layout_constraintBottom_toBottomOf="@+id/view"
-                    app:layout_constraintEnd_toEndOf="parent"
-                    app:layout_constraintHorizontal_bias="0.552"
-                    app:layout_constraintStart_toStartOf="parent"
-                    app:layout_constraintTop_toTopOf="@+id/view"
 
-                    app:layout_constraintVertical_bias="1.0"
-                    app:srcCompat="@drawable/vastlogo" />
 
            </RelativeLayout>
 
@@ -88,14 +88,15 @@
                     android:fontFamily="@font/inter"
                     android:layout_marginLeft="10dp"
                     android:text="Academics and employment"
-                    android:textColor="@color/black"
-                    android:textSize="27dp" />
+                    android:textColor="@color/textCOLOR"
+                    android:textSize="20dp" />
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fillViewport="true"
-                    android:orientation="horizontal">
+                    android:orientation="horizontal"
+                    android:background="#D8F2CD">
 
 
                     <LinearLayout
@@ -103,14 +104,16 @@
                         android:layout_height="match_parent"
                         android:orientation="horizontal">
 
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            >
-                            <ImageButton
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:orientation="vertical"
+                                android:padding="10dp"
+                                >
+
+                                <ImageButton
                                 android:id="@+id/CV"
-                                android:background="#D0E9C5"
+                                android:background="#D8F2CD"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
@@ -118,27 +121,28 @@
                                 android:layout_weight="1"
                                 android:src="@drawable/cvimg"
                                 />
-                            <TextView
+                                <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="CV"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textCOLOR"
                                 android:fontFamily="@font/inter"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
-                                android:textSize="18dp" />
+                                android:textSize="15dp" />
 
-                        </LinearLayout>
+                            </LinearLayout>
 
 
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
+                            android:padding="10dp"
                             >
                             <ImageButton
                                 android:id="@+id/interview"
-                                android:background="#D0E9C5"
+                                android:background="#D8F2CD"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
@@ -151,10 +155,10 @@
                                 android:layout_height="wrap_content"
                                 android:text="Interview"
                                 android:fontFamily="@font/inter"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textCOLOR"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
-                                android:textSize="18dp" />
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -163,10 +167,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
+                            android:padding="10dp"
                             >
                             <ImageButton
                                 android:id="@+id/scholarship"
-                                android:background="#D0E9C5"
+                                android:background="#D8F2CD"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
@@ -179,7 +184,7 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/inter"
                                 android:text="Scholarships"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textCOLOR"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
                                 android:textSize="15dp" />
@@ -190,6 +195,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
+                            android:padding="10dp"
                             >
 
                             <ImageButton
@@ -198,7 +204,7 @@
                                 android:layout_height="114dp"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:background="#D0E9C5"
+                                android:background="#D8F2CD"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/exam" />
 
@@ -207,10 +213,10 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/inter"
                                 android:text="Psychometry "
-                                android:textColor="@color/black"
+                                android:textColor="@color/textCOLOR"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
-                                android:textSize="18dp" />
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -218,10 +224,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
+                            android:padding="10dp"
                             >
                             <ImageButton
                                 android:id="@+id/university"
-                                android:background="#D0E9C5"
+                                android:background="#D8F2CD"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
@@ -236,8 +243,8 @@
                                 android:text="University Briefs"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
-                                android:textColor="@color/black"
-                                android:textSize="18dp" />
+                                android:textColor="@color/textCOLOR"
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -269,13 +276,14 @@
                     android:layout_marginLeft="10dp"
                     android:fontFamily="@font/inter"
                     android:text="Finances"
-                    android:textColor="@color/black"
-                    android:textSize="27dp" />
+                    android:textColor="@color/textCOLOR"
+                    android:textSize="20dp" />
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fillViewport="true"
+                    android:background="#D8F2CD"
                     android:orientation="horizontal">
 
 
@@ -289,10 +297,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
+                            android:padding="10dp"
                             >
                             <ImageButton
                                 android:id="@+id/bankaccount"
-                                android:background="#D0E9C5"
+                                android:background="#D8F2CD"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
@@ -308,8 +317,8 @@
                                 android:fontFamily="@font/inter"
                                 android:text="Bank account"
                                 android:textAlignment="center"
-                                android:textColor="@color/black"
-                                android:textSize="18dp" />
+                                android:textColor="@color/textCOLOR"
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -318,10 +327,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
+                            android:padding="10dp"
                             >
                             <ImageButton
                                 android:id="@+id/saving"
-                                android:background="#D0E9C5"
+                                android:background="#D8F2CD"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
@@ -336,9 +346,9 @@
                                 android:layout_gravity="center_horizontal"
                                 android:fontFamily="@font/inter"
                                 android:text="Saving"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textCOLOR"
                                 android:textAlignment="center"
-                                android:textSize="18dp" />
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -346,10 +356,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
+                            android:padding="10dp"
                             >
                             <ImageButton
                                 android:id="@+id/visa"
-                                android:background="#D0E9C5"
+                                android:background="#D8F2CD"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
@@ -364,9 +375,9 @@
                                 android:layout_gravity="center_horizontal"
                                 android:fontFamily="@font/inter"
                                 android:text="Visa Card"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textCOLOR"
                                 android:textAlignment="center"
-                                android:textSize="18dp" />
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -374,9 +385,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
+                            android:padding="10dp"
                             >
                             <ImageButton
-                                android:background="#D0E9C5"
+                                android:background="#D8F2CD"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
@@ -389,10 +401,10 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/inter"
                                 android:text="Bank Loans"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textCOLOR"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
-                                android:textSize="18dp" />
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -400,10 +412,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
+                            android:padding="10dp"
                             >
                             <ImageButton
                                 android:id="@+id/bills"
-                                android:background="#D0E9C5"
+                                android:background="#D8F2CD"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
@@ -416,10 +429,10 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/inter"
                                 android:text="Bills"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textCOLOR"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
-                                android:textSize="18dp" />
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -427,10 +440,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
+                            android:padding="10dp"
                             >
                             <ImageButton
                                 android:id="@+id/taxes"
-                                android:background="#D0E9C5"
+                                android:background="#D8F2CD"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
@@ -443,10 +457,10 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/inter"
                                 android:text="Taxes"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textCOLOR"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
-                                android:textSize="18dp" />
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -472,15 +486,16 @@
                     android:text="Essentials"
                     android:layout_marginLeft="10dp"
                     android:layout_marginTop="15dp"
-                    android:textColor="@color/black"
+                    android:textColor="@color/textCOLOR"
                     android:fontFamily="@font/inter"
                     android:layout_gravity="left"
-                    android:textSize="27dp"/>
+                    android:textSize="20dp"/>
 
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fillViewport="true"
+                    android:background="#D8F2CD"
                     android:orientation="horizontal">
 
 
@@ -494,10 +509,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
+                            android:padding="10dp"
                             >
                             <ImageButton
                                 android:id="@+id/license"
-                                android:background="#D0E9C5"
+                                android:background="#D8F2CD"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
@@ -510,10 +526,10 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/inter"
                                 android:text="License"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textCOLOR"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
-                                android:textSize="18dp" />
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -522,10 +538,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
+                            android:padding="10dp"
                             >
                             <ImageButton
                                 android:id="@+id/insurace"
-                                android:background="#D0E9C5"
+                                android:background="#D8F2CD"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
@@ -537,11 +554,11 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Insurance "
-                                android:textColor="@color/black"
+                                android:textColor="@color/textCOLOR"
                                 android:fontFamily="@font/inter"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
-                                android:textSize="18dp" />
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -549,10 +566,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
+                            android:padding="10dp"
                             >
                             <ImageButton
                                 android:id="@+id/renting"
-                                android:background="#D0E9C5"
+                                android:background="#D8F2CD"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
@@ -565,10 +583,10 @@
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/inter"
                                 android:text="Rent"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textCOLOR"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
-                                android:textSize="18dp" />
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -576,10 +594,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
+                            android:padding="10dp"
                             >
                             <ImageButton
                                 android:id="@+id/car"
-                                android:background="#D0E9C5"
+                                android:background="#D8F2CD"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
@@ -593,10 +612,10 @@
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
                                 android:fontFamily="@font/inter"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textCOLOR"
                                 android:text="Car matters"
                                 android:textAlignment="center"
-                                android:textSize="18dp" />
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -604,10 +623,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
+                            android:padding="10dp"
                             >
                             <ImageButton
                                 android:id="@+id/mail"
-                                android:background="#D0E9C5"
+                                android:background="#D8F2CD"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
@@ -619,11 +639,11 @@
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/inter"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textCOLOR"
                                 android:text="Mailing"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
-                                android:textSize="18dp" />
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -631,10 +651,11 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
+                            android:padding="10dp"
                             >
                             <ImageButton
                                 android:id="@+id/laundry"
-                                android:background="#D0E9C5"
+                                android:background="#D8F2CD"
                                 android:layout_width="126dp"
                                 android:layout_height="114dp"
                                 android:scaleType="fitXY"
@@ -645,12 +666,12 @@
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:textColor="@color/black"
+                                android:textColor="@color/textCOLOR"
                                 android:fontFamily="@font/inter"
                                 android:text="Laundry and Ironing"
                                 android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
-                                android:textSize="18dp" />
+                                android:textSize="15dp" />
 
                         </LinearLayout>
 
@@ -678,11 +699,6 @@
         android:gravity="bottom"
         android:orientation="horizontal"
         android:background="#0D5D56"
-        android:paddingBottom="20px"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
         tools:context=".activity.MainActivity">
 
         <RelativeLayout
@@ -696,10 +712,7 @@
                 android:id="@+id/searchbutton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5px"
-                android:layout_marginTop="5px"
-                android:layout_marginEnd="5px"
-                android:layout_marginBottom="5px"
+                android:layout_margin="5px"
                 android:layout_weight="0"
                 android:background="@drawable/ellipse_11"
                 android:src="@drawable/_loupe_1"
@@ -717,10 +730,7 @@
                 android:id="@+id/HomeButton"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_marginStart="5px"
-                android:layout_marginTop="5px"
-                android:layout_marginEnd="5px"
-                android:layout_marginBottom="5px"
+                android:layout_margin="5px"
                 android:layout_weight="0"
                 android:background="@drawable/ellipse_11"
                 android:src="@drawable/_home_1__1"

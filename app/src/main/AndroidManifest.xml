@@ -6,9 +6,9 @@
 
     <application
         android:allowBackup="true"
-        android:icon="@drawable/vastlogo"
+        android:icon="@drawable/logo_green"
         android:label="Vast"
-        android:roundIcon="@drawable/vastlogo"
+        android:roundIcon="@drawable/logo_green"
         android:supportsRtl="true"
         android:theme="@style/Theme.EskillsAndroid">
         <activity
