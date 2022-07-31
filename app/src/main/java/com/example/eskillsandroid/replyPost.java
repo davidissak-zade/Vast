@@ -18,9 +18,9 @@ public class replyPost extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_reply_post);
         ImageButton BackButton = (ImageButton) findViewById(R.id.arrowbutton);
-        TextInputEditText usernameInput = (TextInputEditText) findViewById(R.id.username);
-        TextInputEditText topicInput = findViewById(R.id.post);
-        TextInputEditText contentInput = findViewById(R.id.mind);
+        TextInputEditText usernameInput = (TextInputEditText) findViewById(R.id.SenderName);
+        TextInputEditText topicInput = findViewById(R.id.CommentTopic);
+        TextInputEditText contentInput = findViewById(R.id.CommentContent);
         ImageButton SearchButton = findViewById(R.id.SearchButton);
         ImageButton HomeButton = findViewById(R.id.HomeButton);
         ImageButton DiscussionsButton = findViewById(R.id.DiscussionsButton);
