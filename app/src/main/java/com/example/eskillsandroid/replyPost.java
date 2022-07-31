@@ -21,9 +21,6 @@ public class replyPost extends AppCompatActivity {
         TextInputEditText usernameInput = (TextInputEditText) findViewById(R.id.SenderName);
         TextInputEditText topicInput = findViewById(R.id.CommentTopic);
         TextInputEditText contentInput = findViewById(R.id.CommentContent);
-        ImageButton SearchButton = findViewById(R.id.SearchButton);
-        ImageButton HomeButton = findViewById(R.id.HomeButton);
-        ImageButton DiscussionsButton = findViewById(R.id.DiscussionsButton);
 
 
         BackButton.setOnClickListener(new View.OnClickListener() {
@@ -33,27 +30,6 @@ public class replyPost extends AppCompatActivity {
             }
         });
 
-        SearchButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(replyPost.this, SearchBarActivity.class));
-            }
-        });
-
-        HomeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(replyPost.this, MainActivity.class));
-            }
-        });
-
-
-        DiscussionsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(replyPost.this, MemberCommunityActivity.class));
-            }
-        });
 
         ImageButton SubmitButton = (ImageButton) findViewById(R.id.sendbutton);
         SubmitButton.setOnClickListener(new View.OnClickListener() {

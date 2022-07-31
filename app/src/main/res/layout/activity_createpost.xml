@@ -203,71 +203,7 @@
     </LinearLayout>
 
 
-    <LinearLayout
-        android:id="@+id/NavBar"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="bottom"
-        android:orientation="horizontal"
-        android:background="#0D5D56"
-        tools:context=".activity.MainActivity">
 
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
-
-
-            <ImageButton
-                android:id="@+id/searchbutton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="0"
-                android:background="@drawable/ellipse_11"
-                android:src="@drawable/_loupe_1"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@drawable/ellipse_1_ek1"
-            android:gravity="center">
-
-            <ImageButton
-                android:id="@+id/HomeButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="0"
-                android:background="@drawable/ellipse_11"
-                android:src="@drawable/_home_1__1"
-                tools:ignore="SpeakableTextPresentCheck" />
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:gravity="center">
-
-            <ImageButton
-                android:id="@+id/DiscussionsButton"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_margin="5px"
-                android:layout_weight="0"
-                android:background="@drawable/ellipse_11"
-                android:src="@drawable/blogging_1"
-                tools:ignore="SpeakableTextPresentCheck" />
-
-        </RelativeLayout>
-
-
-    </LinearLayout>
 
 </LinearLayout>
 

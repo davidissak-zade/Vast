@@ -54,10 +54,6 @@ public String SetID(){   // this function will create a pseudo-unique id for eac
         TextInputEditText topicInput = findViewById(R.id.CommentTopic);
         TextInputEditText contentInput = findViewById(R.id.CommentContent);
 
-        ImageButton SearchButton = findViewById(R.id.SearchButton);
-        ImageButton HomeButton = findViewById(R.id.HomeButton);
-        ImageButton DiscussionsButton = findViewById(R.id.DiscussionsButton);
-
 
         BackButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,27 +62,6 @@ public String SetID(){   // this function will create a pseudo-unique id for eac
             }
         });
 
-        SearchButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(createpost.this, SearchBarActivity.class));
-            }
-        });
-
-        HomeButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(createpost.this, MainActivity.class));
-            }
-        });
-
-
-        DiscussionsButton.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(createpost.this, MemberCommunityActivity.class));
-            }
-        });
 
         ImageButton SubmitButton = (ImageButton) findViewById(R.id.sendbutton);
         SubmitButton.setOnClickListener(new View.OnClickListener() {
