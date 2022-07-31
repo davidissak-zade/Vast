@@ -15,21 +15,6 @@ public class MemberCommunityActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_member_community);
 
-//        Button HomeButton = (Button) findViewById(R.id.HomeButton);  // link to the home page
-//        HomeButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(MemberCommunityActivity.this, MainActivity3.class));
-//            }
-//        });
-//
-//        Button SearchButton = (Button) findViewById(R.id.SearchButton); // link to the search page
-//        SearchButton.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View view) {
-//                startActivity(new Intent(MemberCommunityActivity.this, SearchBarActivity.class));
-//            }
-//        });
 
         ImageButton BackButton = (ImageButton) findViewById(R.id.MemberCommunityBackButton);
         BackButton.setOnClickListener(new View.OnClickListener() {
@@ -46,5 +31,15 @@ public class MemberCommunityActivity extends AppCompatActivity {
                 startActivity(new Intent(MemberCommunityActivity.this, createpost.class));
             }
         });
+
+        ImageButton CommentButton1 = (ImageButton) findViewById(R.id.CommentButton1);
+        CommentButton1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MemberCommunityActivity.this, replyPost.class));
+            }
+        });
+
+
     }
 }
