@@ -1,317 +1,260 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:background="#D0E9C5">
 
 
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:fillViewport="true">
 
 
-        <ScrollView
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:fillViewport="true">
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="416dp"
+                android:layout_height="60dp"
+                android:orientation="horizontal"
+                android:paddingTop="20px"
+                app:layout_constraintBaseline_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent">
+
+                <ImageButton
+                    android:id="@+id/arrowbutton"
+                    android:layout_width="83dp"
+                    android:layout_height="match_parent"
+                    android:background="#D0E9C5"
+                    android:paddingLeft="20px"
+                    android:src="@drawable/_arrow_1_ek1"
+                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+                <TextView
+                    android:id="@+id/TopicName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="0px"
+                    android:layout_marginTop="10px"
+                    android:background="@drawable/main_box"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:paddingLeft="60px"
+                    android:paddingTop="10px"
+                    android:paddingRight="30px"
+                    android:text=""
+                    android:textColor="@color/PageBackgroundCOlOR"
+                    android:textSize="20dp" />
 
 
-                <LinearLayout
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/intro"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:gravity="center"
+                android:textColor="@color/black"
+                android:textSize="25dp" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px">
+
+                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
+                    android:id="@+id/activity_cvView_youtubePlayerView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical"
-                    >
-
-                        <LinearLayout
-                            android:layout_width="416dp"
-                            android:layout_height="60dp"
-                            android:orientation="horizontal"
-                            android:paddingTop="20px"
-                            app:layout_constraintBaseline_toTopOf="parent"
-                            app:layout_constraintLeft_toLeftOf="parent"
-                            >
-
-                                <ImageButton
-                                    android:id="@+id/arrowbutton"
-                                    android:layout_width="83dp"
-                                    android:layout_height="match_parent"
-                                    android:background="#D0E9C5"
-                                    android:paddingLeft="20px"
-                                    android:src="@drawable/_arrow_1_ek1"
-                                    tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
-
-                                <TextView
-                                    android:id="@+id/TopicName"
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:layout_marginLeft="0px"
-                                    android:layout_marginTop="10px"
-                                    android:background="@drawable/main_box"
-                                    android:gravity="center"
-                                    android:paddingLeft="60px"
-                                    android:paddingRight="30px"
-                                    android:paddingTop="10px"
-                                    android:text=""
-                                    android:fontFamily="@font/inter"
-                                    android:textColor="@color/PageBackgroundCOlOR"
-                                    android:textSize="20dp"
-                                    />
-
-
-                        </LinearLayout>
-
-                        <TextView
-                            android:gravity="center"
-                            android:id="@+id/intro"
-                            android:layout_marginTop="30px"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:textSize="25dp"
-                            android:textColor="@color/black"/>
-
-                        <LinearLayout
-                            xmlns:android="http://schemas.android.com/apk/res/android"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginTop="30px"
-                            >
-
-                                <com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView
-                                    android:id="@+id/activity_cvView_youtubePlayerView"
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    app:videoId="y154-LSICCo"
-                                    app:autoPlay="true"
-                                     />
-                        </LinearLayout>
-
-                        <TextView
-                            android:gravity="center"
-                            android:id="@+id/VideoRecap"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:text="Video Recap"
-                            android:textSize="24dp"
-                            android:textColor="@color/black"
-                            android:fontFamily="@font/inter"
-                            android:layout_marginTop="30px"
-                            />
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
-
-                                <HorizontalScrollView
-
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fillViewport="true"
-                                    android:orientation="horizontal">
-
-
-                                        <LinearLayout
-                                            android:layout_width="match_parent"
-                                            android:layout_height="match_parent"
-                                            android:orientation="horizontal">
-
-                                                <RelativeLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_marginTop="50px"
-                                                    android:layout_marginLeft="50px">
-
-
-                                                    <LinearLayout
-                                                        android:layout_width="340dp"
-                                                        android:layout_height="wrap_content"
-                                                        android:background="@drawable/rectangle_4"
-                                                        android:gravity="center"
-                                                        android:orientation="vertical">
-
-                                                        <TextView
-                                                            android:id="@+id/recaptitle1"
-                                                            android:layout_width="wrap_content"
-                                                            android:layout_height="wrap_content"
-                                                            android:layout_marginTop="20px"
-                                                            android:background="@drawable/main_box"
-                                                            android:fontFamily="@font/inter"
-                                                            android:gravity="center"
-                                                            android:textColor="@color/white"
-                                                            android:textSize="40dp" />
-
-
-                                                        <TextView
-                                                            android:id="@+id/c1text1"
-                                                            android:layout_width="match_parent"
-                                                            android:layout_height="wrap_content"
-                                                            android:fontFamily="@font/inter"
-                                                            android:textColor="@color/PageBackgroundCOlOR"
-                                                            android:textSize="18dp" />
-
-
-                                                    </LinearLayout>
-
-
-
-                                                </RelativeLayout>
-
-                                                <RelativeLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_marginTop="50px"
-                                                    android:layout_marginLeft="50px">
-
-                                                        -->
-                                                        <LinearLayout
-                                                            android:layout_width="340dp"
-                                                            android:layout_height="wrap_content"
-                                                            android:orientation="vertical"
-                                                            android:gravity="center"
-                                                            android:background="@drawable/rectangle_4"
-                                                            >
-                                                                <TextView
-                                                                    android:id="@+id/recaptitle2"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:gravity="center"
-                                                                    android:background="@drawable/main_box"
-                                                                    android:fontFamily="@font/inter"
-                                                                    android:textColor="@color/PageBackgroundCOlOR"
-                                                                    android:textSize="40dp" />
-
-
-                                                                <TextView
-                                                                    android:id="@+id/c2text1"
-                                                                    android:layout_width="match_parent"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:textSize="40dp" />
-
-
-
-                                                        </LinearLayout>
-
-
-
-                                                </RelativeLayout>
-
-                                                <RelativeLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_marginTop="50px"
-                                                    android:layout_marginLeft="50px">
-
-                                                        -->
-                                                        <LinearLayout
-                                                            android:layout_width="340dp"
-                                                            android:layout_height="wrap_content"
-                                                            android:orientation="vertical"
-                                                            android:gravity="center"
-                                                            android:layout_marginTop="25px"
-                                                            android:background="@drawable/rectangle_4"
-                                                            >
-                                                                <TextView
-                                                                    android:id="@+id/recaptitle3"
-                                                                    android:layout_width="wrap_content"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:gravity="center"
-                                                                    android:background="@drawable/main_box"
-                                                                    android:fontFamily="@font/inter"
-                                                                    android:textColor="@color/PageBackgroundCOlOR"
-                                                                    android:textSize="40dp" />
-
-
-                                                                <TextView
-                                                                    android:id="@+id/c3text1"
-                                                                    android:layout_width="match_parent"
-                                                                    android:layout_height="wrap_content"
-                                                                    android:textSize="40dp" />
-
-
-
-                                                        </LinearLayout>
-
-
-
-
-                                                </RelativeLayout>
-
-
-                                            <RelativeLayout
-                                                android:layout_width="match_parent"
-                                                android:layout_height="wrap_content"
-                                                android:layout_marginLeft="50px"
-                                                android:layout_marginTop="50px">
-
-                                                -->
-
-                                                <LinearLayout
-                                                    android:layout_width="340dp"
-                                                    android:layout_height="wrap_content"
-                                                    android:layout_marginTop="25px"
-                                                    android:background="@drawable/rectangle_4"
-                                                    android:gravity="center"
-                                                    android:orientation="vertical">
-
-                                                    <TextView
-                                                        android:id="@+id/recaptitle4"
-                                                        android:layout_width="wrap_content"
-                                                        android:layout_height="wrap_content"
-                                                        android:background="@drawable/main_box"
-                                                        android:fontFamily="@font/inter"
-                                                        android:gravity="center"
-                                                        android:textColor="@color/PageBackgroundCOlOR"
-                                                        android:textSize="40dp" />
-
-
-                                                    <TextView
-                                                        android:id="@+id/c4text1"
-                                                        android:layout_width="match_parent"
-                                                        android:layout_height="wrap_content"
-                                                        android:textSize="40dp" />
-
-
-                                                </LinearLayout>
-
-
-                                            </RelativeLayout>
-
-
-
-                                            <FrameLayout
-                                                    android:layout_width="match_parent"
-                                                    android:layout_height="0dp" />
-
-
-                                        </LinearLayout>
-
-
-                                </HorizontalScrollView>
-
-                        </LinearLayout>
+                    app:autoPlay="true"
+                    app:videoId="y154-LSICCo" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/VideoRecap"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30px"
+                android:fontFamily="@font/inter"
+                android:gravity="center"
+                android:text="Video Recap"
+                android:textColor="@color/black"
+                android:textSize="24dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <HorizontalScrollView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fillViewport="true"
+                    android:orientation="horizontal">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
 
                         <RelativeLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:gravity="center"
+                            android:layout_marginLeft="50px"
                             android:layout_marginTop="50px">
 
-                            <Button
-                                android:id="@+id/chat"
-                                android:layout_width="800px"
+                            <LinearLayout
+                                android:layout_width="340dp"
                                 android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:ellipsize="end"
+                                android:background="@drawable/rectangle_4"
                                 android:gravity="center"
-                                android:padding="5dp"
-                                android:singleLine="true"
-                                android:text="chat"
-                                android:textSize="40dp"
-                                android:fontFamily="@font/inter"
+                                android:orientation="vertical">
 
-                                android:textStyle="bold" />
 
-                                <!--<RelativeLayout
+                                <TextView
+                                    android:id="@+id/c1text1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/inter"
+                                    android:textColor="@color/PageBackgroundCOlOR"
+                                    android:textSize="18dp" />
+
+
+                            </LinearLayout>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:layout_marginTop="50px">
+
+
+                            <LinearLayout
+                                android:layout_width="340dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rectangle_4"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/c2text1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/inter"
+                                    android:textColor="@color/PageBackgroundCOlOR"
+                                    android:textSize="18dp" />
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:layout_marginTop="50px">
+
+
+                            <LinearLayout
+                                android:layout_width="340dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rectangle_4"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/c3text1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/inter"
+                                    android:textColor="@color/PageBackgroundCOlOR"
+                                    android:textSize="18dp" />
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50px"
+                            android:layout_marginTop="50px">
+
+
+                            <LinearLayout
+                                android:layout_width="340dp"
+                                android:layout_height="wrap_content"
+                                android:background="@drawable/rectangle_4"
+                                android:gravity="center"
+                                android:orientation="vertical">
+
+
+                                <TextView
+                                    android:id="@+id/c4text1"
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/inter"
+                                    android:textColor="@color/PageBackgroundCOlOR"
+                                    android:textSize="18dp" />
+
+
+                            </LinearLayout>
+
+
+                        </RelativeLayout>
+
+
+                        <FrameLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="0dp" />
+
+
+                    </LinearLayout>
+
+
+                </HorizontalScrollView>
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50px"
+                android:gravity="center">
+
+                <Button
+                    android:id="@+id/chat"
+                    android:layout_width="800px"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:ellipsize="end"
+                    android:fontFamily="@font/inter"
+                    android:gravity="center"
+                    android:padding="5dp"
+                    android:singleLine="true"
+                    android:text="chat"
+                    android:textSize="40dp"
+
+                    android:textStyle="bold" />
+
+                <!--<RelativeLayout
                                     android:layout_width="match_parent"
                                     android:layout_height="wrap_content"
                                     android:gravity="center">
@@ -324,13 +267,12 @@
                                             android:textColor="@color/white"
                                             android:textSize="40dp" />
                                 </RelativeLayout>-->
-                        </RelativeLayout>
+            </RelativeLayout>
 
-                </LinearLayout>
+        </LinearLayout>
 
 
-
-        </ScrollView>
+    </ScrollView>
 
 </LinearLayout>
 

@@ -21,6 +21,8 @@ import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.YouTubePlayer
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.listeners.AbstractYouTubePlayerListener;
 import com.pierfrancescosoffritti.androidyoutubeplayer.core.player.views.YouTubePlayerView;
 
+import java.util.Arrays;
+
 
 public class cvView extends AppCompatActivity {
     ImageButton BackButton;
@@ -48,14 +50,14 @@ public class cvView extends AppCompatActivity {
 
         BackButton = findViewById(R.id.arrowbutton);
 
-        TextView TopicName, Introduction, VideoRecap, recaptitle1, c1text1, recaptitle2, c2text1;
+        TextView TopicName, Introduction, VideoRecap, recaptitle1, c1text1, recaptitle2, c2text1, c3text1, c4text1;
         TopicName = findViewById(R.id.TopicName);
         Introduction = findViewById(R.id.intro);
         VideoRecap = findViewById(R.id.VideoRecap);
-        recaptitle1 = findViewById(R.id.recaptitle1);
-        recaptitle2 = findViewById(R.id.recaptitle2);
         c1text1 = findViewById(R.id.c1text1);
         c2text1 = findViewById(R.id.c2text1);
+        c3text1 = findViewById(R.id.c3text1);
+        c4text1 = findViewById(R.id.c4text1);
         chat = findViewById(R.id.chat);
 
     // Find a child in the database with id of the passed PageID value
@@ -69,22 +71,17 @@ public class cvView extends AppCompatActivity {
                 String PageStepsNames = Page.getStepName();
                 String PageSteps = Page.getSteps();
                 String VideoLink = Page.getVideoLink();
-                Log.d("DB", "Page ID: " + PageId);
-                Log.d("DB", "Page Intro: " + PageIntro);
-                Log.d("DB", "Page Name: " + PageName);
-                Log.d("DB", "Page Steps Names: " + PageStepsNames);
-                Log.d("DB", "Page Steps: " + PageSteps);
-                Log.d("DB", "Page ID: " + VideoLink);
 
                 TopicName.setText(PageName + " ");
 
                 String[] StepsNames, Steps;
-
-                StepsNames = PageStepsNames.split("|");
-                Steps = PageSteps.split("|");
+                Steps = PageSteps.split("@");
 
                 Introduction.setText(PageIntro);
-                c1text1.setText(PageSteps);
+                c1text1.setText(Steps[0]);
+                c2text1.setText(Steps[1]);
+                c3text1.setText(Steps[2]);
+                c4text1.setText(Steps[3]);
 
                 youtubeplayer = findViewById(R.id.activity_cvView_youtubePlayerView);
                 getLifecycle().addObserver(youtubeplayer);
