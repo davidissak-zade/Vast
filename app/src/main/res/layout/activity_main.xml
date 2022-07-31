@@ -5,7 +5,7 @@
     android:orientation="vertical"
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
-    android:background="#D0E9C5">
+    android:background="#D8f2cd">
 
 
     <ScrollView
@@ -85,6 +85,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
+                    android:layout_marginTop="40dp"
                     android:fontFamily="@font/inter"
                     android:layout_marginLeft="10dp"
                     android:text="Academics and employment"
@@ -102,36 +103,36 @@
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
+                        android:background="#FDF8E1"
                         android:orientation="horizontal">
 
-                            <LinearLayout
-                                android:layout_width="wrap_content"
-                                android:layout_height="wrap_content"
-                                android:orientation="vertical"
-                                android:padding="10dp"
-                                >
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="149dp"
+                            android:orientation="vertical"
+                            android:padding="10dp">
 
-                                <ImageButton
+                            <ImageButton
                                 android:id="@+id/CV"
-                                android:background="#D8F2CD"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
+                                android:layout_width="86dp"
+                                android:layout_height="99dp"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/cvimg"
-                                />
-                                <TextView
+                                android:background="#D8F2CD"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/cvimg" />
+
+                            <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:text="CV"
-                                android:textColor="@color/textCOLOR"
-                                android:fontFamily="@font/inter"
                                 android:layout_gravity="center_horizontal"
+                                android:fontFamily="@font/inter"
+                                android:text="CV"
                                 android:textAlignment="center"
+                                android:textColor="@color/textCOLOR"
                                 android:textSize="15dp" />
 
-                            </LinearLayout>
+                        </LinearLayout>
 
 
                         <LinearLayout
@@ -140,16 +141,16 @@
                             android:orientation="vertical"
                             android:padding="10dp"
                             >
+
                             <ImageButton
                                 android:id="@+id/interview"
-                                android:background="#D8F2CD"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
+                                android:layout_width="97dp"
+                                android:layout_height="90dp"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/inter"
-                                />
+                                android:background="#D8F2CD"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/inter" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -169,16 +170,16 @@
                             android:orientation="vertical"
                             android:padding="10dp"
                             >
+
                             <ImageButton
                                 android:id="@+id/scholarship"
-                                android:background="#D8F2CD"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
+                                android:layout_width="103dp"
+                                android:layout_height="90dp"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/scholer"
-                                />
+                                android:background="#D8F2CD"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/scholer" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -200,8 +201,8 @@
 
                             <ImageButton
                                 android:id="@+id/exam"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
+                                android:layout_width="96dp"
+                                android:layout_height="94dp"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
                                 android:background="#D8F2CD"
@@ -226,16 +227,16 @@
                             android:orientation="vertical"
                             android:padding="10dp"
                             >
+
                             <ImageButton
                                 android:id="@+id/university"
-                                android:background="#D8F2CD"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
+                                android:layout_width="98dp"
+                                android:layout_height="96dp"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/universittyy"
-                                />
+                                android:background="#D8F2CD"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/universittyy" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -299,16 +300,16 @@
                             android:orientation="vertical"
                             android:padding="10dp"
                             >
+
                             <ImageButton
                                 android:id="@+id/bankaccount"
-                                android:background="#D8F2CD"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
+                                android:layout_width="102dp"
+                                android:layout_height="85dp"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/bankk"
-                                />
+                                android:background="#D8F2CD"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/bankk" />
 
                             <TextView
                                 android:layout_width="wrap_content"
@@ -329,16 +330,16 @@
                             android:orientation="vertical"
                             android:padding="10dp"
                             >
+
                             <ImageButton
                                 android:id="@+id/saving"
-                                android:background="#D8F2CD"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
+                                android:layout_width="102dp"
+                                android:layout_height="100dp"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/saving"
-                                />
+                                android:background="#D8F2CD"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/saving" />
 
                             <TextView
                                 android:layout_width="138dp"
@@ -358,16 +359,16 @@
                             android:orientation="vertical"
                             android:padding="10dp"
                             >
+
                             <ImageButton
                                 android:id="@+id/visa"
-                                android:background="#D8F2CD"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
+                                android:layout_width="113dp"
+                                android:layout_height="104dp"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/viissa"
-                                />
+                                android:background="#D8F2CD"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/viissa" />
 
                             <TextView
                                 android:layout_width="104dp"
@@ -387,15 +388,15 @@
                             android:orientation="vertical"
                             android:padding="10dp"
                             >
+
                             <ImageButton
-                                android:background="#D8F2CD"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
+                                android:layout_width="108dp"
+                                android:layout_height="98dp"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/loan"
-                                />
+                                android:background="#D8F2CD"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/loan" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -414,16 +415,16 @@
                             android:orientation="vertical"
                             android:padding="10dp"
                             >
+
                             <ImageButton
                                 android:id="@+id/bills"
-                                android:background="#D8F2CD"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
+                                android:layout_width="96dp"
+                                android:layout_height="102dp"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/bill"
-                                />
+                                android:background="#D8F2CD"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/bill" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -442,16 +443,16 @@
                             android:orientation="vertical"
                             android:padding="10dp"
                             >
+
                             <ImageButton
                                 android:id="@+id/taxes"
-                                android:background="#D8F2CD"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
+                                android:layout_width="102dp"
+                                android:layout_height="90dp"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/taxx"
-                                />
+                                android:background="#D8F2CD"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/taxx" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -511,16 +512,16 @@
                             android:orientation="vertical"
                             android:padding="10dp"
                             >
+
                             <ImageButton
                                 android:id="@+id/license"
-                                android:background="#D8F2CD"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
+                                android:layout_width="112dp"
+                                android:layout_height="101dp"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/drive"
-                                />
+                                android:background="#D8F2CD"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/drive" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -540,16 +541,16 @@
                             android:orientation="vertical"
                             android:padding="10dp"
                             >
+
                             <ImageButton
                                 android:id="@+id/insurace"
-                                android:background="#D8F2CD"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
+                                android:layout_width="102dp"
+                                android:layout_height="101dp"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/neww"
-                                />
+                                android:background="#D8F2CD"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/neww" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -568,16 +569,16 @@
                             android:orientation="vertical"
                             android:padding="10dp"
                             >
+
                             <ImageButton
                                 android:id="@+id/renting"
-                                android:background="#D8F2CD"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
+                                android:layout_width="105dp"
+                                android:layout_height="99dp"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/rentt"
-                                />
+                                android:background="#D8F2CD"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/rentt" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -625,16 +626,16 @@
                             android:orientation="vertical"
                             android:padding="10dp"
                             >
+
                             <ImageButton
                                 android:id="@+id/mail"
-                                android:background="#D8F2CD"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
+                                android:layout_width="116dp"
+                                android:layout_height="105dp"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/mail"
-                                />
+                                android:background="#D8F2CD"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/mail" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
@@ -653,16 +654,16 @@
                             android:orientation="vertical"
                             android:padding="10dp"
                             >
+
                             <ImageButton
                                 android:id="@+id/laundry"
-                                android:background="#D8F2CD"
-                                android:layout_width="126dp"
-                                android:layout_height="114dp"
-                                android:scaleType="fitXY"
+                                android:layout_width="102dp"
+                                android:layout_height="96dp"
                                 android:layout_margin="15px"
                                 android:layout_weight="1"
-                                android:src="@drawable/lan"
-                                />
+                                android:background="#D8F2CD"
+                                android:scaleType="fitXY"
+                                android:src="@drawable/lan" />
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"

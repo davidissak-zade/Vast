@@ -52,7 +52,7 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="572dp"
         android:orientation="vertical"
         android:translationY="-50px">
         #first small layout
@@ -71,7 +71,7 @@
                 android:layout_width="376dp"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="75px"
-                android:layout_marginTop="30dp"
+                android:layout_marginTop="70dp"
                 android:background="@drawable/main_box"
                 android:fontFamily="@font/inter"
                 android:gravity="left"
@@ -96,7 +96,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10px"
-                android:layout_marginTop="10px"
+                android:layout_marginTop="80px"
                 android:background="@drawable/main_box"
                 android:orientation="vertical">
 
@@ -105,7 +105,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginLeft="50px"
-                    android:layout_marginTop="60px"
+                    android:layout_marginTop="70px"
                     android:background="@drawable/main_box"
                     android:fontFamily="@font/inter"
                     android:gravity="left"
@@ -133,7 +133,7 @@
 
             <LinearLayout
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_height="156dp"
                 android:layout_gravity="center"
                 android:layout_marginTop="10px">
 
@@ -149,14 +149,15 @@
                         android:id="@+id/sendbutton"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
+                        android:layout_centerHorizontal="true"
                         android:layout_marginStart="5px"
-                        android:layout_marginTop="5px"
+                        android:layout_marginTop="1px"
                         android:layout_marginEnd="5px"
                         android:layout_marginBottom="5px"
                         android:layout_weight="0"
                         android:background="@drawable/ellipse_11"
-                        android:paddingTop="30px"
-                        android:paddingRight="10px"
+                        android:paddingTop="20px"
+                        android:paddingRight="20px"
                         android:src="@drawable/send_2"
                         tools:ignore="SpeakableTextPresentCheck" />
                 </RelativeLayout>
@@ -165,82 +166,8 @@
 
         </LinearLayout>
 
-        <LinearLayout
-            android:id="@+id/NavBar"
-            android:layout_width="match_parent"
-            android:layout_height="fill_parent"
-            android:gravity="bottom"
-            android:orientation="horizontal"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="parent"
-            android:paddingTop="40px"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            tools:context=".activity.MainActivity">
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center">
-
-
-                <ImageButton
-                    android:id="@+id/SearchButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_margin="5px"
-                    android:layout_weight="0"
-                    android:background="@drawable/ellipse_11"
-                    android:src="@drawable/_loupe_1"
-                    tools:ignore="SpeakableTextPresentCheck" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:background="@drawable/ellipse_1_ek1"
-                android:gravity="center">
-
-                <ImageButton
-                    android:id="@+id/HomeButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5px"
-                    android:layout_marginTop="5px"
-                    android:layout_marginEnd="5px"
-                    android:layout_marginBottom="5px"
-                    android:layout_weight="0"
-                    android:background="@drawable/ellipse_11"
-                    android:src="@drawable/_home_1__1"
-                    tools:ignore="SpeakableTextPresentCheck" />
-            </RelativeLayout>
-
-            <RelativeLayout
-                android:layout_width="0dp"
-                android:layout_height="wrap_content"
-                android:layout_weight="1"
-                android:gravity="center">
-
-                <ImageButton
-                    android:id="@+id/DiscussionsButton"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_marginStart="5px"
-                    android:layout_marginTop="5px"
-                    android:layout_marginEnd="5px"
-                    android:layout_marginBottom="5px"
-                    android:layout_weight="0"
-                    android:background="@drawable/ellipse_11"
-                    android:src="@drawable/blogging_1"
-                    tools:ignore="SpeakableTextPresentCheck" />
-
-            </RelativeLayout>
-
-        </LinearLayout>
-
     </LinearLayout>
 
 
 </LinearLayout>
+
