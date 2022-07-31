@@ -46,5 +46,15 @@ public class MemberCommunityActivity extends AppCompatActivity {
                 startActivity(new Intent(MemberCommunityActivity.this, createpost.class));
             }
         });
+
+        ImageButton CommentButton1 = (ImageButton) findViewById(R.id.CommentButton1);
+        CreatePostButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MemberCommunityActivity.this, replyPost.class));
+            }
+        });
+
+
     }
 }
