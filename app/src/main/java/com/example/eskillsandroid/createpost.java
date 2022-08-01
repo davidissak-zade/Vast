@@ -23,7 +23,10 @@ import java.util.Random;
 
 public class createpost extends AppCompatActivity {
 
-public String Id, toId, sender, topic, txt, time, reputation;
+    FirebaseDatabase DB;
+    DatabaseReference ref;
+
+    public String Id, toId, sender, topic, txt, time, reputation;
 
 //
 //public String GetTime(){   // this function will take the time once it was called. we will call this function when a comment is added and set comment.time to the return value of this func
@@ -52,6 +55,9 @@ public String SetID(){   // this function will create a pseudo-unique id for eac
         setContentView(R.layout.activity_createpost);
         ImageButton BackButton = (ImageButton) findViewById(R.id.arrowbutton);
 
+        DB = FirebaseDatabase.getInstance("https://vast-a293d-default-rtdb.firebaseio.com/");
+        ref = DB.getReference("comments");
+
         TextInputEditText usernameInput = (TextInputEditText) findViewById(R.id.SenderName);
         TextInputEditText topicInput = findViewById(R.id.CommentTopic);
         TextInputEditText contentInput = findViewById(R.id.CommentContent);
@@ -70,9 +76,6 @@ public String SetID(){   // this function will create a pseudo-unique id for eac
             @Override
             public void onClick(View view) {
                 // for Adding comments to firebase -> code here
-                FirebaseDatabase DB = FirebaseDatabase.getInstance("https://vast-a293d-default-rtdb.firebaseio.com/");
-                DatabaseReference ref = DB.getReference("comments");
-                ref.setValue("sioihh");
 
                 Id = SetID();   // sets random id that consists of 4 digits
                 toId = "main";  // whenever id is main the comment is shown in the main community page
@@ -82,7 +85,7 @@ public String SetID(){   // this function will create a pseudo-unique id for eac
                 time = "GetTime();";
                 comment CurrentComment = new comment(Id, toId, sender, topic, txt, time, 0);
 
-                ref.child(Id).setValue(CurrentComment);  // add the instance of the current comment to the DB
+                ref.push().setValue(CurrentComment);  // add the instance of the current comment to the DB
 
                 //All of the code under this line is for opening an alert window
                 AlertDialog.Builder builder = new AlertDialog.Builder(createpost.this);
