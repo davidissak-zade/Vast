@@ -30,7 +30,6 @@ public class replyPost extends AppCompatActivity {
             }
         });
 
-
         ImageButton SubmitButton = (ImageButton) findViewById(R.id.sendbutton);
         SubmitButton.setOnClickListener(new View.OnClickListener() {
             @Override
