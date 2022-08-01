@@ -8,12 +8,10 @@
     tools:context=".createpost">
 
 
-
-
     <LinearLayout
         android:id="@+id/createpost"
         android:layout_width="416dp"
-        android:layout_height="60dp"
+        android:layout_height="78dp"
         android:orientation="horizontal"
         android:paddingTop="20px"
 
@@ -27,21 +25,21 @@
             android:background="@color/PageBackgroundCOlOR"
             android:paddingLeft="20px"
             android:src="@drawable/_arrow_1_ek1"
-            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck"/>
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/createposttxt"
             android:layout_width="295dp"
-            android:layout_height="46dp"
+            android:layout_height="60dp"
+            android:layout_gravity="center"
             android:layout_marginLeft="0px"
             android:layout_marginTop="10px"
             android:background="@drawable/main_box"
+            android:fontFamily="@font/inter"
             android:gravity="left"
-            android:layout_gravity="center"
             android:paddingLeft="60px"
             android:paddingTop="10px"
             android:text="Reply to @"
-            android:fontFamily="@font/inter"
             android:textColor="@color/PageBackgroundCOlOR"
             android:textSize="24dp" />
 
@@ -52,15 +50,20 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="572dp"
+        android:layout_height="match_parent"
         android:orientation="vertical"
         android:translationY="-50px">
         #first small layout
 
         <LinearLayout
-            android:layout_width="900px"
-            android:layout_height="531dp"
-            android:layout_marginLeft="88px"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
             android:layout_marginTop="100px"
             android:background="@drawable/main_box"
             android:orientation="vertical">
@@ -145,22 +148,22 @@
                     android:layout_marginLeft="360px"
                     android:layout_marginTop="20px">
 
-                    <ImageButton
-                        android:id="@+id/sendbutton"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:layout_marginStart="5px"
-                        android:layout_marginTop="1px"
-                        android:layout_marginEnd="5px"
-                        android:layout_marginBottom="5px"
-                        android:layout_weight="0"
-                        android:background="@drawable/ellipse_11"
-                        android:paddingTop="20px"
-                        android:paddingRight="20px"
-                        android:src="@drawable/send_2"
-                        tools:ignore="SpeakableTextPresentCheck" />
                 </RelativeLayout>
+
+                <ImageButton
+                    android:id="@+id/sendbutton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5px"
+                    android:layout_marginTop="1px"
+                    android:layout_marginEnd="5px"
+                    android:layout_marginBottom="5px"
+                    android:layout_weight="0"
+                    android:background="@drawable/ellipse_11"
+                    android:paddingTop="20px"
+                    android:paddingRight="20px"
+                    android:src="@drawable/send_2"
+                    tools:ignore="SpeakableTextPresentCheck" />
 
             </LinearLayout>
 
