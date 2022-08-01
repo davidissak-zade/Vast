@@ -51,13 +51,14 @@ public class cvView extends AppCompatActivity {
 
         BackButton = findViewById(R.id.arrowbutton);
 
-        TextView TopicName, Introduction, c1text1, c2text1, c3text1, c4text1;
+        TextView TopicName, Introduction, c1text1, c2text1, c3text1, c4text1, c5text1;
         TopicName = findViewById(R.id.TopicName);
         Introduction = findViewById(R.id.intro);
         c1text1 = findViewById(R.id.c1text1);
         c2text1 = findViewById(R.id.c2text1);
         c3text1 = findViewById(R.id.c3text1);
         c4text1 = findViewById(R.id.c4text1);
+        c5text1 = findViewById(R.id.c5text1);
         chat = findViewById(R.id.chat);
 
     // Find a child in the database with id of the passed PageID value
@@ -79,9 +80,10 @@ public class cvView extends AppCompatActivity {
 
                 Introduction.setText(PageIntro);
                 c1text1.setText(Steps[0].replace("_b","\n"));
-                c2text1.setText(Steps[1]);
-                c3text1.setText(Steps[2]);
-                c4text1.setText(Steps[3]);
+                c2text1.setText(Steps[1].replace("_b","\n"));
+                c3text1.setText(Steps[2].replace("_b","\n"));
+                c4text1.setText(Steps[3].replace("_b","\n"));
+                c5text1.setText(Steps[4].replace("_b","\n"));
 
                 youtubeplayer = findViewById(R.id.activity_cvView_youtubePlayerView);
                 getLifecycle().addObserver(youtubeplayer);
