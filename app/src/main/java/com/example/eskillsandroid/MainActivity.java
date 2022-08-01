@@ -1,12 +1,14 @@
 package com.example.eskillsandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
-
+import android.widget.Spinner;
 
 
 public class MainActivity extends AppCompatActivity {
@@ -19,6 +21,11 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+        Spinner dropdown = findViewById(R.id.spinner1);
+        String[] items = new String[]{"1", "ENG", "3"};
+        ArrayAdapter<String> adapter = new ArrayAdapter<>(this, android.R.layout.simple_spinner_dropdown_item, items);
+        dropdown.setAdapter(adapter);
 
         searchButton = findViewById(R.id.searchbutton);
         DiscussionsButton = findViewById(R.id.DiscussionsButton);
