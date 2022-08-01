@@ -108,7 +108,7 @@
         </LinearLayout>
 
 
-        
+
         <ScrollView
             android:id="@+id/commentSection"
             android:layout_width="match_parent"
