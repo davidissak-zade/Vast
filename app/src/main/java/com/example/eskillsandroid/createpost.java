@@ -82,7 +82,7 @@ public String SetID(){   // this function will create a pseudo-unique id for eac
                 sender = usernameInput.getText().toString();
                 topic = topicInput.getText().toString();
                 txt = contentInput.getText().toString();
-                time = "GetTime();";
+                time = GetTime();
                 comment CurrentComment = new comment(Id, toName, sender, topic, txt, time, 0);
 
                 ref.push().setValue(CurrentComment);  // add the instance of the current comment to the DB
