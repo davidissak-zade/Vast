@@ -17,8 +17,8 @@ import com.google.firebase.database.FirebaseDatabase;
 
 
 import java.util.Random;
-//import java.text.SimpleDateFormat;
-//import java.util.Date;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 
 public class createpost extends AppCompatActivity {
@@ -26,16 +26,16 @@ public class createpost extends AppCompatActivity {
     FirebaseDatabase DB;
     DatabaseReference ref;
 
-    public String Id, toId, sender, topic, txt, time, reputation;
+    public String Id, toName, sender, topic, txt, time, reputation;
 
-//
-//public String GetTime(){   // this function will take the time once it was called. we will call this function when a comment is added and set comment.time to the return value of this func
-//        Date date = new Date();
-//        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
-//        String dateTXT = formatter.format(date);
-//        Log.d("TIME", dateTXT);
-//        return dateTXT;
-//    }
+
+public String GetTime(){   // this function will take the time once it was called. we will call this function when a comment is added and set comment.time to the return value of this func
+        Date date = new Date();
+        SimpleDateFormat formatter = new SimpleDateFormat("dd/MM/yyyy HH:mm:ss");
+        String dateTXT = formatter.format(date);
+        Log.d("TIME", dateTXT);
+        return dateTXT;
+    }
 
 public String SetID(){   // this function will create a pseudo-unique id for each comment. an id is a combination of 4 random digits;
     Random random = new Random();
@@ -78,12 +78,12 @@ public String SetID(){   // this function will create a pseudo-unique id for eac
                 // for Adding comments to firebase -> code here
 
                 Id = SetID();   // sets random id that consists of 4 digits
-                toId = "main";  // whenever id is main the comment is shown in the main community page
+                toName = "main";  // whenever id is main the comment is shown in the main community page
                 sender = usernameInput.getText().toString();
                 topic = topicInput.getText().toString();
                 txt = contentInput.getText().toString();
                 time = "GetTime();";
-                comment CurrentComment = new comment(Id, toId, sender, topic, txt, time, 0);
+                comment CurrentComment = new comment(Id, toName, sender, topic, txt, time, 0);
 
                 ref.push().setValue(CurrentComment);  // add the instance of the current comment to the DB
 

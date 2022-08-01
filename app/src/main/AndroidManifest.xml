@@ -15,9 +15,6 @@
             android:name=".replyPost"
             android:exported="false" />
         <activity
-            android:name=".view"
-            android:exported="false" />
-        <activity
             android:name=".cvView"
             android:exported="false" />
         <activity

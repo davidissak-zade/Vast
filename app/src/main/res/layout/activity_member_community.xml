@@ -230,121 +230,15 @@
 
                 </LinearLayout>  <!-- Comment 1 -->
 
-
-                <LinearLayout
-                    android:id="@+id/comment2"
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/CommentsList"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-
-                    android:orientation="vertical">
-
-                    <LinearLayout
-                        android:id="@+id/comment2INFO"
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginLeft="40px"
-                        android:orientation="vertical"
-                        android:translationY="60px">
-
-                        <TextView
-                            android:id="@+id/commentator2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="june.IOves.dolph1ns"
-                            android:textColor="@color/textCOLOR"
-                            android:fontFamily="@font/inter"
-
-                            />
-
-                        <TextView
-                            android:id="@+id/commenttime2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="19/7/22     16:23"
-                            android:textColor="@color/CommentBackgroundCOLOR"
-                            />
-
-                    </LinearLayout>
-                    // Comment Info
-
-                    <View
-                        android:id="@+id/commentTRIANGLE2"
-                        android:layout_width="49dp"
-                        android:layout_height="49dp"
-                        android:background="@drawable/polygon_12"
-                        android:translationY="72px"
-                        />
-
-                    <LinearLayout
-                        android:id="@+id/commentContent2"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:background="@drawable/main_box"
-                        android:padding="50px"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:id="@+id/commentHeader2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="looking for a good driving teacher!"
-                            android:fontFamily="@font/inter"
-                            android:textSize="16sp"
-                            android:textColor="@color/black"
-                            />
-
-                        <TextView
-                            android:id="@+id/commentTXT2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="hi guys:) i've been trying to find a good driving teacher in the Tel Aviv for a while now, does anyone have any recommendations?"
-                            android:fontFamily="@font/inter"
-                            android:textSize="16sp"
-                            android:textColor="@color/textCOLOR"/>
-                    </LinearLayout>
-
-                    <LinearLayout
-                        android:id="@+id/ButtonsHolder2"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:layout_marginTop="20px"
-                        android:layout_marginLeft="80px">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:textSize="20dp"
-                            android:layout_marginRight="30px"
-                            android:text="14.3K"/>
-
-                        <ImageButton
-                            android:id="@+id/upbuttoncolor"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/upcolor"
-                            android:layout_marginRight="10px"
-                            />
-                        <ImageButton
-                            android:id="@+id/downbuttoncolor"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/downcolor"
-                            android:layout_marginRight="34px"
-                            />
-
-                        <ImageButton
-                            android:id="@+id/CommentButton2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/comment_3__1"/>
-
-                    </LinearLayout>
-
-                </LinearLayout>  <!-- Comment 2-->
+                    android:layout_height="match_parent" />
 
             </androidx.appcompat.widget.LinearLayoutCompat>
         </ScrollView>
+
+
 
     </LinearLayout>
 

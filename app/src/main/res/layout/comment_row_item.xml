@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/comment1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/comment1INFO"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="40px"
+            android:orientation="vertical"
+            android:translationY="60px">
+
+            <TextView
+                android:id="@+id/commentator"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter"
+                android:text="senderName"
+                android:textColor="@color/textCOLOR"
+
+                />
+
+            <TextView
+                android:id="@+id/commenttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="commentTime"
+                android:textColor="@color/CommentBackgroundCOLOR"
+                />
+
+        </LinearLayout>
+        // Comment Info
+
+        <View
+            android:id="@+id/commentTRIANGLE1"
+            android:layout_width="49dp"
+            android:layout_height="49dp"
+            android:background="@drawable/polygon_12"
+            android:translationY="72px"
+            />
+
+        <LinearLayout
+            android:id="@+id/commentContent"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/main_box"
+            android:padding="50px"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/commentHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Comment header"
+                android:fontFamily="@font/inter"
+                android:textSize="16sp"
+                android:textColor="@color/black"
+                />
+
+            <TextView
+                android:id="@+id/commentTXT"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="comment Text"
+                android:fontFamily="@font/inter"
+                android:textSize="16sp"
+                android:textColor="@color/textCOLOR"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ButtonsHolder1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="20px"
+            android:layout_marginLeft="80px">
+
+            <TextView
+                android:id="@+id/CommentReputation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20dp"
+                android:layout_marginRight="30px"
+                android:text="143"/>
+
+            <ImageButton
+                android:id="@+id/upbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/up"
+                android:layout_marginRight="10px"
+                />
+            <ImageButton
+                android:id="@+id/downbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/down"
+                android:layout_marginRight="34px"
+                />
+
+            <ImageButton
+                android:id="@+id/CommentButton1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/comment_3__1"/>
+
+        </LinearLayout>
+
+    </LinearLayout>  <!-- Comment 1 -->
+
+
+</androidx.cardview.widget.CardView>

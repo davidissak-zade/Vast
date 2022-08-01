@@ -3,12 +3,12 @@ package com.example.eskillsandroid;
 
 
 public class comment {
-    private String id, sender, topic,toId, txt, datetime;
+    private String id, sender, topic, toName, txt, datetime;
     private int reputation;
 
-    public comment(String ID, String TOID, String sender, String topic,String TXT, String datetime, int reputation){
+    public comment(String ID, String ToSender, String sender, String topic,String TXT, String datetime, int reputation){
         this.id = ID;
-        this.toId = TOID;
+        this.toName = ToSender;
         this.sender = sender;
         this.topic = topic;
         this.txt = TXT;
@@ -16,7 +16,24 @@ public class comment {
         this.datetime = datetime;
     }
 
+    public void setSender(String sender) {
+        this.sender = sender;
+    }
+
     public comment(){}
+
+    @Override
+    public String toString() {
+        return "comment{" +
+                "id='" + id + '\'' +
+                ", sender='" + sender + '\'' +
+                ", topic='" + topic + '\'' +
+                ", toName='" + toName + '\'' +
+                ", txt='" + txt + '\'' +
+                ", datetime='" + datetime + '\'' +
+                ", reputation=" + reputation +
+                '}';
+    }
 
     public int getReputation() {
         return reputation;
@@ -26,8 +43,8 @@ public class comment {
         return id;
     }
 
-    public String getToId() {
-        return toId;
+    public String getToName() {
+        return toName;
     }
 
     public String getTxt() {
@@ -47,4 +64,8 @@ public class comment {
     public String getSender() {
         return sender;
     }
+
+    public String getDatetime(){ return datetime;}
+
+
 }
