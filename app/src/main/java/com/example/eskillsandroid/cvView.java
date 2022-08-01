@@ -78,7 +78,7 @@ public class cvView extends AppCompatActivity {
                 Steps = PageSteps.split("@");
 
                 Introduction.setText(PageIntro);
-                c1text1.setText(Steps[0]);
+                c1text1.setText(Steps[0].replace("_b","\n"));
                 c2text1.setText(Steps[1]);
                 c3text1.setText(Steps[2]);
                 c4text1.setText(Steps[3]);
