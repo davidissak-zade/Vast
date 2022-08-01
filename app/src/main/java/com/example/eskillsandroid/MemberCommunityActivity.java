@@ -80,13 +80,13 @@ public class MemberCommunityActivity extends AppCompatActivity {
             }
         });
 
-        ImageButton CommentButton1 = (ImageButton) findViewById(R.id.CommentButton1);
-        CommentButton1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                startActivity(new Intent(MemberCommunityActivity.this, replyPost.class));
-            }
-        });
+//        ImageButton CommentButton1 = (ImageButton) findViewById(R.id.CommentButton1);
+//        CommentButton1.setOnClickListener(new View.OnClickListener() {
+//            @Override
+//            public void onClick(View view) {
+//                startActivity(new Intent(MemberCommunityActivity.this, replyPost.class));
+//            }
+//        });
 
     }
 }

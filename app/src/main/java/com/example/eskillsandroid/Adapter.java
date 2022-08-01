@@ -36,7 +36,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
         holder.senderName.setText(CurrentComment.getSender());
         holder.commentHeader.setText(CurrentComment.getTopic());
         holder.commentText.setText(CurrentComment.getTxt());
-        holder.commentReputation.setText(CurrentComment.getReputation());
+        holder.commentReputation.setText(String.valueOf(CurrentComment.getReputation()));
     }
 
     @Override
