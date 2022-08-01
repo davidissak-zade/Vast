@@ -97,7 +97,7 @@
                     android:layout_height="wrap_content"
                     android:fillViewport="true"
                     android:orientation="horizontal"
-                    android:background="FDF8E1">
+                    android:background="#FDF8E1">
 
 
                     <LinearLayout
