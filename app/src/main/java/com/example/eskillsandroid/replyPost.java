@@ -7,6 +7,7 @@ import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 import android.widget.ImageButton;
 
 import com.google.android.material.textfield.TextInputEditText;
@@ -21,7 +22,7 @@ public class replyPost extends AppCompatActivity {
         TextInputEditText usernameInput = (TextInputEditText) findViewById(R.id.SenderName);
         TextInputEditText topicInput = findViewById(R.id.CommentTopic);
         TextInputEditText contentInput = findViewById(R.id.CommentContent);
-
+        TextView header = findViewById(R.id.createposttxt);
 
         BackButton.setOnClickListener(new View.OnClickListener() {
             @Override
