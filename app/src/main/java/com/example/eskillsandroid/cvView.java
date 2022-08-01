@@ -40,20 +40,20 @@ public class cvView extends AppCompatActivity {
         DatabaseReference ref = database.getReference("pages");
 
         Bundle extras = getIntent().getExtras();
-        if (extras != null) {
+        if (extras != null) {  // if there are extras
             PageID = extras.getString("PageID");
+            Log.d("PAGEID", PageID);
             //The key argument here must match that used in the other activity
         }
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_cv_view);
+        setContentView(R.layout.activity_cv_view); // load the xml page (~activity_view.xml)
 
         BackButton = findViewById(R.id.arrowbutton);
 
-        TextView TopicName, Introduction, VideoRecap, recaptitle1, c1text1, recaptitle2, c2text1, c3text1, c4text1;
+        TextView TopicName, Introduction, c1text1, c2text1, c3text1, c4text1;
         TopicName = findViewById(R.id.TopicName);
         Introduction = findViewById(R.id.intro);
-        VideoRecap = findViewById(R.id.VideoRecap);
         c1text1 = findViewById(R.id.c1text1);
         c2text1 = findViewById(R.id.c2text1);
         c3text1 = findViewById(R.id.c3text1);

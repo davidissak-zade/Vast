@@ -51,6 +51,17 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        Renting.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, cvView.class);
+                PageID = "1";
+                i.putExtra("PageID", PageID);
+                startActivity(i);
+            }
+        });
+
+
         BankAccount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -61,15 +72,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        Renting.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, cvView.class);
-                PageID = "1";
-                i.putExtra("PageID", PageID);
-                startActivity(i);
-            }
-        });
 
         License.setOnClickListener(new View.OnClickListener() {
             @Override
