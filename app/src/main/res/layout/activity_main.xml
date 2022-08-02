@@ -32,44 +32,49 @@
                 <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content">
+
                     <TextView
-                    android:id="@+id/welcome_to_"
-                    android:layout_width="wrap_content"
-                    android:layout_marginRight="24dp"
-                    android:layout_height="49dp"
-                    android:layout_marginLeft="110px"
-                    android:layout_marginTop="40dp"
-                    android:fontFamily="@font/inter"
-                    android:gravity="center"
-                    android:text="Welcome to "
-                    android:textAppearance="@style/welcome_to_"
-                    android:textSize="24dp" />
+                        android:id="@+id/welcome_to_"
+                        android:layout_width="wrap_content"
+                        android:layout_height="49dp"
+                        android:layout_marginLeft="110px"
+                        android:layout_marginTop="40dp"
+                        android:layout_marginRight="24dp"
+                        android:fontFamily="@font/inter"
+                        android:gravity="center"
+                        android:text="Welcome to "
+                        android:textAppearance="@style/welcome_to_"
+                        android:textSize="24dp" />
 
                     <ImageView
-                    android:id="@+id/imageView"
-                    android:layout_width="146dp"
-                    android:layout_height="41dp"
-                    android:layout_marginTop="40dp"
-                    app:srcCompat="@drawable/logo_bright" />
+                        android:id="@+id/imageView"
+                        android:layout_width="146dp"
+                        android:layout_height="41dp"
+                        android:layout_marginTop="40dp"
+                        app:srcCompat="@drawable/logo_bright" />
                 </LinearLayout>
 
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-                <TextView
-                    android:id="@+id/message"
-                    android:layout_width="252dp"
-                    android:layout_height="wrap_content"
-                    android:layout_marginLeft="185px"
-                    android:layout_marginTop="300px"
-                    android:background="@drawable/messagebox"
-                    android:fontFamily="@font/inter"
-                    android:foregroundGravity="center"
-                    android:gravity="start"
-                    android:paddingHorizontal="20px"
-                    android:paddingTop="5dp"
-                    android:text="Be not afraid of growing slowly, be afraid of standing still"
-                    android:textAlignment="viewStart"
-                    android:textColor="@color/textCOLOR"
-                    android:textSize="18dp" />
+                    <TextView
+                        android:id="@+id/message"
+                        android:layout_width="252dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="185px"
+                        android:layout_marginTop="300px"
+                        android:background="@drawable/messagebox"
+                        android:fontFamily="@font/inter"
+                        android:foregroundGravity="center"
+                        android:gravity="start"
+                        android:paddingHorizontal="20px"
+                        android:paddingTop="5dp"
+                        android:text="Be not afraid of growing slowly, be afraid of standing still"
+                        android:textAlignment="viewStart"
+                        android:textColor="@color/textCOLOR"
+                        android:textSize="18dp" />
+                </LinearLayout>
 
 
 
