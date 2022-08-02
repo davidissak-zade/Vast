@@ -7,10 +7,5 @@
     tools:context=".hebrewActivity"
     android:background="#D8f2cd">
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="hebrew page"
-        tools:ignore="MissingConstraints"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

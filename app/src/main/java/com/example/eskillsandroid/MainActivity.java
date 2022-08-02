@@ -2,6 +2,7 @@ package com.example.eskillsandroid;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.util.Log;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.FrameLayout;
@@ -34,13 +35,15 @@ public class MainActivity extends AppCompatActivity {
         mySpinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
             @Override
             public void onItemSelected(android.widget.AdapterView<?> parent, View view, int i, long id) {
+                Log.d("INDENT", ""+i);
                 if (i == 0){
                     mySpinner.setOnItemSelectedListener(this);
 
                 }else
                     if(i == 1) {
                         startActivity(new Intent(MainActivity.this, arabicActivity.class));
-               }else
+
+                }else
                    if(i ==2){
                        startActivity(new Intent(MainActivity.this, hebrewActivity.class));
 
