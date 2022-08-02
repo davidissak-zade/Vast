@@ -43,7 +43,7 @@ public class replyPost extends AppCompatActivity {
                 AlertDialog.Builder builder = new AlertDialog.Builder(replyPost.this);
                 builder.setCancelable(true);
                 builder.setTitle("Thank you!");
-                builder.setMessage("Your comment was added to the database!");  //hahah no, but we are working on it
+                builder.setMessage("Your comment was added to the database!");
 
                 builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
                     @Override

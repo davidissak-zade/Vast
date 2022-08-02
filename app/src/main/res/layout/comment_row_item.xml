@@ -8,7 +8,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/PageBackgroundCOlOR"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:paddingBottom="15dp">
 
         <LinearLayout
             android:id="@+id/comment1INFO"
@@ -87,19 +88,21 @@
                 android:id="@+id/CommentReputation"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
+                android:textSize="16dp"
+                android:textColor="@color/black"
+                android:fontFamily="@font/inter"
                 android:layout_marginRight="30px"
-                android:text="143"/>
+                android:text="123"/>
 
             <ImageButton
-                android:id="@+id/upbutton"
+                android:id="@+id/upvote"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/up"
-                android:layout_marginRight="10px"
+                android:layout_marginRight="20px"
                 />
             <ImageButton
-                android:id="@+id/downbutton"
+                android:id="@+id/downvote"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/down"
@@ -107,7 +110,7 @@
                 />
 
             <ImageButton
-                android:id="@+id/CommentButton1"
+                android:id="@+id/reply"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:background="@drawable/comment_3__1"/>

@@ -4,9 +4,9 @@ package com.example.eskillsandroid;
 
 public class comment {
     private String id, sender, topic, toName, txt, datetime;
-    private int reputation;
+    private Long reputation;
 
-    public comment(String ID, String ToSender, String sender, String topic,String TXT, String datetime, int reputation){
+    public comment(String ID, String ToSender, String sender, String topic,String TXT, String datetime, Long reputation){
         this.id = ID;
         this.toName = ToSender;
         this.sender = sender;
@@ -35,7 +35,31 @@ public class comment {
                 '}';
     }
 
-    public int getReputation() {
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public void setTopic(String topic) {
+        this.topic = topic;
+    }
+
+    public void setToName(String toName) {
+        this.toName = toName;
+    }
+
+    public void setTxt(String txt) {
+        this.txt = txt;
+    }
+
+    public void setDatetime(String datetime) {
+        this.datetime = datetime;
+    }
+
+    public void setReputation(Long reputation) {
+        this.reputation = reputation;
+    }
+
+    public Long getReputation() {
         return reputation;
     }
 

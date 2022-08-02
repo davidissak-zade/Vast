@@ -84,7 +84,7 @@ public String SetID(){   // this function will create a pseudo-unique id for eac
                 topic = topicInput.getText().toString();
                 txt = contentInput.getText().toString();
                 time = GetTime();
-                comment CurrentComment = new comment(Id, toName, sender, topic, txt, time, 0);
+                comment CurrentComment = new comment(Id, toName, sender, topic, txt, time, 0L);
 
                 if(TextUtils.isEmpty(usernameInput.getText().toString()) || TextUtils.isEmpty(topicInput.getText().toString()) || TextUtils.isEmpty(contentInput.getText().toString())){
                     // if any of the input fields were left empty, throw popup window and don't create comment instance
