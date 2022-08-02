@@ -6,6 +6,7 @@ import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.util.Log;
 import android.view.View;
 import android.widget.ImageButton;
@@ -85,26 +86,48 @@ public String SetID(){   // this function will create a pseudo-unique id for eac
                 time = GetTime();
                 comment CurrentComment = new comment(Id, toName, sender, topic, txt, time, 0);
 
-                ref.push().setValue(CurrentComment);  // add the instance of the current comment to the DB
+                if(TextUtils.isEmpty(usernameInput.getText().toString()) || TextUtils.isEmpty(topicInput.getText().toString()) || TextUtils.isEmpty(contentInput.getText().toString())){
+                    // if any of the input fields were left empty, throw popup window and don't create comment instance
+                    AlertDialog.Builder builder2 = new AlertDialog.Builder(createpost.this);
+                    builder2.setCancelable(true);
+                    builder2.setTitle("Can't add empty post");
+                    builder2.setMessage("You left some of the fields empty, please fill them and share!");
 
-                //All of the code under this line is for opening an alert window
-                AlertDialog.Builder builder = new AlertDialog.Builder(createpost.this);
-                builder.setCancelable(true);
-                builder.setTitle("Thank you!");
-                builder.setMessage("Your comment was added to the database!");  //hahah no, but we are working on it
+                    builder2.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.cancel();
+                        }
+                    });
+                    builder2.show();
+                }
 
-                builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
-                    @Override
-                    public void onClick(DialogInterface dialogInterface, int i) {
-                        dialogInterface.cancel();
-                    }
-                });
-                builder.show();
 
-                //erase textholders values
-                usernameInput.setText("");
-                topicInput.setText("");
-                contentInput.setText("");
+                else {
+
+                    ref.push().setValue(CurrentComment);  // add the instance of the current comment to the DB
+
+                    //All of the code under this line is for opening an alert window
+
+                    AlertDialog.Builder builder = new AlertDialog.Builder(createpost.this);
+                    builder.setCancelable(true);
+                    builder.setTitle("Thank you!");
+                    builder.setMessage("Your comment was added to the database!");
+
+                    builder.setPositiveButton("Ok", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialogInterface, int i) {
+                            dialogInterface.cancel();
+                        }
+                    });
+                    builder.show();
+
+                    //erase textholders values
+                    usernameInput.setText("");
+                    topicInput.setText("");
+                    contentInput.setText("");
+                }
+
             }
         });
     }
