@@ -1,5 +1,15 @@
 <resources>
     <string name="app_name">Quote Generator</string>
+    <string name="main_activity">choose language</string>
+
+
+    <string-array name="languages">
+        <item>choose language</item>
+        <item>ENG</item>
+        <item>ARB</item>
+        <item>HEB</item>
+
+    </string-array>
 
     <string name="quote_string">“Despite my ghoulish reputation, I really have the heart of a small boy. I keep it in a jar on my desk.”
         <b>\n\n– Robert Bloch</b>
