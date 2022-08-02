@@ -15,7 +15,8 @@ import android.widget.Spinner;
 
 public class MainActivity extends AppCompatActivity {
 
-    ImageButton searchButton, HomeButton, DiscussionsButton, BankAccount, Renting, License;
+    ImageButton searchButton, HomeButton, DiscussionsButton, BankAccount, Renting, License, CV, scholarship
+     ,visa;
     private String PageID;
     private Object AdapterView;
 
@@ -62,6 +63,9 @@ public class MainActivity extends AppCompatActivity {
         BankAccount = findViewById(R.id.bankaccount);
         Renting = findViewById(R.id.renting);
         License = findViewById(R.id.license);
+        CV = findViewById(R.id.CV);
+        scholarship  = findViewById(R.id.scholarship );
+        visa  = findViewById(R.id.visa );
 
 
         DiscussionsButton.setOnClickListener(new View.OnClickListener(){
@@ -119,6 +123,35 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
+        CV.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, cvView.class);;
+                PageID = "4";
+                i.putExtra("PageID", PageID);
+                startActivity(i);
+            }
+        });
+
+        scholarship.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, cvView.class);;
+                PageID = "5";
+                i.putExtra("PageID", PageID);
+                startActivity(i);
+            }
+        });
+
+        visa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent i = new Intent(MainActivity.this, cvView.class);;
+                PageID = "6";
+                i.putExtra("PageID", PageID);
+                startActivity(i);
+            }
+        });
 
     }
 }
