@@ -104,24 +104,34 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             downvote.setTag(R.drawable.down);  // set the tag for initial drawable
 
 
-            //buttons onclick fucntions
+            //buttons onclick functions
             upvote.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v) {
                     if(((Integer) upvote.getTag()) == R.drawable.up  && (((Integer) downvote.getTag()) == R.drawable.down)){  // if the user didn't upvote or downvote yet
-                        Log.d("demo", "onClick: Upvote for comment " + CurrentComment.getTxt());
                         CurrentComment.upvote();
-                        Log.d("demo", "Comment Reputation: " + CurrentComment.getReputation());
                         upvote.setImageResource(R.drawable.upcolor);
                         updateReputation(ref, CurrentComment);
                         commentReputation.setText("" + CurrentComment.getReputation());
                         upvote.setTag(R.drawable.upcolor);
                     }
+
+                    else if(((Integer) upvote.getTag()) == R.drawable.up && (((Integer) downvote.getTag() == R.drawable.downcolor))){   // if downvote was pressed beforehand, and now the upvote is clicked
+                        CurrentComment.upvote();
+                        updateReputation(ref, CurrentComment);
+                        commentReputation.setText("" + CurrentComment.getReputation());
+                        upvote.setImageResource(R.drawable.upcolor);
+                        upvote.setTag(R.drawable.upcolor);
+                        downvote.setImageResource(R.drawable.down);
+                        downvote.setTag(R.drawable.down);
+                    }
+
                     else if(((Integer) upvote.getTag()) == R.drawable.upcolor){   // if the upvote button was already pressed and is pressed again, return the upvote
                         CurrentComment.downvote();
                         commentReputation.setText("" + CurrentComment.getReputation());
                         upvote.setImageResource(R.drawable.up);
                         upvote.setTag(R.drawable.up);
+                        updateReputation(ref, CurrentComment);
                     }
                 }
             });
@@ -129,17 +139,27 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
             downvote.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v){
-                    if(((Integer) downvote.getTag()) == R.drawable.down  && (((Integer) upvote.getTag()) == R.drawable.up)) {
-                        Log.d("demo", "onClick: downvote for comment " + CurrentComment.getTxt());
+                    if(  (((Integer) downvote.getTag()) == R.drawable.down  && (((Integer) upvote.getTag()) == R.drawable.up))) {
                         CurrentComment.downvote();
                         updateReputation(ref, CurrentComment);
                         commentReputation.setText("" + CurrentComment.getReputation());
-                        Log.d("demo", "Comment Reputation: " + CurrentComment.getReputation());
                         downvote.setImageResource(R.drawable.downcolor);
                         downvote.setTag(R.drawable.downcolor);
                     }
+
+                    else if(((Integer) upvote.getTag()) == R.drawable.upcolor && (((Integer) downvote.getTag() == R.drawable.down))){   // if upvote was pressed beforehand, and now the downvote is clicked
+                        CurrentComment.downvote();
+                        updateReputation(ref, CurrentComment);
+                        commentReputation.setText("" + CurrentComment.getReputation());
+                        downvote.setImageResource(R.drawable.downcolor);
+                        downvote.setTag(R.drawable.downcolor);
+                        upvote.setImageResource(R.drawable.up);
+                        upvote.setTag(R.drawable.up);
+                    }
+
                     else if (((Integer) downvote.getTag()) == R.drawable.downcolor ){  // if the downvote was already pressed and is pressed again, return the downvote
                         CurrentComment.upvote();
+                        updateReputation(ref, CurrentComment);
                         commentReputation.setText("" + CurrentComment.getReputation());
                         downvote.setImageResource(R.drawable.down);
                         downvote.setTag(R.drawable.down);
@@ -151,6 +171,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
                 @Override
                 public void onClick(View view) {
                     Intent intent = new Intent(context, replyPost.class);
+                    intent.putExtra("ReplyTo", CurrentComment.getSender());
                     context.startActivity(intent);
                 }
             });

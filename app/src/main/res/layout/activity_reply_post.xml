@@ -20,25 +20,26 @@
 
         <ImageButton
             android:id="@+id/arrowbutton"
-            android:layout_width="83dp"
+            android:layout_width="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="10dp"
             android:layout_height="match_parent"
             android:background="@color/PageBackgroundCOlOR"
-            android:paddingLeft="20px"
             android:src="@drawable/_arrow_1_ek1"
             tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
 
         <TextView
             android:id="@+id/createposttxt"
-            android:layout_width="295dp"
+            android:layout_width="match_parent"
             android:layout_height="60dp"
             android:layout_gravity="center"
-            android:layout_marginLeft="0px"
-            android:layout_marginTop="10px"
+            android:layout_marginRight="15dp"
+
             android:background="@drawable/main_box"
             android:fontFamily="@font/inter"
             android:gravity="left"
-            android:paddingLeft="60px"
-            android:paddingTop="10px"
+            android:paddingLeft="20dp"
+            android:paddingTop="10dp"
             android:text="Reply to @"
             android:textColor="@color/PageBackgroundCOlOR"
             android:textSize="24dp" />
@@ -52,7 +53,8 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:translationY="-50px">
+        android:translationY="-50px"
+        android:paddingHorizontal="20dp">
         #first small layout
 
         <LinearLayout
@@ -63,7 +65,7 @@
 
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_marginTop="100px"
             android:background="@drawable/main_box"
             android:orientation="vertical">
@@ -71,7 +73,7 @@
 
             <TextView
                 android:id="@+id/usernameQ"
-                android:layout_width="376dp"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="75px"
                 android:layout_marginTop="70dp"
@@ -93,13 +95,13 @@
                 android:background="@drawable/messagebox"
                 android:fontFamily="@font/inter"
                 android:hint=" Your Name"
-                android:textColor="@color/black" />
+                android:textColor="@color/white" />
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="10px"
-                android:layout_marginTop="80px"
+                android:layout_marginVertical="175px"
                 android:background="@drawable/main_box"
                 android:orientation="vertical">
 
@@ -126,8 +128,8 @@
                     android:layout_marginTop="10px"
                     android:background="@drawable/messagebox"
                     android:fontFamily="@font/inter"
-                    android:hint="  reply"
-                    android:textColor="@color/black" />
+                    android:hint="  Reply"
+                    android:textColor="@color/white" />
 
             </LinearLayout>
 
@@ -138,12 +140,11 @@
                 android:layout_width="match_parent"
                 android:layout_height="156dp"
                 android:layout_gravity="center"
-                android:layout_marginTop="10px">
+                android:layout_marginTop="100px">
 
                 <RelativeLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-
                     android:layout_gravity="center"
                     android:layout_marginLeft="360px"
                     android:layout_marginTop="20px">

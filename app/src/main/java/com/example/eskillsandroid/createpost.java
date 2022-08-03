@@ -27,7 +27,7 @@ public class createpost extends AppCompatActivity {
     FirebaseDatabase DB;
     DatabaseReference ref;
 
-    public String Id, toName, sender, topic, txt, time, reputation;
+    public String Id, toName, sender, topic, txt, time;
 
 
 public String GetTime(){   // this function will take the time once it was called. we will call this function when a comment is added and set comment.time to the return value of this func
@@ -84,8 +84,6 @@ public String SetID(){   // this function will create a pseudo-unique id for eac
                 topic = topicInput.getText().toString();
                 txt = contentInput.getText().toString();
                 time = GetTime();
-                comment CurrentComment = new comment(Id, toName, sender, topic, txt, time, 0L);
-
                 if(TextUtils.isEmpty(usernameInput.getText().toString()) || TextUtils.isEmpty(topicInput.getText().toString()) || TextUtils.isEmpty(contentInput.getText().toString())){
                     // if any of the input fields were left empty, throw popup window and don't create comment instance
                     AlertDialog.Builder builder2 = new AlertDialog.Builder(createpost.this);
@@ -102,9 +100,8 @@ public String SetID(){   // this function will create a pseudo-unique id for eac
                     builder2.show();
                 }
 
-
                 else {
-
+                    comment CurrentComment = new comment(Id, toName, sender, topic, txt, time, 0L);
                     ref.push().setValue(CurrentComment);  // add the instance of the current comment to the DB
 
                     //All of the code under this line is for opening an alert window

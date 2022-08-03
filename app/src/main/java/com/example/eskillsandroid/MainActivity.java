@@ -22,8 +22,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     private String PageID;
-    private String Language = "ENG";
     private Object AdapterView;
+    String Language = "ENG";
 
 
 
