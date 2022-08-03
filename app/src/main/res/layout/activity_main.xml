@@ -138,6 +138,7 @@
                                 android:src="@drawable/cvimg" />
 
                             <TextView
+                                android:id="@+id/cvtxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
@@ -166,6 +167,7 @@
                                 android:scaleType="fitXY"
                                 android:src="@drawable/scholer" />
                             <TextView
+                                android:id="@+id/scholtxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/inter"
@@ -194,6 +196,7 @@
                                 android:scaleType="fitXY"
                                 android:src="@drawable/inter" />
                             <TextView
+                                android:id="@+id/interviewtxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Interview"
@@ -223,6 +226,7 @@
                                 android:src="@drawable/exam" />
 
                             <TextView
+                                android:id="@+id/examtxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/inter"
@@ -251,6 +255,7 @@
                                 android:scaleType="fitXY"
                                 android:src="@drawable/universittyy" />
                             <TextView
+                                android:id="@+id/unitxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/inter"
@@ -326,6 +331,7 @@
                                 android:src="@drawable/bankk" />
 
                             <TextView
+                                android:id="@+id/banktxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
@@ -355,6 +361,7 @@
                                 android:src="@drawable/viissa" />
 
                             <TextView
+                                android:id="@+id/visatxt"
                                 android:layout_width="104dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
@@ -383,6 +390,7 @@
                                 android:src="@drawable/saving" />
 
                             <TextView
+                                android:id="@+id/savingtxt"
                                 android:layout_width="120dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
@@ -410,6 +418,7 @@
                                 android:src="@drawable/loan" />
 
                             <TextView
+                                android:id="@+id/loantxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
@@ -438,6 +447,7 @@
                                 android:src="@drawable/bill" />
 
                             <TextView
+                                android:id="@+id/billtxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
@@ -466,6 +476,7 @@
                                 android:src="@drawable/taxx" />
 
                             <TextView
+                                android:id="@+id/taxestxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
@@ -535,6 +546,7 @@
                                 android:scaleType="fitXY"
                                 android:src="@drawable/drive" />
                             <TextView
+                                android:id="@+id/licensetxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/inter"
@@ -566,6 +578,7 @@
                                 android:scaleType="fitXY"
                                 android:src="@drawable/rentt" />
                             <TextView
+                                android:id="@+id/renttxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/inter"
@@ -594,6 +607,7 @@
                                 android:scaleType="fitXY"
                                 android:src="@drawable/neww" />
                             <TextView
+                                android:id="@+id/insuracetxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:text="Insurance "
@@ -623,6 +637,7 @@
                                 />
 
                             <TextView
+                                android:id="@+id/cartxt"
                                 android:layout_width="150dp"
                                 android:layout_height="wrap_content"
                                 android:layout_gravity="center_horizontal"
@@ -651,6 +666,7 @@
                                 android:scaleType="fitXY"
                                 android:src="@drawable/mail" />
                             <TextView
+                                android:id="@+id/mailtxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/inter"
@@ -679,6 +695,7 @@
                                 android:scaleType="fitXY"
                                 android:src="@drawable/lan" />
                             <TextView
+                                android:id="@+id/laundrytxt"
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
                                 android:textColor="@color/textCOLOR"

@@ -18,7 +18,7 @@ public class MainActivity extends AppCompatActivity {
 
     ImageButton searchButton, HomeButton, DiscussionsButton, BankAccount, Renting, License, CV, scholarship
      ,visa;
-    TextView BankAccountTXT;
+    TextView cvtxt,scholtxt,interviewtxt, examtxt,unitxt, banktxt,visatxt, savingtxt,loantxt, billtxt, taxestxt,licensetxt, renttxt, insuracetxt, cartxt,mailtxt,laundrytxt;
     private String PageID;
     private String Language = "ENG";
     private Object AdapterView;
@@ -60,6 +60,24 @@ public class MainActivity extends AppCompatActivity {
 
 
 
+
+        cvtxt = findViewById(R.id.cvtxt);
+        scholtxt = findViewById(R.id.scholtxt);
+        interviewtxt = findViewById(R.id.interviewtxt);
+        examtxt= findViewById(R.id.examtxt);
+        unitxt= findViewById(R.id.unitxt);
+        banktxt = findViewById(R.id.banktxt);
+        visatxt= findViewById(R.id.visatxt);
+        savingtxt= findViewById(R.id.savingtxt);
+        loantxt = findViewById(R.id.loantxt);
+        billtxt = findViewById(R.id.billtxt);
+        taxestxt = findViewById(R.id.taxestxt);
+        licensetxt = findViewById(R.id.licensetxt);
+        renttxt = findViewById(R.id.renttxt);
+        insuracetxt = findViewById(R.id.insuracetxt);
+        cartxt = findViewById(R.id.cartxt);
+        mailtxt = findViewById(R.id.mailtxt);
+        laundrytxt = findViewById(R.id.laundrytxt);
 
         searchButton = findViewById(R.id.searchbutton);
         DiscussionsButton = findViewById(R.id.DiscussionsButton);
