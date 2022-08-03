@@ -19,6 +19,7 @@ public class MainActivity extends AppCompatActivity {
     ImageButton searchButton, HomeButton, DiscussionsButton, BankAccount, Renting, License, CV, scholarship
      ,visa;
     private String PageID;
+    private String Language = "ENG";
     private Object AdapterView;
 
     @Override
@@ -41,11 +42,11 @@ public class MainActivity extends AppCompatActivity {
 
                 }else
                     if(i == 1) {
-                        startActivity(new Intent(MainActivity.this, arabicActivity.class));
+                        Language = "ARB";
 
                 }else
                    if(i ==2){
-                       startActivity(new Intent(MainActivity.this, hebrewActivity.class));
+                       Language = "HEB";
 
                    }
             }

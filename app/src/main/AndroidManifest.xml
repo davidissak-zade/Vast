@@ -12,12 +12,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.EskillsAndroid">
         <activity
-            android:name=".hebrewActivity"
-            android:exported="false" />
-        <activity
-            android:name=".arabicActivity"
-            android:exported="false" />
-        <activity
             android:name=".replyPost"
             android:exported="false" />
         <activity
