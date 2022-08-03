@@ -41,6 +41,8 @@ public class MainActivity extends AppCompatActivity {
         message = findViewById(R.id.message);
 
         String[] quoteStr = {"We cannot solve problems with the kind of thinking we employed when we came up with them.” — Albert Einstein};", "Goal setting is the secret to a compelling future.” — Tony Robbins", "Learn as if you will live forever, live like you will die tomorrow", "Stay away from those people who try to disparage your ambitions. Small minds will always do that, but great minds will give you a feeling that you can become great too.", "When you change your thoughts, remember to also change your world.", "Success is not final; failure is not fatal: It is the courage to continue that counts.", "Success usually comes to those who are too busy looking for it.", "I never dreamed about success. I worked for it", "Success is getting what you want, happiness is wanting what you get."};
+        String[] quoteStrArb={"aa", "a", "2", "3", "4", "6", "7", "9", "90"};
+        String[] quoteStrHeb={"b", "b", "bb", "bbb", "bbb", "l", "k", "kk", "kkk"};
         message.setText(quoteStr[rand-1]);
 
         Spinner mySpinner = findViewById(R.id.spinner1);
@@ -78,6 +80,9 @@ public class MainActivity extends AppCompatActivity {
                             mailtxt.setText(R.string.MailingENG);
                             laundrytxt.setText(R.string.LaundryENG);
 
+                            message.setText(quoteStr[rand-1]);
+
+
                          }
                 else if(i == 1) {
                                     Language = "ARB";
@@ -104,6 +109,8 @@ public class MainActivity extends AppCompatActivity {
                                     cartxt.setText(R.string.CarARB);
                                     mailtxt.setText(R.string.MailingARB);
                                     laundrytxt.setText(R.string.LaundryARB);
+
+                                    message.setText(quoteStrArb[rand-1]);
                                 }
 
                 else if(i ==2)  {
@@ -131,6 +138,8 @@ public class MainActivity extends AppCompatActivity {
                                     cartxt.setText(R.string.CarHEB);
                                     mailtxt.setText(R.string.MailingHEB);
                                     laundrytxt.setText(R.string.LaundryHEB);
+
+                                    message.setText(quoteStrHeb[rand-1]);
                                 }
             }
 
