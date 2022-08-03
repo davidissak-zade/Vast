@@ -40,9 +40,9 @@ public class MainActivity extends AppCompatActivity {
         TextView message;
         message = findViewById(R.id.message);
 
-        String[] quoteStr = {"We cannot solve problems with the kind of thinking we employed when we came up with them.” — Albert Einstein};", "Goal setting is the secret to a compelling future.” — Tony Robbins", "Learn as if you will live forever, live like you will die tomorrow", "Stay away from those people who try to disparage your ambitions. Small minds will always do that, but great minds will give you a feeling that you can become great too.", "When you change your thoughts, remember to also change your world.", "Success is not final; failure is not fatal: It is the courage to continue that counts.", "Success usually comes to those who are too busy looking for it.", "I never dreamed about success. I worked for it", "Success is getting what you want, happiness is wanting what you get."};
-        String[] quoteStrArb={"aa", "a", "2", "3", "4", "6", "7", "9", "90"};
-        String[] quoteStrHeb={"b", "b", "bb", "bbb", "bbb", "l", "k", "kk", "kkk"};
+        String[] quoteStr = {"We cannot solve problems with the kind of thinking we employed when we came up with them.” — Albert Einstein};", "Goal setting is the secret to a compelling future.” — Tony Robbins", "Learn as if you will live forever, live like you will die tomorrow", "It is never too late to be what you might have been.", "When you change your thoughts, remember to also change your world.", "Success is not final; failure is not fatal: It is the courage to continue that counts.", "Success usually comes to those who are too busy looking for it.", "I never dreamed about success. I worked for it", "Success is getting what you want, happiness is wanting what you get."};
+        String[] quoteStrArb={"خلف الصبر أشياء جميلة، فأنتظر", "إدفع نفسك بنفسك", "لا تنتظر الفرصة، إصنعها", "لا تستسلم على اللإطلاق، الأشياء الجميلة تأخذ وقتاً فكن صبوراً", "كلما عملت بجد من أجل شيء ما، زادت سعادتك عند تحققه", "ليس هناك تحدٍ أكبر من تحسين ذاتك وتطويرها.", "مفتاح الحياة هو عدم الاستسلام عندما تشعر بالضعف.", "أعظم النجاحات تأتي بعد أشق العثرات.", "ليس هناك اسرار للنجاح، فهو حصيلة الاعداد الجيد، والعمل الشاق، والتعلم من الأخطاء والفشل."};
+        String[] quoteStrHeb={"האדם שמזיז הרים, התחיל בלסחוב אבנים קטנות", "מי שלא מוכן לטעות, לעולם לא יגיע למשהו מקורי", "אני מאמין גדול במזל, ושמתי לב שככל שאני עובד קשה יותר, יש לי יותר מזל", "אדם חייב להיות מוכן לוותר על מי שהוא, כדי להפוך למי שהוא יכול להיות", "אנשים אומרים שמוטיבציה לא מחזיקה הרבה זמן. גם מקלחת לא, לכן אנו ממליצים אותה על בסיס יומי", "כשהם אומרים לך שאתה לא יכול, הם מראים לך את הגבולות שלהם, לא שלך", "אנשים מסוימים ישנאו אותך על היותך שונה, אבל בפנים הם מייחלים שיהיה להם אומץ לעשות אותו הדבר", "אתה תמיד גדול כגודל העניין שאתה משרת ואתה נהייה קטן אם אתה משרת רק את עצמך"," אומץ הוא לא תמיד שאגה, לפעמים אומץ הוא קול חלוש בסוף היום שאומר - מחר אנסה פעם נוספת" ,"מי שמפחד להסתכן, מסתכן בחיים של בינוניות"};
         message.setText(quoteStr[rand-1]);
 
         Spinner mySpinner = findViewById(R.id.spinner1);
@@ -213,6 +213,7 @@ public class MainActivity extends AppCompatActivity {
                 PageID = "1";
                 i.putExtra("PageID", PageID);
                 i.putExtra("PageLanguage", Language);
+
                 startActivity(i);
             }
         });

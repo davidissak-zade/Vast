@@ -78,6 +78,7 @@ public class cvView extends AppCompatActivity {
 
 
     // Find a child in the database with id of the passed PageID value
+        Integer finalX = x;
         ref.child(PageID).addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot snapshot) {
@@ -89,15 +90,32 @@ public class cvView extends AppCompatActivity {
                 String PageSteps = Page.getSteps();
                 String VideoLink = Page.getVideoLink();
 
-                TopicName.setText(PageName + " ");
+                if(finalX <= 6){
+                    TopicName.setText(PageName + " ");
 
-                String[] StepsNames, Steps;
-                Steps = PageSteps.split("@");
+                    String[] StepsNames, Steps;
+                    Steps = PageSteps.split("@");
 
-                Introduction.setText(PageIntro);
-                c1text1.setText(Steps[0].replace("_b","\n"));
-                c2text1.setText(Steps[1].replace("_b","\n"));
-                c3text1.setText(Steps[2].replace("_b","\n"));
+                    Introduction.setText(PageIntro);
+                    c1text1.setText(Steps[0].replace("_b","\n"));
+                    c2text1.setText(Steps[1].replace("_b","\n"));
+                    c3text1.setText(Steps[2].replace("_b","\n"));
+
+                }
+                else{
+                    TopicName.setText(PageName + " ");
+
+                    String[] StepsNames, Steps;
+                    Steps = PageSteps.split("p");
+
+                    Introduction.setText(PageIntro);
+                    c1text1.setText(Steps[0].replace("_b","\n"));
+                    c2text1.setText(Steps[1].replace("_b","\n"));
+                    c3text1.setText(Steps[2].replace("_b","\n"));
+                }
+
+
+
 
 
                 youtubeplayer = findViewById(R.id.activity_cvView_youtubePlayerView);
