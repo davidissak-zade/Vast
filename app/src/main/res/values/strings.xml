@@ -11,7 +11,82 @@
 
     </string-array>
 
+    <string name="introENG">Welcome to </string>
 
+    <string name="Section1ENG">Academics and Employment</string>
+    <string name="CVENG">CV</string>
+    <string name="ScholarshipsENG">Scholarships</string>
+    <string name="InterviewENG">Interview</string>
+    <string name="PsychometryENG">Psychometry</string>
+    <string name="UniversityENG">Universities</string>
+
+    <string name="Section2ENG">Finances</string>
     <string name="BankENG">Bank Account</string>
+    <string name="VisaENG">Visa Card</string>
+    <string name="SavingsENG">Savings</string>
+    <string name="LoansENG">Bank Loans</string>
+    <string name="BillsENG">Bills</string>
+    <string name="TaxesENG">Taxes</string>
+
+    <string name="Section3ENG">Essentials</string>
+    <string name="LicenseENG">LicenseENG</string>
+    <string name="RentENG">Rent</string>
+    <string name="InsuranceENG">Insurance</string>
+    <string name="CarENG">Car Maintenance</string>
+    <string name="MailingENG">Mailing</string>
+    <string name="LaundryENG">Laundry and Ironing</string>
+
+
+    <string name="introHEB">ברוכים הבאים ל</string>
+
+    <string name="Section1HEB">תעסוקה ולימודים</string>
+    <string name="CVHEB">כתיבת קו״ח</string>
+    <string name="ScholarshipsHEB">מלגות</string>
+    <string name="InterviewHEB">ראיון עבודה</string>
+    <string name="PsychometryHEB">פסיכומטרי</string>
+    <string name="UniversityHEB">אוניברסיטאות</string>
+
+    <string name="Section2HEB">פיננסים</string>
+    <string name="BankHEB">חשבון בנק</string>
+    <string name="VisaHEB">כרטיס ויזה</string>
+    <string name="SavingsHEB">חסכונות</string>
+    <string name="LoansHEB">הלוואה בנקאית</string>
+    <string name="BillsHEB">חשבונות</string>
+    <string name="TaxesHEB">מיסים</string>
+
+    <string name="Section3HEB">נוספים</string>
+    <string name="LicenseHEB">רישיון נהיגה</string>
+    <string name="RentHEB">מגורים בשכירות</string>
+    <string name="InsuranceHEB">ביטוח</string>
+    <string name="CarHEB">טיפול ברכב</string>
+    <string name="MailingHEB">דואר</string>
+    <string name="LaundryHEB">כביסה וגיהוץ</string>
+
+
+    
+    <string name="introARB">Welcome to </string>
+
+    <string name="Section1ARB">Academics and Employment</string>
+    <string name="CVARB">CV</string>
+    <string name="ScholarshipsARB">Scholarships</string>
+    <string name="InterviewARB">Interview</string>
+    <string name="PsychometryARB">Psychometry</string>
+    <string name="UniversityARB">Universities</string>
+
+    <string name="Section2ARB">Finances</string>
+    <string name="BankARB">Bank Account</string>
+    <string name="VisaARB">Visa Card</string>
+    <string name="SavingsARB">Savings</string>
+    <string name="LoansARB">Bank Loans</string>
+    <string name="BillsARB">Bills</string>
+
+    <string name="TaxesARB">Taxes</string>
+    <string name="Section3ARB">Essentials</string>
+    <string name="LicenseARB">LicenseENG</string>
+    <string name="RentARB">Rent</string>
+    <string name="InsuranceARB">Insurance</string>
+    <string name="CarARB">Car Maintenance</string>
+    <string name="MailingARB">Mailing</string>
+    <string name="LaundryARB">Laundry and Ironing</string>
 
 </resources>
