@@ -43,7 +43,6 @@ public class cvView extends AppCompatActivity {
         if (extras != null) {  // if there are extras
             PageID = extras.getString("PageID");
             PageLanguage = extras.getString("PageLanguage");
-            Log.d("PAGEID", PageID);
             Log.d("PAGELanguage", PageLanguage);
 
             //The key argument here must match that used in the other activity
@@ -63,13 +62,20 @@ public class cvView extends AppCompatActivity {
 
         chat = findViewById(R.id.chat);
 
-        if(PageLanguage == "ARB"){
-            PageID += 6;
+        Integer x = Integer.parseInt(PageID);
+
+        if(PageLanguage.equals("ARB")){
+             x += 6;
+             PageID = x.toString();
         }
 
-        if(PageLanguage == "HEB"){
-            PageID += 12;
+        if(PageLanguage.equals("HEB")){
+            x += 12;
+            PageID = x.toString();
         }
+        Log.d("PAGEID", PageID);
+
+
 
     // Find a child in the database with id of the passed PageID value
         ref.child(PageID).addValueEventListener(new ValueEventListener() {
