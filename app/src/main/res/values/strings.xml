@@ -64,29 +64,29 @@
 
 
     
-    <string name="introARB">Welcome to </string>
+    <string name="introARB">أهلاً بكم في </string>
 
-    <string name="Section1ARB">Academics and Employment</string>
-    <string name="CVARB">CV</string>
-    <string name="ScholarshipsARB">Scholarships</string>
-    <string name="InterviewARB">Interview</string>
-    <string name="PsychometryARB">Psychometry</string>
-    <string name="UniversityARB">Universities</string>
+    <string name="Section1ARB">الأكاديمي والتوظيف</string>
+    <string name="CVARB">السيرة الذاتية</string>
+    <string name="ScholarshipsARB">المنح الدراسية</string>
+    <string name="InterviewARB">مقابلة</string>
+    <string name="PsychometryARB">امتحان بسيخومتري</string>
+    <string name="UniversityARB">الجامعات</string>
 
-    <string name="Section2ARB">Finances</string>
-    <string name="BankARB">Bank Account</string>
-    <string name="VisaARB">Visa Card</string>
-    <string name="SavingsARB">Savings</string>
-    <string name="LoansARB">Bank Loans</string>
-    <string name="BillsARB">Bills</string>
+    <string name="Section2ARB">المالية</string>
+    <string name="BankARB">حساب بنكي</string>
+    <string name="VisaARB">بطاقة فيزا</string>
+    <string name="SavingsARB">توفير</string>
+    <string name="LoansARB">القروض المصرفية</string>
+    <string name="BillsARB">الفواتير</string>
 
-    <string name="TaxesARB">Taxes</string>
-    <string name="Section3ARB">Essentials</string>
-    <string name="LicenseARB">LicenseENG</string>
-    <string name="RentARB">Rent</string>
-    <string name="InsuranceARB">Insurance</string>
-    <string name="CarARB">Car Maintenance</string>
-    <string name="MailingARB">Mailing</string>
-    <string name="LaundryARB">Laundry and Ironing</string>
+    <string name="TaxesARB">الضرائب</string>
+    <string name="Section3ARB">الاحتياجات</string>
+    <string name="LicenseARB">رخصة القيادة</string>
+    <string name="RentARB">الإجار</string>
+    <string name="InsuranceARB">تأمين</string>
+    <string name="MailingARB">البريد الاكتروني</string>
+        <string name="CarARB">صيانة السيارة</string>
+    <string name="LaundryARB">الغسيل والكي</string>
 
 </resources>
