@@ -1,6 +1,7 @@
 package com.example.eskillsandroid;
 
 import android.content.Context;
+import android.content.Intent;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -97,6 +98,7 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
             upvote = itemView.findViewById(R.id.upvote);
             downvote = itemView.findViewById(R.id.downvote);
+            reply = itemView.findViewById(R.id.reply);
 
             upvote.setTag(R.drawable.up);  // set the tag for initial drawable
             downvote.setTag(R.drawable.down);  // set the tag for initial drawable
@@ -142,6 +144,14 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
                         downvote.setImageResource(R.drawable.down);
                         downvote.setTag(R.drawable.down);
                     }
+                }
+            });
+
+            reply.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    Intent intent = new Intent(context, replyPost.class);
+                    context.startActivity(intent);
                 }
             });
 

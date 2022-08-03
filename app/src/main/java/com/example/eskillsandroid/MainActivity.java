@@ -212,6 +212,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(MainActivity.this, cvView.class);
                 PageID = "1";
                 i.putExtra("PageID", PageID);
+                i.putExtra("PageLanguage", Language);
                 startActivity(i);
             }
         });
@@ -223,6 +224,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(MainActivity.this, cvView.class);
                 PageID = "3";
                 i.putExtra("PageID", PageID);
+                i.putExtra("PageLanguage", Language);
                 startActivity(i);
             }
         });
@@ -234,6 +236,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(MainActivity.this, cvView.class);;
                 PageID = "2";
                 i.putExtra("PageID", PageID);
+                i.putExtra("PageLanguage", Language);
                 startActivity(i);
             }
         });
@@ -244,6 +247,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(MainActivity.this, cvView.class);;
                 PageID = "4";
                 i.putExtra("PageID", PageID);
+                i.putExtra("PageLanguage", Language);
                 startActivity(i);
             }
         });
@@ -254,6 +258,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(MainActivity.this, cvView.class);;
                 PageID = "5";
                 i.putExtra("PageID", PageID);
+                i.putExtra("PageLanguage", Language);
                 startActivity(i);
             }
         });
@@ -264,6 +269,7 @@ public class MainActivity extends AppCompatActivity {
                 Intent i = new Intent(MainActivity.this, cvView.class);;
                 PageID = "6";
                 i.putExtra("PageID", PageID);
+                i.putExtra("PageLanguage", Language);
                 startActivity(i);
             }
         });

@@ -28,7 +28,7 @@ public class cvView extends AppCompatActivity {
     ImageButton BackButton;
     Button chat;
     private YouTubePlayerView youtubeplayer;
-    public String PageID;
+    public String PageID, PageLanguage;
 
 
     @Override
@@ -42,7 +42,10 @@ public class cvView extends AppCompatActivity {
         Bundle extras = getIntent().getExtras();
         if (extras != null) {  // if there are extras
             PageID = extras.getString("PageID");
+            PageLanguage = extras.getString("PageLanguage");
             Log.d("PAGEID", PageID);
+            Log.d("PAGELanguage", PageLanguage);
+
             //The key argument here must match that used in the other activity
         }
 
@@ -59,6 +62,14 @@ public class cvView extends AppCompatActivity {
         c3text1 = findViewById(R.id.c3text1);
 
         chat = findViewById(R.id.chat);
+
+        if(PageLanguage == "ARB"){
+            PageID += 6;
+        }
+
+        if(PageLanguage == "HEB"){
+            PageID += 12;
+        }
 
     // Find a child in the database with id of the passed PageID value
         ref.child(PageID).addValueEventListener(new ValueEventListener() {
