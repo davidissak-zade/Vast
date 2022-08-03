@@ -11,56 +11,7 @@
 
     </string-array>
 
-    <string name="quote_string">“Despite my ghoulish reputation, I really have the heart of a small boy. I keep it in a jar on my desk.”
-        <b>\n\n– Robert Bloch</b>
-    </string>
 
-    <string name="quote_string2">“I envy people that know love. That have someone who takes them as they are.”
-        <b>\n\n– Jess C Scott, The Devilin Fey</b>
-    </string>
-
-    <string name="quote_string3">“What\'s the whole point of being pretty on the outside when you’re so ugly on the inside?”
-        <b>\n\n– Jess C. Scott</b>
-    </string>
-
-    <string name="quote_string4">“Build a man a fire, and he\'ll be warm for a day. Set a man on fire, and he\'ll be warm for the rest of his life.”
-        <b>\n\n– Terry Pratchett</b>
-    </string>
-
-    <string name="quote_string5">“I know a man who gave up smoking, drinking, sex, and rich food. He was healthy right up to the day he killed himself.”
-        <b>\n\n– Johnny Carson</b>
-    </string>
-
-    <string name="quote_string6">“When I die, I want to die like my grandfather who died peacefully in his sleep. Not screaming like all the passengers in his car.”
-        <b>\n\n– Will Rogers</b>
-    </string>
-
-    <string name="quote_string7">“How much is real and for how long?”
-        <b>\n\n– J. Limbu</b>
-    </string>
-    <!-- TODO: Remove or change this placeholder text -->
-    <string name="hello_blank_fragment">Hello blank fragment</string>
-    <string name="title_activity_search">SearchActivity</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
-
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
-    <string name="title_activity_search_page">SearchPage</string>
-    <string name="title_activity_lead_to_search">LeadToSearch</string>
-    <string name="title_activity_find_lesson">FindLesson</string>
-    <string name="title_activity_lessons_search">LessonsSearchActivity</string>
-    <string name="title_activity_middle_page">MiddlePage</string>
-    <string name="title_activity_main2">MainActivity2</string>
-    <string name="money">Money</string>
-    <string name="essential">Eseential</string>
-
-    <string name="Comment1TXT">hi guys:) i’ve been trying to find a good driving teacher in the Tel Aviv area for a while now, does anyone have any recommentations?</string>
-    <string name="Comment1HEADER">looking for a good driving teacher!</string>
-
-    <string name="Comment2TXT"> I followed the steps in the app and it really helped me! still not sure about it though, can anyone review what i wrote? Thx! </string>
+    <string name="BankENG">Bank Account</string>
 
 </resources>

@@ -11,13 +11,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.Spinner;
-
+import android.widget.TextView;
 
 
 public class MainActivity extends AppCompatActivity {
 
     ImageButton searchButton, HomeButton, DiscussionsButton, BankAccount, Renting, License, CV, scholarship
      ,visa;
+    TextView BankAccountTXT;
     private String PageID;
     private String Language = "ENG";
     private Object AdapterView;
@@ -56,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
-
 
 
 

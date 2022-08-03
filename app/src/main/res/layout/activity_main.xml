@@ -279,15 +279,16 @@
             </LinearLayout>
 
             <LinearLayout
-                android:orientation="vertical" android:layout_width="match_parent"
-                android:layout_height="wrap_content">
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
 
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_gravity="left"
-                    android:layout_marginTop="60dp"
                     android:layout_marginLeft="10dp"
+                    android:layout_marginTop="60dp"
                     android:fontFamily="@font/inter"
                     android:text="Finances"
                     android:textColor="@color/textCOLOR"
@@ -296,17 +297,16 @@
                 <HorizontalScrollView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:fillViewport="true"
                     android:background="#D8F2CD"
+                    android:fillViewport="true"
                     android:orientation="horizontal">
 
 
                     <LinearLayout
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
-                        android:orientation="horizontal"
                         android:background="#63FDF8E1"
-                        >
+                        android:orientation="horizontal">
 
 
                         <LinearLayout
@@ -338,14 +338,11 @@
                         </LinearLayout>
 
 
-
-
                         <LinearLayout
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:padding="10dp"
-                            >
+                            android:padding="10dp">
 
                             <ImageButton
                                 android:id="@+id/visa"
@@ -363,8 +360,8 @@
                                 android:layout_gravity="center_horizontal"
                                 android:fontFamily="@font/inter"
                                 android:text="Visa Card"
-                                android:textColor="@color/textCOLOR"
                                 android:textAlignment="center"
+                                android:textColor="@color/textCOLOR"
                                 android:textSize="15dp" />
 
                         </LinearLayout>
@@ -373,8 +370,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:padding="10dp"
-                            >
+                            android:padding="10dp">
 
                             <ImageButton
                                 android:id="@+id/saving"
@@ -402,8 +398,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:padding="10dp"
-                            >
+                            android:padding="10dp">
 
                             <ImageButton
                                 android:layout_width="108dp"
@@ -413,14 +408,15 @@
                                 android:background="#63FDF8E1"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/loan" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
                                 android:fontFamily="@font/inter"
                                 android:text="Bank Loans"
-                                android:textColor="@color/textCOLOR"
-                                android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
+                                android:textColor="@color/textCOLOR"
                                 android:textSize="15dp" />
 
                         </LinearLayout>
@@ -429,8 +425,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:padding="10dp"
-                            >
+                            android:padding="10dp">
 
                             <ImageButton
                                 android:id="@+id/bills"
@@ -441,14 +436,15 @@
                                 android:background="#63FDF8E1"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/bill" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
                                 android:fontFamily="@font/inter"
                                 android:text="Bills"
-                                android:textColor="@color/textCOLOR"
-                                android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
+                                android:textColor="@color/textCOLOR"
                                 android:textSize="15dp" />
 
                         </LinearLayout>
@@ -457,8 +453,7 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:orientation="vertical"
-                            android:padding="10dp"
-                            >
+                            android:padding="10dp">
 
                             <ImageButton
                                 android:id="@+id/taxes"
@@ -469,14 +464,15 @@
                                 android:background="#63FDF8E1"
                                 android:scaleType="fitXY"
                                 android:src="@drawable/taxx" />
+
                             <TextView
                                 android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
+                                android:layout_gravity="center_horizontal"
                                 android:fontFamily="@font/inter"
                                 android:text="Taxes"
-                                android:textColor="@color/textCOLOR"
-                                android:layout_gravity="center_horizontal"
                                 android:textAlignment="center"
+                                android:textColor="@color/textCOLOR"
                                 android:textSize="15dp" />
 
                         </LinearLayout>
@@ -485,7 +481,6 @@
                         <FrameLayout
                             android:layout_width="match_parent"
                             android:layout_height="0dp" />
-
 
 
                     </LinearLayout>
